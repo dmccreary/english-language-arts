@@ -26,8 +26,23 @@ nav:
 
   - Chapters:
       - List of Chapters: chapters/index.md
-      # Add chapter entries here as content is generated, e.g.:
-      # - 1. Introduction: chapters/01-introduction/index.md
+      - 1. Foundations of ELA: chapters/01-foundations/index.md
+      - 2. Literary Genres: chapters/02-literary-genres/index.md
+      - 3. Narrative Elements: chapters/03-narrative-elements/index.md
+      - 4. Figurative Language: chapters/04-figurative-language/index.md
+      - 5. Narrative Techniques: chapters/05-narrative-techniques/index.md
+      - 6. Informational Text: chapters/06-informational-text/index.md
+      - 7. Foundational Documents: chapters/07-foundational-documents/index.md
+      - 8. Critical Thinking: chapters/08-critical-thinking/index.md
+      - 9. Writing Process: chapters/09-writing-process/index.md
+      - 10. Writing Modes: chapters/10-writing-modes/index.md
+      - 11. Research and Citation: chapters/11-research-citation/index.md
+      - 12. Grammar: chapters/12-grammar/index.md
+      - 13. Language Conventions: chapters/13-language-conventions/index.md
+      - 14. Speaking and Listening: chapters/14-speaking-listening/index.md
+      - 15. Media Literacy: chapters/15-media-literacy/index.md
+      - 16. Systems Thinking and AI: chapters/16-systems-thinking-ai/index.md
+      - 17. Capstone Project: chapters/17-capstone/index.md
 
   - Learning Graph:
       - Introduction: learning-graph/index.md
