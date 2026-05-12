@@ -2,6 +2,10 @@
 
 Project-specific instructions for agents working in this repo.
 
+## Content Generation
+
+When generating or reviewing chapter content — including prose, structure, mascot placement, tone, text density, and misinformation framing — read and follow **[`CONTENT-GENERATION-GUIDE.md`](CONTENT-GENERATION-GUIDE.md)** before writing anything. That file is the authoritative guide for chapter authors and overrides general defaults (e.g., it requires more prose than the default chapter-content-generator produces).
+
 ## Learning Mascot: Pip the Bookworm
 
 ### Mascot File Index
