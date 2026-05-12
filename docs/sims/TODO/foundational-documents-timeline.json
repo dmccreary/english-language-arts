@@ -1,0 +1,14 @@
+{
+  "sim_id": "foundational-documents-timeline",
+  "diagram_name": "The American Intellectual Tradition Timeline",
+  "chapter_number": 7,
+  "chapter_title": "US Foundational Documents and Informational Sources",
+  "chapter_dir": "07-foundational-documents",
+  "library": "vis-timeline",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Understand (L2 — Understand) the chronological relationships among key foundational documents and writers, and identify which documents responded to or built on earlier ones.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-12",
+  "specification": "Type: Interactive Timeline\n**sim-id:** foundational-documents-timeline<br/>\n**Library:** vis-timeline<br/>\n**Status:** Specified\n\n**Learning Objective:** Understand (L2 — Understand) the chronological relationships among key foundational documents and writers, and identify which documents responded to or built on earlier ones.\n\n**Description:** A horizontal timeline spanning 1750–1970, displaying key writers and documents as labeled events grouped in colored bands by category.\n\n**Categories and color coding:**\n- **Political-Constitutional** (navy blue #1A237E): Declaration of Independence (1776), US Constitution (1787), Bill of Rights (1791), Federalist Papers (1787–88), Gettysburg Address (1863), Second Inaugural Address (1865)\n- **Transcendentalist** (forest green #1B5E20): Emerson \"Nature\" (1836), \"The American Scholar\" (1837), \"Self-Reliance\" (1841); Thoreau \"Civil Disobedience\" (1849), *Walden* (1854)\n- **Civil Rights** (deep red #B71C1C): Douglass \"What to the Slave is the Fourth of July?\" (1852), King \"Letter from Birmingham Jail\" (1963), \"I Have a Dream\" (1963)\n\n**Interactions:**\n- Clicking any event node opens a side panel with: document/speech title, author, date, one-sentence summary, and a \"Key Rhetorical Move\" field describing the text's most important argumentative or stylistic feature.\n- A \"Show Connections\" toggle draws labeled arrows between texts that directly influenced or responded to each other (e.g., Thoreau → Gandhi → King; Declaration → Douglass → King).\n- A filter toolbar allows showing/hiding categories.\n\n**Canvas:** Responsive, minimum 700px wide. Horizontal scroll on small screens."
+}

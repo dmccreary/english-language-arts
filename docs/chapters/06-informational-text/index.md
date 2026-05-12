@@ -164,6 +164,10 @@ Consider this argument: "This candidate has extensive business experience, so th
 
 #### Diagram: The Anatomy of an Argument
 
+
+<iframe src="../../sims/argument-anatomy-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run The Anatomy of an Argument Fullscreen](../../sims/argument-anatomy-explorer/main.html)
+
 <details markdown="1">
 <summary>Interactive Toulmin Argument Structure Explorer</summary>
 Type: Interactive Infographic

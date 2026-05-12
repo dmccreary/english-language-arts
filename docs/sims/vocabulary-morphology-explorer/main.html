@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<title>Vocabulary Morphology Explorer</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f5f7fa; }
+.container { width: 100%; height: 640px; display: flex; position: relative; }
+#network { flex: 1; background: white; }
+.title {
+  position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
+  font-size: 16px; font-weight: bold; color: #1a237e;
+  background: rgba(255,255,255,0.9); padding: 4px 14px; border-radius: 6px;
+  pointer-events: none; z-index: 10; white-space: nowrap;
+}
+.right-panel {
+  width: 255px; background: #fff8e1; border-left: 2px solid #ffe082;
+  padding: 10px; overflow-y: auto; display: flex; flex-direction: column; gap: 8px;
+}
+.right-panel h3 { font-size: 13px; color: #E65100; }
+#root-info {
+  background: white; border-radius: 8px; border: 2px solid #ffe082; padding: 10px;
+  font-size: 12px; min-height: 80px;
+}
+.legend { display: flex; flex-direction: column; gap: 4px; }
+.leg-item { display: flex; align-items: center; gap: 6px; font-size: 11px; }
+.leg-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+.root-selector h3 { margin-bottom: 4px; }
+.root-btn {
+  display: block; width: 100%; text-align: left; font-size: 12px;
+  padding: 5px 8px; border: 1px solid #ffe082; border-radius: 4px;
+  background: white; cursor: pointer; margin-bottom: 4px;
+}
+.root-btn:hover { background: #fff8e1; }
+.root-btn.active { background: #C62828; color: white; border-color: #C62828; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div id="network"></div>
+  <div class="title">Vocabulary Morphology Explorer</div>
+  <div class="right-panel">
+    <h3>Root / Word Details</h3>
+    <div id="root-info">Select a root and click any node to see its morphological analysis.</div>
+
+    <div class="root-selector">
+      <h3>Select a Root</h3>
+      <button class="root-btn active" data-root="spec/spect">spec / spect (to look)</button>
+      <button class="root-btn" data-root="port">port (to carry)</button>
+      <button class="root-btn" data-root="dict/dic">dict / dic (to say)</button>
+    </div>
+
+    <h3>Legend</h3>
+    <div class="legend">
+      <div class="leg-item"><div class="leg-dot" style="background:#C62828"></div>Word Root (center)</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#1565C0"></div>Prefixes</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#2E7D32"></div>Suffixes</div>
+      <div class="leg-item"><div class="leg-dot" style="background:#FFE082;border:1px solid #F9A825"></div>Complete Words</div>
+    </div>
+  </div>
+</div>
+<script src="vocabulary-morphology-explorer.js"></script>
+</body>
+</html>

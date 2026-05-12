@@ -264,6 +264,10 @@ One practical strategy for applying critical thinking skills to social media con
 
 #### Diagram: Logical Fallacy Navigator
 
+
+<iframe src="../../sims/logical-fallacy-navigator/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Logical Fallacy Navigator Fullscreen](../../sims/logical-fallacy-navigator/main.html)
+
 <details markdown="1">
 <summary>Interactive Logical Fallacy Identification Tool</summary>
 Type: Interactive Quiz / Reference

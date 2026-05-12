@@ -1,0 +1,14 @@
+{
+  "sim_id": "source-credibility-explorer",
+  "diagram_name": "Source Credibility Spectrum",
+  "chapter_number": 7,
+  "chapter_title": "US Foundational Documents and Informational Sources",
+  "chapter_dir": "07-foundational-documents",
+  "library": "Chart.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Evaluate (L5 — Evaluate) multiple sources on the same issue by mapping their credibility indicators and viewpoints on a comparative visual display.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-12",
+  "specification": "Type: Interactive Visual\n**sim-id:** source-credibility-explorer<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Evaluate (L5 — Evaluate) multiple sources on the same issue by mapping their credibility indicators and viewpoints on a comparative visual display.\n\n**Description:** A two-axis scatter plot. The horizontal axis is \"Ideological/Perspective Spectrum\" (left = progressive, center = centrist, right = conservative, with a middle zone labeled \"Technical/Nonpartisan\"). The vertical axis is \"Credibility Indicators\" (lower = more credibility concerns, upper = stronger credibility signals). Eight to ten pre-loaded example source types are plotted as labeled bubbles: peer-reviewed research, government data (e.g., CDC, Census Bureau), major newspaper news sections, major newspaper opinion sections, advocacy organization reports, think-tank publications (left-leaning and right-leaning), social media posts, and tabloid press.\n\n**Interactions:**\n- Hovering over any bubble shows a tooltip listing the source type's typical credibility strengths and limitations.\n- A \"Compare Two Sources\" mode allows selecting two sources and displays a side-by-side table of credibility indicators: expertise evidence, editorial oversight, transparency about methods, funding disclosure, and track record.\n- An \"Add Your Own\" feature allows users to enter a real source URL and drag-place it on the chart, with a checklist prompting them to consider each credibility indicator.\n\n**Canvas:** Responsive, minimum 600px wide, minimum 450px height."
+}

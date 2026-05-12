@@ -339,6 +339,10 @@ Wordiness often results from hedging — adding qualifications to statements tha
 
 #### Diagram: Sentence Structure Analyzer
 
+
+<iframe src="../../sims/sentence-structure-analyzer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Sentence Structure Analyzer Fullscreen](../../sims/sentence-structure-analyzer/main.html)
+
 <details markdown="1">
 <summary>Interactive Sentence Structure Visual Tool</summary>
 Type: Interactive Diagram

@@ -254,6 +254,10 @@ The following sections define and illustrate the eighteen specific cognitive bia
 
 #### Diagram: Cognitive Bias Spotter
 
+
+<iframe src="../../sims/cognitive-bias-spotter/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Cognitive Bias Spotter Fullscreen](../../sims/cognitive-bias-spotter/main.html)
+
 <details markdown="1">
 <summary>Interactive Cognitive Bias Practice Tool</summary>
 Type: Interactive Diagram

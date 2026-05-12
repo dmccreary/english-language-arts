@@ -352,6 +352,10 @@ Not every body paragraph requires three sources — some claims need only one st
 
 #### Diagram: The Research Writing Process
 
+
+<iframe src="../../sims/research-process-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run The Research Writing Process Fullscreen](../../sims/research-process-explorer/main.html)
+
 <details markdown="1">
 <summary>Interactive Research Process and Source Map</summary>
 Type: Interactive Flowchart and Node Map

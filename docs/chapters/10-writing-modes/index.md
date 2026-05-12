@@ -254,6 +254,10 @@ A **topic sentence** is the sentence — typically the first — that states the
 
 #### Diagram: The Essay Architecture Explorer
 
+
+<iframe src="../../sims/essay-architecture-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run The Essay Architecture Explorer Fullscreen](../../sims/essay-architecture-explorer/main.html)
+
 <details markdown="1">
 <summary>Interactive Essay Structure and Paragraph Development Tool</summary>
 Type: Interactive Diagram

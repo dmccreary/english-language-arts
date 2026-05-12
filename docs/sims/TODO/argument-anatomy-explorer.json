@@ -1,0 +1,14 @@
+{
+  "sim_id": "argument-anatomy-explorer",
+  "diagram_name": "The Anatomy of an Argument",
+  "chapter_number": 6,
+  "chapter_title": "Informational Text — Rhetoric, Argument, and Rhetorical Appeals",
+  "chapter_dir": "06-informational-text",
+  "library": "vis-network",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Apply (L3 — Apply) the Toulmin model to identify and label the components of a real argument — claim, evidence, warrant, counterclaim, rebuttal — in a provided sample text.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-12",
+  "specification": "Type: Interactive Infographic\n**sim-id:** argument-anatomy-explorer<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Learning Objective:** Apply (L3 — Apply) the Toulmin model to identify and label the components of a real argument — claim, evidence, warrant, counterclaim, rebuttal — in a provided sample text.\n\n**Description:** A node-and-edge diagram showing the six Toulmin argument components. Six labeled nodes: Claim (center, large, deep blue #1565C0), Evidence (left, green #2E7D32), Warrant (bottom center, amber #F57F17), Backing (bottom-left, light amber #FFE082), Qualifier (top-right, teal #00695C), and Counterclaim/Rebuttal (right, red #C62828). Directed edges show how each component relates to the Claim node.\n\n**Default node display:** Each node shows its name and a one-line definition.\n\n**Interactions:**\n- Clicking any node opens a side panel with: (1) full definition, (2) a concrete example from Martin Luther King Jr.'s \"Letter from Birmingham Jail,\" (3) a \"How to find it\" checklist of 2–3 diagnostic questions.\n- A dropdown menu switches the example source among: \"Letter from Birmingham Jail,\" Lincoln's Second Inaugural Address, and a sample student argumentative essay. All node examples update when the source is switched.\n- A \"Build My Argument\" button opens a guided entry form: the user selects or types a claim, then fills in evidence, warrant, and counterclaim fields. When completed, the diagram assembles the components into a color-coded display with the user's text in each node.\n\n**Canvas:** Responsive, minimum 500px wide, minimum height 400px. Re-renders on window resize.\n\n**Visual style:** White background, colored nodes, directed curved-arrow edges, clean sans-serif labels."
+}

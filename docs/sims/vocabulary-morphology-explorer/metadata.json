@@ -1,0 +1,23 @@
+{
+  "title": "Vocabulary Morphology Explorer",
+  "description": "Apply (L3 — Apply) morphological analysis by identifying word roots, prefixes, and suffixes to infer the meanings of unfamiliar academic vocabulary words.",
+  "creator": "English Language Arts",
+  "date": "2026-05-12",
+  "subject": [
+    "English Language Arts",
+    "Vocabulary",
+    "Morphology"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "vocabulary-morphology-explorer",
+  "library": "vis-network",
+  "bloomLevel": 3,
+  "bloomVerb": "Apply",
+  "completion_status": "scaffold",
+  "chapter_number": 13,
+  "chapter_title": "Language Conventions and Vocabulary Development",
+  "chapter_dir": "13-language-conventions"
+}

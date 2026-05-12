@@ -1,0 +1,23 @@
+{
+  "title": "American Literary Periods — Timeline Explorer",
+  "description": "Identify (L1 — Remember) and contextualize (L2 — Understand) the major American literary periods by placing representative authors and works within their historical moment.",
+  "creator": "English Language Arts",
+  "date": "2026-05-12",
+  "subject": [
+    "English Language Arts",
+    "American Literary History",
+    "Literary Periods"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "literary-periods-timeline",
+  "library": "vis-timeline",
+  "bloomLevel": 2,
+  "bloomVerb": "Contextualize",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Narrative Techniques, Literary Periods, and Comparative Analysis",
+  "chapter_dir": "05-narrative-techniques"
+}

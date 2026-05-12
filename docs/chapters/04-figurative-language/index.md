@@ -160,6 +160,10 @@ Visual imagery, despite being the most common, is also the most analysable in te
 
 #### Diagram: Figurative Language Explorer
 
+
+<iframe src="../../sims/figurative-language-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Figurative Language Explorer Fullscreen](../../sims/figurative-language-explorer/main.html)
+
 <details markdown="1">
 <summary>Interactive Figurative Language Reference Explorer</summary>
 Type: Interactive Infographic

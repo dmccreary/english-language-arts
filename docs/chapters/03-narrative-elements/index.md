@@ -126,6 +126,10 @@ The most widely used model of plot structure is **Freytag's Pyramid**, named for
 
 #### Diagram: Freytag's Pyramid — Plot Structure Explorer
 
+
+<iframe src="../../sims/freytagpyramid-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Freytag's Pyramid — Plot Structure Explorer Fullscreen](../../sims/freytagpyramid-explorer/main.html)
+
 <details markdown="1">
 <summary>Interactive Plot Structure Explorer</summary>
 Type: Interactive Infographic

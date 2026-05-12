@@ -1,0 +1,22 @@
+{
+  "title": "Narrative Time — Scene, Summary, and Flashback",
+  "description": "Distinguish (L2 — Understand) between scene, summary, and flashback as narrative techniques by mapping them onto a visual representation of a narrative's story time versus narrative time.",
+  "creator": "English Language Arts",
+  "date": "2026-05-12",
+  "subject": [
+    "English Language Arts",
+    "Narrative Techniques"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "narrative-timeline-explorer",
+  "library": "vis-timeline",
+  "bloomLevel": 2,
+  "bloomVerb": "Distinguish",
+  "completion_status": "scaffold",
+  "chapter_number": 5,
+  "chapter_title": "Narrative Techniques, Literary Periods, and Comparative Analysis",
+  "chapter_dir": "05-narrative-techniques"
+}

@@ -1,0 +1,14 @@
+{
+  "sim_id": "literary-periods-timeline",
+  "diagram_name": "American Literary Periods — Timeline Explorer",
+  "chapter_number": 5,
+  "chapter_title": "Narrative Techniques, Literary Periods, and Comparative Analysis",
+  "chapter_dir": "05-narrative-techniques",
+  "library": "vis-timeline",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Identify (L1 — Remember) and contextualize (L2 — Understand) the major American literary periods by placing representative authors and works within their historical moment.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-12",
+  "specification": "Type: Interactive Infographic\n**sim-id:** literary-periods-timeline<br/>\n**Library:** vis-timeline<br/>\n**Status:** Specified\n\n**Learning Objective:** Identify (L1 — Remember) and contextualize (L2 — Understand) the major American literary periods by placing representative authors and works within their historical moment.\n\n**Description:** A horizontal chronological timeline spanning from 1600 to the present, divided into the six major American literary periods. Each period is represented as a colored band occupying its approximate dates. Within each band, representative authors and works appear as clickable nodes positioned at their approximate date of publication or activity.\n\n**Period colors:**\n- Puritan/Colonial (#8D6E63 — warm brown)\n- Enlightenment/Revolutionary (#5C6BC0 — indigo)\n- Romantic (#66BB6A — green)\n- Realism/Naturalism (#FFA726 — amber)\n- Modernist (#EF5350 — red)\n- Contemporary (#26C6DA — cyan)\n\n**Node contents:** Each author/work node, when hovered, shows the author's name and the title and date of a representative work. When clicked, it opens a side panel with: (1) the author's name and dates; (2) the period they belong to; (3) a brief description of their significance; (4) the period's key characteristics summarized in three bullet points; (5) a connection to a specific historical event that shaped the period.\n\n**Historical events:** A secondary track below the literary timeline shows major historical events (e.g., Civil War 1861–65, World War I 1914–18, Great Depression 1929–39, Civil Rights Movement 1955–68) with brief labels, allowing students to see the correlation between history and literary movements.\n\n**Canvas:** Responsive, minimum width 700px. Scrollable horizontally if needed. Minimum height 350px. Re-renders on window resize.\n\n**Interactions:** All author/work nodes are clickable as described. Historical event markers are hoverable to show a tooltip with the event name, date, and a one-sentence statement of its literary significance."
+}

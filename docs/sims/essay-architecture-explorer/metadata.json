@@ -1,0 +1,23 @@
+{
+  "title": "The Essay Architecture Explorer",
+  "description": "Apply (L3 — Apply) the structural conventions of argumentative essays by identifying and labeling the components of a sample essay and by assembling the components of an original essay structure.",
+  "creator": "English Language Arts",
+  "date": "2026-05-12",
+  "subject": [
+    "English Language Arts",
+    "Essay Writing",
+    "Argumentation"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "essay-architecture-explorer",
+  "library": "vis-network",
+  "bloomLevel": 3,
+  "bloomVerb": "Apply",
+  "completion_status": "scaffold",
+  "chapter_number": 10,
+  "chapter_title": "Writing Modes and Essay Development",
+  "chapter_dir": "10-writing-modes"
+}

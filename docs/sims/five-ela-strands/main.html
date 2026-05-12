@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<title>Five ELA Strands</title>
+<!-- CANVAS_HEIGHT: 480 -->
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true, theme: 'default',
+    flowchart: { useMaxWidth: true, htmlLabels: true, curve: 'basis' } });
+</script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 100%; height: 100%; font-family: Arial, sans-serif; }
+.container { display: flex; width: 100%; height: 480px; }
+.diagram-panel {
+  width: 66.67%; background: aliceblue;
+  display: flex; justify-content: center; align-items: flex-start;
+  padding: 10px; overflow: auto;
+}
+.mermaid { width: 100%; }
+.mermaid svg { max-width: 100%; }
+.info-panel {
+  width: 33.33%; background: #f8f9fa; border-left: 1px solid #dee2e6;
+  padding: 15px; overflow-y: auto;
+}
+.info-panel h3 { font-size: 16px; color: #333; margin-bottom: 10px;
+  border-bottom: 2px solid #1565C0; padding-bottom: 6px; }
+.info-title { font-size: 15px; font-weight: bold; color: #1565C0; margin-bottom: 6px; }
+.info-content { font-size: 13px; line-height: 1.55; color: #444; }
+.info-placeholder { color: #888; font-style: italic; font-size: 13px; }
+.node { cursor: pointer; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="diagram-panel">
+    <div class="mermaid">
+flowchart TD
+  ELA["🎓 English Language Arts"]
+
+  ELA --> RL["Reading: Literature"]
+  ELA --> RI["Reading: Informational Text"]
+  ELA --> W["Writing"]
+  ELA --> SL["Speaking & Listening"]
+  ELA --> L["Language"]
+
+  RL  --> RL2["Analyze literary texts — fiction,\npoetry, drama, and narrative"]
+  RI  --> RI2["Evaluate arguments, evidence,\nand structure in nonfiction"]
+  W   --> W2["Produce arguments, narratives,\nand informational writing"]
+  SL  --> SL2["Discuss, present, and collaborate\nwith purpose and clarity"]
+  L   --> L2["Apply grammar, vocabulary,\nand conventions to communicate"]
+
+  style ELA fill:#1565C0,color:#fff,stroke:#0D47A1
+  style RL  fill:#2E7D32,color:#fff,stroke:#1B5E20
+  style RI  fill:#00695C,color:#fff,stroke:#004D40
+  style W   fill:#6A1B9A,color:#fff,stroke:#4A148C
+  style SL  fill:#E65100,color:#fff,stroke:#BF360C
+  style L   fill:#C62828,color:#fff,stroke:#B71C1C
+  style RL2 fill:#C8E6C9,color:#1B5E20,stroke:#2E7D32
+  style RI2 fill:#B2DFDB,color:#004D40,stroke:#00695C
+  style W2  fill:#E1BEE7,color:#4A148C,stroke:#6A1B9A
+  style SL2 fill:#FFE0B2,color:#BF360C,stroke:#E65100
+  style L2  fill:#FFCDD2,color:#B71C1C,stroke:#C62828
+    </div>
+  </div>
+  <div class="info-panel">
+    <h3>ELA Strand Details</h3>
+    <div id="info-display">
+      <p class="info-placeholder">Hover over any node to learn about that strand or focus area.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+const nodeInfo = {
+  ELA:  { title: "English Language Arts", description: "ELA is a unified discipline built around five interdependent strands. Strength in one strand supports all others — skilled readers write better; skilled writers read more critically." },
+  RL:   { title: "Reading: Literature", description: "Students analyze fictional texts — novels, short stories, poems, plays — focusing on theme, character, structure, point of view, and figurative language." },
+  RI:   { title: "Reading: Informational Text", description: "Students read nonfiction texts — essays, articles, speeches, documents — and evaluate how authors build arguments, use evidence, and structure ideas." },
+  W:    { title: "Writing", description: "Students write for three major purposes: argumentative (claim + evidence), informational/explanatory (explain + analyze), and narrative (story + craft). Each requires planning, drafting, and revision." },
+  SL:   { title: "Speaking & Listening", description: "Students engage in collaborative discussions, prepare and deliver presentations, and evaluate spoken media. These skills bridge reading/writing to real-world communication." },
+  L:    { title: "Language", description: "Students study grammar, usage, and mechanics alongside vocabulary acquisition strategies — including morphology, context clues, and word relationships." },
+  RL2:  { title: "Literature Focus", description: "Key skills: trace theme development, analyze character motivation, identify figurative language, compare texts across genres, and evaluate author's craft decisions." },
+  RI2:  { title: "Informational Text Focus", description: "Key skills: identify central idea and supporting details, evaluate the strength of an argument, analyze text structure, and assess author's point of view and purpose." },
+  W2:   { title: "Writing Focus", description: "Key skills: develop a clear thesis, integrate and cite evidence, use transitions effectively, revise for clarity and precision, and follow standard formatting conventions." },
+  SL2:  { title: "Speaking & Listening Focus", description: "Key skills: contribute meaningfully to discussions, ask probing questions, build on others' ideas, prepare organized presentations, and use appropriate eye contact and pace." },
+  L2:   { title: "Language Focus", description: "Key skills: apply standard grammar conventions, expand vocabulary through morphological analysis (roots, prefixes, suffixes), and use context clues to infer word meanings." }
+};
+
+const infoDisplay = document.getElementById("info-display");
+const defaultContent = '<p class="info-placeholder">Hover over any node to learn about that strand or focus area.</p>';
+
+function showInfo(id) {
+  if (nodeInfo[id]) {
+    infoDisplay.innerHTML = `<div class="info-title">${nodeInfo[id].title}</div><div class="info-content">${nodeInfo[id].description}</div>`;
+  }
+}
+function clearInfo() { infoDisplay.innerHTML = defaultContent; }
+
+function setupHover() {
+  const nodes = document.querySelectorAll(".node");
+  nodes.forEach(node => {
+    const raw = node.id.replace("flowchart-", "").split("-")[0];
+    if (nodeInfo[raw]) {
+      node.addEventListener("mouseenter", () => showInfo(raw));
+      node.addEventListener("mouseleave", clearInfo);
+    }
+  });
+  if (nodes.length === 0) setTimeout(setupHover, 150);
+}
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", () => setTimeout(setupHover, 200));
+} else {
+  setTimeout(setupHover, 200);
+}
+</script>
+</body>
+</html>

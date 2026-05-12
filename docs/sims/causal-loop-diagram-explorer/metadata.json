@@ -1,0 +1,23 @@
+{
+  "title": "Causal Loop Diagram Explorer",
+  "description": "Apply (L3 — Apply) systems thinking by constructing and interpreting causal loop diagrams for real-world and literary scenarios.",
+  "creator": "English Language Arts",
+  "date": "2026-05-12",
+  "subject": [
+    "English Language Arts",
+    "Systems Thinking",
+    "Writing"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "causal-loop-diagram-explorer",
+  "library": "vis-network",
+  "bloomLevel": 3,
+  "bloomVerb": "Apply",
+  "completion_status": "scaffold",
+  "chapter_number": 16,
+  "chapter_title": "Systems Thinking and AI in Writing",
+  "chapter_dir": "16-systems-thinking-ai"
+}

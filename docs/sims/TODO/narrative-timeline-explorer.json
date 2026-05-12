@@ -1,0 +1,14 @@
+{
+  "sim_id": "narrative-timeline-explorer",
+  "diagram_name": "Narrative Time — Scene, Summary, and Flashback",
+  "chapter_number": 5,
+  "chapter_title": "Narrative Techniques, Literary Periods, and Comparative Analysis",
+  "chapter_dir": "05-narrative-techniques",
+  "library": "vis-timeline",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Distinguish (L2 — Understand) between scene, summary, and flashback as narrative techniques by mapping them onto a visual representation of a narrative's story time versus narrative time.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-12",
+  "specification": "Type: Interactive Infographic\n**sim-id:** narrative-timeline-explorer<br/>\n**Library:** vis-timeline<br/>\n**Status:** Specified\n\n**Learning Objective:** Distinguish (L2 — Understand) between scene, summary, and flashback as narrative techniques by mapping them onto a visual representation of a narrative's story time versus narrative time.\n\n**Description:** A two-axis visual representation. The horizontal axis represents story time (chronological order of events in the fictional world, from left to right). The vertical axis represents the amount of narrative space devoted to each event (how many pages or words). The display shows a selected narrative (default: *Romeo and Juliet*; user can switch to *Of Mice and Men* or *Beloved* via a dropdown).\n\n**Visual elements:**\n- Bars of varying height represent narrative sections, with taller bars = more narrative space (scenes) and shorter bars = less narrative space (summaries).\n- Bars rendered in a non-chronological section of the story time axis represent flashbacks (shown in a different color and linked to their chronological position with a dotted line).\n- Color coding: Scenes — deep blue (#1565C0); Summaries — light grey (#90A4AE); Flashbacks — amber (#F57F17); Climax — red accent bar (#E53935).\n- Labels on each bar identify the narrative section (e.g., \"The feast (Act I, scene 5)\" or \"The elopement\").\n\n**Interactions:**\n- Hovering over any bar displays a tooltip: section name, whether it is scene or summary or flashback, the approximate story time represented, and a note on why the author devoted the amount of space they did.\n- Clicking on a bar opens a side panel with a fuller explanation of the pacing choice in that section and a key analytical question (e.g., \"Why does Shakespeare devote so much dramatic time to the balcony scene but compress the subsequent weeks of marriage into a single reference?\").\n- The dropdown menu switches the displayed narrative among the three options. All three must be fully specified.\n\n**Canvas:** Responsive, minimum height 350px. Re-renders on window resize. Bars adjust proportionally to canvas width.\n\n**Visual style:** White background, clean axis labels, thin horizontal grid lines at equal intervals of the vertical (narrative space) axis."
+}

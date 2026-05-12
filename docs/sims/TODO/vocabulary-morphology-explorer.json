@@ -1,0 +1,14 @@
+{
+  "sim_id": "vocabulary-morphology-explorer",
+  "diagram_name": "Vocabulary Morphology Explorer",
+  "chapter_number": 13,
+  "chapter_title": "Language Conventions and Vocabulary Development",
+  "chapter_dir": "13-language-conventions",
+  "library": "vis-network",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Apply (L3 — Apply) morphological analysis by identifying word roots, prefixes, and suffixes to infer the meanings of unfamiliar academic vocabulary words.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-12",
+  "specification": "Type: Interactive Diagram\n**sim-id:** vocabulary-morphology-explorer<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Learning Objective:** Apply (L3 — Apply) morphological analysis by identifying word roots, prefixes, and suffixes to infer the meanings of unfamiliar academic vocabulary words.\n\n**Description:** A radial network visualization centered on a selected word root. The root node appears at the center; prefix nodes and suffix nodes branch outward from the center, and complete words built from those morphemes appear at the outer ring of the network. Clicking a word node reveals a pop-up panel with the word's definition, a usage example sentence, and the morphological breakdown showing which morphemes compose it.\n\n**Explore Mode:** User selects from a dropdown menu of 22 high-frequency academic roots (the full set from the chapter's table). The network updates to show all words in the vocabulary database that contain that root, with their prefixes and suffixes labeled on the connecting edges. Words are color-coded by part of speech: blue for nouns, green for verbs, orange for adjectives, purple for adverbs.\n\n**Build Mode:** The user constructs a word by selecting a root from one panel, an optional prefix from another, and an optional suffix from a third. The tool shows whether the constructed combination is a real English word, provides a definition if it is, and notes \"not a standard English word\" if it is not. This mode emphasizes that not all morpheme combinations produce real words — morphological analysis is a guide to meaning inference, not a word generator. For example, \"re-\" + \"port\" + \"-er\" produces \"reporter\" (real); \"mis-\" + \"aud\" produces nothing standard (the tool notes the combination is not a recognized form).\n\n**Canvas:** Minimum 700px wide, minimum 500px tall. Responsive layout with nodes and labels legible at all viewport widths."
+}

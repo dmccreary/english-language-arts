@@ -144,6 +144,10 @@ Reading essays requires attention to the organizing logic. Not all essays argue 
 
 #### Diagram: The Literary Genre Landscape
 
+
+<iframe src="../../sims/literary-genre-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run The Literary Genre Landscape Fullscreen](../../sims/literary-genre-explorer/main.html)
+
 <details markdown="1">
 <summary>Interactive Genre Classification Explorer</summary>
 Type: Interactive Infographic
@@ -247,6 +251,10 @@ The most important thing to understand about free verse is that it is not poetry
 Reading free verse requires the same attention to formal choices as reading metered poetry — but without the grid of meter to guide you. You must ask: Why does this line end here? What is the effect of this line break? Why is this poem in short, clipped lines rather than long, expansive ones? Why does the poet choose to isolate this particular word on its own line, giving it emphasis it would not have if it were buried in the middle of a longer line? These are not arbitrary questions — they have answers, or at least productive speculations, and pursuing them is the core of close reading free verse.
 
 #### Diagram: Poetry Forms Comparison
+
+
+<iframe src="../../sims/poetry-forms-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Poetry Forms Comparison Fullscreen](../../sims/poetry-forms-explorer/main.html)
 
 <details markdown="1">
 <summary>Interactive Poetry Forms Explorer</summary>

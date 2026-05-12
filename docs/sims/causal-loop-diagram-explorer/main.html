@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<title>Causal Loop Diagram Explorer</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f5f7fa; }
+.outer { width: 100%; height: 680px; display: flex; flex-direction: column; }
+.topbar {
+  background: #1a237e; color: white; padding: 6px 12px;
+  display: flex; align-items: center; gap: 10px; flex-shrink: 0;
+}
+.topbar h1 { font-size: 16px; flex: 1; }
+.mode-btn {
+  font-size: 12px; padding: 5px 12px; border: 2px solid white;
+  border-radius: 5px; cursor: pointer; background: transparent; color: white; font-weight: bold;
+}
+.mode-btn.active { background: white; color: #1a237e; }
+.main { display: flex; flex: 1; overflow: hidden; }
+#network { flex: 1; background: white; }
+.sidebar {
+  width: 270px; background: #f0f4ff; border-left: 2px solid #c5cae9;
+  padding: 10px; overflow-y: auto; display: flex; flex-direction: column; gap: 8px;
+}
+.sidebar h3 { font-size: 13px; color: #3949ab; border-bottom: 1px solid #c5cae9; padding-bottom: 4px; }
+.cld-btn {
+  display: block; width: 100%; text-align: left; font-size: 11px;
+  padding: 5px 8px; border: 1px solid #bbb; border-radius: 4px;
+  background: white; cursor: pointer; margin-bottom: 3px;
+}
+.cld-btn:hover { background: #e8eaf6; }
+.badge {
+  display: inline-block; padding: 2px 8px; border-radius: 10px;
+  font-size: 12px; font-weight: bold; color: white;
+}
+.info-box {
+  background: white; border-radius: 6px; border: 1px solid #c5cae9;
+  padding: 8px; font-size: 12px; color: #333; line-height: 1.45;
+}
+.info-box.edge { border-color: #9fa8da; background: #e8eaf6; min-height: 40px; }
+input[type="text"], select {
+  font-size: 12px; padding: 4px 6px; border: 1px solid #bbb;
+  border-radius: 4px; width: 100%;
+}
+.btn-sm {
+  font-size: 12px; padding: 5px 10px; border: none; border-radius: 4px;
+  cursor: pointer; font-weight: bold; background: #1565C0; color: white; width: 100%; margin-top: 4px;
+}
+.btn-sm:hover { opacity: 0.85; }
+.result-box {
+  background: #fffde7; border: 1px solid #f9a825; border-radius: 6px;
+  padding: 8px; font-size: 11px; white-space: pre-wrap; min-height: 30px; color: #333;
+}
+.form-row { display: flex; gap: 4px; align-items: center; margin-top: 4px; }
+.form-row label { font-size: 11px; min-width: 60px; color: #555; }
+</style>
+</head>
+<body>
+<div class="outer">
+  <div class="topbar">
+    <h1>Causal Loop Diagram Explorer</h1>
+    <button class="mode-btn active" id="btn-explore">Explore Mode</button>
+    <button class="mode-btn" id="btn-build">Build Mode</button>
+  </div>
+  <div class="main">
+    <div id="network"></div>
+    <div class="sidebar">
+
+      <!-- EXPLORE PANEL -->
+      <div id="explore-panel">
+        <h3>Pre-Built Diagrams</h3>
+        <button class="cld-btn" data-cld="thermostat">Thermostat Regulation</button>
+        <button class="cld-btn" data-cld="compound">Compound Interest</button>
+        <button class="cld-btn" data-cld="echo">Echo Chamber Dynamics</button>
+        <button class="cld-btn" data-cld="poverty">Poverty Trap</button>
+        <button class="cld-btn" data-cld="gatsby">The Great Gatsby</button>
+
+        <h3>Loop Type</h3>
+        <div><span class="badge" id="loop-badge" style="background:#1565C0">B — Balancing</span></div>
+        <div class="info-box" id="loop-desc" style="margin-top:4px"></div>
+
+        <h3>Edge Details</h3>
+        <div class="info-box edge" id="edge-info">Click any arrow label to see the relationship explanation.</div>
+      </div>
+
+      <!-- BUILD PANEL -->
+      <div id="build-panel" style="display:none">
+        <h3>Add Variables</h3>
+        <input type="text" id="node-name" placeholder="Variable name, e.g. Stress Level">
+        <button class="btn-sm" id="add-node-btn">Add Variable</button>
+
+        <h3 style="margin-top:8px">Add Causal Arrow</h3>
+        <div class="form-row">
+          <label>From:</label>
+          <select id="from-node"><option value="">— select —</option></select>
+        </div>
+        <div class="form-row">
+          <label>To:</label>
+          <select id="to-node"><option value="">— select —</option></select>
+        </div>
+        <div class="form-row">
+          <label>Polarity:</label>
+          <select id="edge-polarity"><option value="+">+ (same direction)</option><option value="-">− (opposite direction)</option></select>
+        </div>
+        <button class="btn-sm" id="add-edge-btn">Add Arrow</button>
+
+        <h3 style="margin-top:8px">Detect Loops</h3>
+        <button class="btn-sm" id="detect-loops-btn" style="background:#2E7D32">Detect Loops</button>
+        <div class="result-box" id="loop-result"></div>
+
+        <h3 style="margin-top:8px">What Would Happen If…</h3>
+        <div class="form-row">
+          <label>Variable:</label>
+          <select id="trace-node"><option value="">— select —</option></select>
+        </div>
+        <div class="form-row">
+          <label>Direction:</label>
+          <select id="trace-dir"><option value="increase">increases ↑</option><option value="decrease">decreases ↓</option></select>
+        </div>
+        <button class="btn-sm" id="trace-btn" style="background:#6A1B9A">Trace Effect</button>
+        <div class="result-box" id="trace-result"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script src="causal-loop-diagram-explorer.js"></script>
+</body>
+</html>

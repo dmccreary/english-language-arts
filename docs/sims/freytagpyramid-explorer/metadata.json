@@ -1,0 +1,23 @@
+{
+  "title": "Freytag's Pyramid — Plot Structure Explorer",
+  "description": "Identify (L1 — Remember) and apply (L3 — Apply) the five stages of Freytag's Pyramid by locating them in a familiar narrative and understanding their structural role.",
+  "creator": "English Language Arts",
+  "date": "2026-05-12",
+  "subject": [
+    "English Language Arts",
+    "Narrative Structure",
+    "Plot Analysis"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "freytagpyramid-explorer",
+  "library": "p5.js",
+  "bloomLevel": 3,
+  "bloomVerb": "Apply",
+  "completion_status": "scaffold",
+  "chapter_number": 3,
+  "chapter_title": "Narrative Elements — Plot, Character, and Point of View",
+  "chapter_dir": "03-narrative-elements"
+}

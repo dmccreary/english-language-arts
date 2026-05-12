@@ -285,6 +285,10 @@ The final vocabulary concept in this chapter addresses the distinction between l
 
 #### Diagram: Vocabulary Morphology Explorer
 
+
+<iframe src="../../sims/vocabulary-morphology-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Vocabulary Morphology Explorer Fullscreen](../../sims/vocabulary-morphology-explorer/main.html)
+
 <details markdown="1">
 <summary>Interactive Root-Prefix-Suffix Word Builder</summary>
 Type: Interactive Diagram

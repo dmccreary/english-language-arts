@@ -90,6 +90,10 @@ Before we examine the diagram below, two terms need to be clear. A **strand** is
 
 #### Diagram: The Five ELA Strands — Interactive Overview
 
+
+<iframe src="../../sims/five-ela-strands/main.html" width="100%" height="482px" scrolling="no"></iframe>
+[Run The Five ELA Strands — Interactive Overview Fullscreen](../../sims/five-ela-strands/main.html)
+
 <details markdown="1">
 <summary>The Five ELA Strands — Interactive Overview</summary>
 Type: diagram
@@ -273,6 +277,10 @@ The Lexile range for grades 9–10 runs from approximately 1050L to 1215L. The r
 **Lexile levels are a guide, not a ceiling.** Independent reading — reading you do outside of class, driven by your own interests — is one of the most powerful tools available for vocabulary growth and reading fluency. Research consistently shows that students who read for pleasure outperform their peers on reading assessments, regardless of what specific books they choose. The goal is not to restrict your reading to texts that fall exactly within your measured band. The goal is to read widely, challenge yourself regularly, and treat complex texts as opportunities to grow rather than obstacles to avoid.
 
 #### Diagram: Lexile Level Explorer — Text Complexity in Action
+
+
+<iframe src="../../sims/lexile-level-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Lexile Level Explorer — Text Complexity in Action Fullscreen](../../sims/lexile-level-explorer/main.html)
 
 <details markdown="1">
 <summary>Lexile Level Explorer — Text Complexity in Action</summary>

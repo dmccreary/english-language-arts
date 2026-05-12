@@ -1,0 +1,14 @@
+{
+  "sim_id": "poetry-forms-explorer",
+  "diagram_name": "Poetry Forms Comparison",
+  "chapter_number": 2,
+  "chapter_title": "Literary Genres and Text Forms",
+  "chapter_dir": "02-literary-genres",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Compare and contrast (L2 — Understand) the four major poetry forms covered in this chapter by examining their key formal characteristics side by side.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-12",
+  "specification": "Type: Interactive Infographic\n**sim-id:** poetry-forms-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Compare and contrast (L2 — Understand) the four major poetry forms covered in this chapter by examining their key formal characteristics side by side.\n\n**Description:** A comparative visual display showing the four poetry forms (Epic Poetry, Sonnet, Lyric Poetry, Free Verse) arranged in a 2×2 grid of clickable cards. Each card displays the form's name and three key formal characteristics. When a card is clicked, it expands into a detail panel.\n\n**Default card layout (before click):**\n- Form name in large bold text\n- Three bullet characteristics in small text, for example:\n  - Epic Poetry: \"Length: Very long narrative\" / \"Meter: Dactylic hexameter (traditional)\" / \"Structure: Books or cantos\"\n  - Sonnet: \"Length: Exactly 14 lines\" / \"Meter: Iambic pentameter\" / \"Structure: Three quatrains + couplet (English) or octave + sestet (Italian)\"\n  - Lyric Poetry: \"Length: Short to medium\" / \"Meter: Varies; often metered\" / \"Structure: Stanzas; speaker-centered\"\n  - Free Verse: \"Length: Any\" / \"Meter: None fixed\" / \"Structure: Poet-determined line and stanza breaks\"\n- A color-coded border matching the poetry category palette\n\n**Expanded panel (after clicking a card):**\n- Scrollable overlay on top of the grid\n- Full form description (3–4 sentences)\n- A short representative excerpt (4–8 lines) displayed in a bordered monospace box with line numbers\n- Two or three canonical examples (title, author, approximate date)\n- Key close-reading question for that form in a highlighted box\n- Close button (×) to return to the grid\n\n**Colors:**\n- Epic Poetry: warm amber (#F57F17)\n- Sonnet: deep teal (#00695C)\n- Lyric Poetry: violet (#6A1B9A)\n- Free Verse: slate blue (#1565C0)\n\n**Canvas:** Responsive, minimum 600px wide. Cards reflow to a single column on narrow screens. Window resize redraws the grid.\n\n**Interactions:** Hovering over a card raises a slight shadow to signal interactivity. Clicking opens the detail panel. Pressing Escape or clicking outside the panel closes it. All four forms from the chapter concept list must be represented."
+}

@@ -1,0 +1,14 @@
+{
+  "sim_id": "logical-fallacy-navigator",
+  "diagram_name": "Logical Fallacy Navigator",
+  "chapter_number": 8,
+  "chapter_title": "Critical Thinking, Logical Reasoning, and Fallacies",
+  "chapter_dir": "08-critical-thinking",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Apply (L3 — Apply) knowledge of seven logical fallacies to correctly identify the fallacy type in provided example arguments, and explain why the argument is flawed.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-12",
+  "specification": "Type: Interactive Quiz / Reference\n**sim-id:** logical-fallacy-navigator<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Apply (L3 — Apply) knowledge of seven logical fallacies to correctly identify the fallacy type in provided example arguments, and explain why the argument is flawed.\n\n**Description:** An interactive reference and quiz tool with two modes.\n\n**Reference Mode:** Seven cards arranged in a 3-2-2 grid, each representing one fallacy. Each card shows: the fallacy name (large), a one-sentence definition, a concrete example argument, and a \"Why It's Flawed\" explanation. Clicking any card flips it to reveal: a diagnostic checklist (2–3 questions to help identify the fallacy in the wild), a real-world context where this fallacy commonly appears, and a \"What a legitimate version looks like\" note.\n\n**Quiz Mode:** A \"Test Yourself\" button presents 10 argument prompts one at a time. The user selects which fallacy (if any) the argument commits from a multiple-choice list that also includes \"No fallacy — this is a valid argument.\" After each selection, immediate feedback explains the correct answer with a reference to the specific flaw. A score tracker shows correct/total and allows the quiz to be restarted with a new randomized set.\n\n**Canvas:** Minimum 560px wide, minimum 420px height. Responsive column arrangement for narrow screens.\n**Color scheme:** Each fallacy has a distinct card color from a complementary palette; quiz mode uses a clean white background with feedback displayed in green (correct) or amber (incorrect — avoids red to reduce test anxiety)."
+}

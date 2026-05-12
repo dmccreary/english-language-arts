@@ -91,6 +91,10 @@ This two-loop system shows how academic performance is driven by a reinforcing l
 
 #### Diagram: Causal Loop Diagram Explorer
 
+
+<iframe src="../../sims/causal-loop-diagram-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Causal Loop Diagram Explorer Fullscreen](../../sims/causal-loop-diagram-explorer/main.html)
+
 <details markdown="1">
 <summary>Interactive Causal Loop Diagram Builder</summary>
 Type: Interactive Diagram

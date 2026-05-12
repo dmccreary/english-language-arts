@@ -1,0 +1,23 @@
+{
+  "title": "Sentence Structure Analyzer",
+  "description": "Apply (L3 — Apply) knowledge of sentence types and clause structure by correctly identifying and labeling the components of sample sentences.",
+  "creator": "English Language Arts",
+  "date": "2026-05-12",
+  "subject": [
+    "English Language Arts",
+    "Grammar",
+    "Sentence Structure"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "sentence-structure-analyzer",
+  "library": "p5.js",
+  "bloomLevel": 3,
+  "bloomVerb": "Apply",
+  "completion_status": "scaffold",
+  "chapter_number": 12,
+  "chapter_title": "Standard English Grammar and Sentence Structure",
+  "chapter_dir": "12-grammar"
+}

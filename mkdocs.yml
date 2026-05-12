@@ -44,6 +44,8 @@ nav:
       - 16. Systems Thinking and AI: chapters/16-systems-thinking-ai/index.md
       - 17. Capstone Project: chapters/17-capstone/index.md
 
+  - Glossary: glossary.md
+
   - Learning Graph:
       - Introduction: learning-graph/index.md
       - Course Description Assessment: learning-graph/course-description-assessment.md
@@ -54,8 +56,31 @@ nav:
       - Mascot Style Guide: learning-graph/mascot-test.md
 
   - MicroSims:
-      - List of MicroSims: sims/index.md
-      - Learning Graph Viewer: sims/graph-viewer/index.md
+    - List of MicroSims: sims/index.md
+    - American Literary Periods — Timeline Explorer: sims/literary-periods-timeline/index.md
+    - Causal Loop Diagram Explorer: sims/causal-loop-diagram-explorer/index.md
+    - Cognitive Bias Spotter: sims/cognitive-bias-spotter/index.md
+    - Figurative Language Explorer: sims/figurative-language-explorer/index.md
+    - Freytag's Pyramid — Plot Structure Explorer: sims/freytagpyramid-explorer/index.md
+    - Learning Graph Viewer: sims/graph-viewer/index.md
+    - Lexile Level Explorer — Text Complexity in Action: sims/lexile-level-explorer/index.md
+    - Logical Fallacy Navigator: sims/logical-fallacy-navigator/index.md
+    - Narrative Time — Scene, Summary, and Flashback: sims/narrative-timeline-explorer/index.md
+    - Poetry Forms Comparison: sims/poetry-forms-explorer/index.md
+    - Sentence Structure Analyzer: sims/sentence-structure-analyzer/index.md
+    - Source Credibility Spectrum: sims/source-credibility-explorer/index.md
+    - The American Intellectual Tradition Timeline: sims/foundational-documents-timeline/index.md
+    - The Anatomy of an Argument: sims/argument-anatomy-explorer/index.md
+    - The Essay Architecture Explorer: sims/essay-architecture-explorer/index.md
+    - The Five ELA Strands — Interactive Overview: sims/five-ela-strands/index.md
+    - The Literary Genre Landscape: sims/literary-genre-explorer/index.md
+    - The Research Writing Process: sims/research-process-explorer/index.md
+    - Vocabulary Morphology Explorer: sims/vocabulary-morphology-explorer/index.md
+
+
+
+  - Appendices:
+      - Appendix A — Modern Forms of Writing: appendicies/modern-forms-of-writing.md
 
   - License: license.md
   - Contact: contact.md
@@ -129,11 +154,13 @@ extra_css:
 # extra_javascript:
 #   - js/extra.js
 
-# Exclude prompt scratch files and TODOs from build/search/sitemap
+# Exclude prompt scratch files, image prompts, mascot character sheets, and TODOs from build/search/sitemap
 exclude_docs: |
   **/image-prompt*.md
   **/image-prompts*.md
   **/cover-prompt.md
+  img/mascot/character-sheet.md
+  prompts/*
   **/TODO.md
 
 # Rebuild on changes during `mkdocs serve`

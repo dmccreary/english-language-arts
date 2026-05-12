@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<title>American Literary Periods Timeline</title>
+<!-- CANVAS_HEIGHT: 580 -->
+<script src="https://unpkg.com/vis-timeline@7.7.3/standalone/umd/vis-timeline-graph2d.min.js"></script>
+<link href="https://unpkg.com/vis-timeline@7.7.3/styles/vis-timeline-graph2d.min.css" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: aliceblue; }
+.header { background: #4527A0; color: white; padding: 10px 16px; }
+.header h1 { font-size: 17px; }
+.header p  { font-size: 12px; color: #d1c4e9; }
+.controls { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 12px; background: #ede7f6; }
+.filter-btn { padding: 5px 10px; border: none; border-radius: 14px; cursor: pointer; font-size: 11px; font-weight: bold; color: white; }
+.nav-controls { display: flex; gap: 6px; padding: 6px 12px; background: #ede7f6; border-bottom: 1px solid #d1c4e9; }
+.nav-btn { padding: 4px 10px; border: 1px solid #b39ddb; border-radius: 5px; background: white; cursor: pointer; font-size: 12px; }
+.nav-btn:hover { background: #ede7f6; }
+#timeline { padding: 10px 30px; background: white; height: 230px; }
+.vis-item { border-radius: 4px !important; font-size: 11px !important; }
+.vis-item.vis-selected { box-shadow: 0 0 0 3px #ffd740 !important; }
+.vis-tooltip { background: #1e293b !important; color: white !important; padding: 8px 12px !important;
+  border-radius: 6px !important; font-size: 12px !important; max-width: 280px !important;
+  white-space: normal !important; word-wrap: break-word !important; }
+.info-panel { display: grid; grid-template-columns: 180px 1fr; gap: 10px; padding: 10px 12px; background: #ede7f6; }
+.legend { background: white; border-radius: 8px; padding: 10px; }
+.legend h3 { font-size: 13px; color: #4527A0; margin-bottom: 6px; }
+.leg-item { display: flex; align-items: center; gap: 6px; font-size: 11px; margin-bottom: 4px; }
+.leg-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
+.details { background: white; border-radius: 8px; padding: 10px; }
+.details h3 { font-size: 13px; color: #4527A0; margin-bottom: 6px; }
+#event-details { font-size: 12px; line-height: 1.55; color: #444; }
+.ev-title { font-size: 14px; font-weight: bold; color: #111; margin-bottom: 4px; }
+.ev-date  { font-size: 11px; color: #4527A0; margin-bottom: 6px; }
+.ev-desc  { margin-bottom: 6px; }
+.ev-ctx   { font-style: italic; padding: 6px 8px; background: #f5f5f5; border-left: 3px solid #7E57C2; border-radius: 0 4px 4px 0; font-size: 11px; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>American Literary Periods Timeline</h1>
+  <p>Major literary movements and representative works, 1600–present — click an event for details</p>
+</div>
+
+<div class="controls" id="filter-controls"></div>
+
+<div class="nav-controls">
+  <button class="nav-btn" onclick="panLeft()">◀ Earlier</button>
+  <button class="nav-btn" onclick="zoomIn()">+ Zoom</button>
+  <button class="nav-btn" onclick="zoomOut()">− Zoom</button>
+  <button class="nav-btn" onclick="fitAll()">Fit All</button>
+  <button class="nav-btn" onclick="panRight()">Later ▶</button>
+</div>
+
+<div id="timeline"></div>
+
+<div class="info-panel">
+  <div class="legend">
+    <h3>Legend</h3>
+    <div id="legend-items"></div>
+  </div>
+  <div class="details">
+    <h3>Work / Author Details</h3>
+    <div id="event-details">Click any event on the timeline to see its literary significance and historical context.</div>
+  </div>
+</div>
+
+<script>
+const PERIODS = {
+  "Colonial":        { color: "#5D4037", start: 1607, end: 1775 },
+  "Revolutionary":   { color: "#1565C0", start: 1776, end: 1820 },
+  "Romanticism":     { color: "#2E7D32", start: 1820, end: 1865 },
+  "Realism":         { color: "#E65100", start: 1865, end: 1914 },
+  "Modernism":       { color: "#6A1B9A", start: 1914, end: 1945 },
+  "Postmodernism":   { color: "#C62828", start: 1945, end: 2000 }
+};
+
+const EVENTS = [
+  // Colonial
+  { year:1650, cat:"Colonial",      title:"Anne Bradstreet — The Tenth Muse",
+    desc:"Bradstreet was the first published poet in the American colonies, writing devotional verse while navigating Puritan expectations of women's roles.",
+    ctx:"First American literature appeared in Puritan religious contexts, emphasizing spiritual themes and God's providence." },
+  { year:1702, cat:"Colonial",      title:"Cotton Mather — Magnalia Christi Americana",
+    desc:"Mather's ecclesiastical history of New England argues that America is the fulfillment of God's providential plan — an early expression of American exceptionalism.",
+    ctx:"Puritan writing shaped American identity through its emphasis on mission, community, and covenant with God." },
+  // Revolutionary
+  { year:1776, cat:"Revolutionary", title:"Thomas Paine — Common Sense",
+    desc:"Plain-language pamphlet that made the case for independence accessible to ordinary colonists; shaped the rhetoric of democratic revolution.",
+    ctx:"Revolutionary writers used Enlightenment ideals of reason, natural rights, and individual liberty." },
+  { year:1791, cat:"Revolutionary", title:"Olaudah Equiano — The Interesting Narrative",
+    desc:"Equiano's autobiography documents his kidnapping, enslavement, and freedom, using Biblical and Enlightenment rhetoric to argue for abolition.",
+    ctx:"African American voices challenged the contradiction between freedom rhetoric and the reality of slavery." },
+  // Romanticism
+  { year:1837, cat:"Romanticism",   title:"Ralph Waldo Emerson — 'The American Scholar'",
+    desc:"Emerson's Transcendentalist manifesto called for intellectual independence from Europe and celebration of the individual's connection to nature and the divine.",
+    ctx:"Transcendentalism (Emerson, Thoreau) emphasized intuition, nature, and self-reliance over reason and tradition." },
+  { year:1845, cat:"Romanticism",   title:"Frederick Douglass — Narrative",
+    desc:"Douglass's powerful autobiography demonstrates that literacy equals freedom and human dignity — a direct challenge to the ideology of slavery.",
+    ctx:"Slave narratives became a major American genre, combining memoir with moral argument against slavery." },
+  { year:1851, cat:"Romanticism",   title:"Herman Melville — Moby-Dick",
+    desc:"Melville's epic novel uses the whaling voyage as a metaphor for the human obsession with knowledge, vengeance, and the unknowable.",
+    ctx:"Dark Romanticism (Poe, Hawthorne, Melville) explored the shadow side of the Transcendentalist ideal." },
+  { year:1855, cat:"Romanticism",   title:"Walt Whitman — Leaves of Grass",
+    desc:"Whitman's free-verse poetry celebrated democracy, the body, and the American self in a radically new voice that broke all poetic conventions.",
+    ctx:"American Romanticism valued originality, the individual, nature, emotion, and the spiritual over the rational." },
+  // Realism
+  { year:1884, cat:"Realism",       title:"Mark Twain — Adventures of Huckleberry Finn",
+    desc:"Twain's novel uses vernacular language and a child narrator to expose the moral corruption of antebellum American society and challenge racial hypocrisy.",
+    ctx:"Realism rejected Romantic idealization; writers depicted ordinary people's lives honestly, including social problems." },
+  { year:1899, cat:"Realism",       title:"Kate Chopin — The Awakening",
+    desc:"Chopin's novel traces a woman's growing consciousness of her own desires and the oppressive constraints of 19th-century marriage and gender roles.",
+    ctx:"Local color and regional realism (Chopin, Jewett) captured specific American places and social experiences." },
+  // Modernism
+  { year:1925, cat:"Modernism",     title:"F. Scott Fitzgerald — The Great Gatsby",
+    desc:"Fitzgerald's novel examines the hollowness of the American Dream, the class divide, and the corrupting influence of wealth in 1920s America.",
+    ctx:"Modernism fragmented traditional forms; stream of consciousness, unreliable narrators, and anti-heroes reflected post-WWI disillusionment." },
+  { year:1929, cat:"Modernism",     title:"William Faulkner — The Sound and the Fury",
+    desc:"Faulkner's novel uses multiple unreliable narrators and non-linear time to examine the decline of a Southern aristocratic family.",
+    ctx:"The Harlem Renaissance (Hughes, Hurston, Cullen) simultaneously created a vibrant African American literary identity." },
+  { year:1937, cat:"Modernism",     title:"Zora Neale Hurston — Their Eyes Were Watching God",
+    desc:"Hurston's novel celebrates Black Southern vernacular culture through Janie Crawford's quest for love and self-determination.",
+    ctx:"Harlem Renaissance writers reclaimed African American identity and dignity through literature, music, and visual art." },
+  // Postmodernism
+  { year:1952, cat:"Postmodernism", title:"Ralph Ellison — Invisible Man",
+    desc:"Ellison's novel explores the psychological experience of being Black in America — a person rendered invisible by the white gaze.",
+    ctx:"Post-WWII literature grappled with trauma, identity, civil rights, and the destabilization of all grand narratives." },
+  { year:1987, cat:"Postmodernism", title:"Toni Morrison — Beloved",
+    desc:"Morrison's novel confronts the psychological aftermath of slavery through the story of a formerly enslaved woman haunted by the ghost of her dead child.",
+    ctx:"Contemporary American literature centers marginalized voices and challenges the traditional literary canon." }
+];
+
+// Build legend
+const legendContainer = document.getElementById("legend-items");
+Object.entries(PERIODS).forEach(([name, p]) => {
+  legendContainer.innerHTML += `<div class="leg-item"><div class="leg-dot" style="background:${p.color}"></div>${name} (${p.start}–${p.end})</div>`;
+});
+
+// Build filter buttons
+const filterContainer = document.getElementById("filter-controls");
+filterContainer.innerHTML = `<button class="filter-btn" style="background:#546e7a" onclick="filterCat('all')">All Periods</button>`;
+Object.entries(PERIODS).forEach(([name, p]) => {
+  filterContainer.innerHTML += `<button class="filter-btn" style="background:${p.color}" onclick="filterCat('${name}')">${name}</button>`;
+});
+
+// Build timeline items
+let allItems = EVENTS.map((e, i) => ({
+  id: i,
+  content: e.title.length > 40 ? e.title.slice(0, 38) + "…" : e.title,
+  start: new Date(e.year, 0, 1),
+  title: e.desc,
+  category: e.cat,
+  _full: e,
+  style: `background-color:${PERIODS[e.cat]?.color || '#555'};color:white;border-color:${PERIODS[e.cat]?.color || '#555'};`
+}));
+
+let ds, timeline;
+
+document.addEventListener('DOMContentLoaded', () => {
+  ds = new vis.DataSet(allItems);
+  timeline = new vis.Timeline(document.getElementById('timeline'), ds, {
+    width: '100%', height: '210px',
+    margin: { item: { horizontal: 6, vertical: 4 }, axis: 20 },
+    orientation: 'top', stack: true, selectable: true, showCurrentTime: false,
+    moveable: true, zoomable: true,
+    min: new Date(1590, 0, 1), max: new Date(2010, 0, 1),
+    zoomMin: 1000*60*60*24*365*10, zoomMax: 1000*60*60*24*365*500,
+    tooltip: { followMouse: true }
+  });
+  timeline.setWindow(new Date(1600, 0, 1), new Date(2000, 0, 1), { animation: false });
+  timeline.on('select', p => { if (p.items.length) showDetails(p.items[0]); });
+});
+
+function showDetails(id) {
+  const item = allItems[id];
+  if (!item) return;
+  const e = item._full;
+  document.getElementById('event-details').innerHTML =
+    `<div class="ev-title">${e.title}</div>
+     <div class="ev-date">${e.year} — ${e.cat}</div>
+     <div class="ev-desc">${e.desc}</div>
+     <div class="ev-ctx">${e.ctx}</div>`;
+}
+
+function filterCat(cat) {
+  const f = cat === 'all' ? allItems : allItems.filter(i => i.category === cat);
+  ds.clear(); ds.add(f);
+  const dates = f.map(i => i.start.getTime());
+  if (dates.length) {
+    const pad = 5*365*24*60*60*1000;
+    timeline.setWindow(new Date(Math.min(...dates) - pad), new Date(Math.max(...dates) + pad));
+  }
+}
+
+function panLeft()  { const r=timeline.getWindow(),d=(r.end-r.start)*0.3; timeline.setWindow(r.start-d,r.end-d); }
+function panRight() { const r=timeline.getWindow(),d=(r.end-r.start)*0.3; timeline.setWindow(r.start+d,r.end+d); }
+function zoomIn()   { const r=timeline.getWindow(),c=(r.start.getTime()+r.end.getTime())/2,n=(r.end-r.start)*0.5; timeline.setWindow(c-n/2,c+n/2); }
+function zoomOut()  { const r=timeline.getWindow(),c=(r.start.getTime()+r.end.getTime())/2,n=(r.end-r.start)*2; timeline.setWindow(c-n/2,c+n/2); }
+function fitAll()   { const d=ds.get().map(i=>i.start.getTime()); if(d.length){const p=5*365*24*60*60*1000;timeline.setWindow(new Date(Math.min(...d)-p),new Date(Math.max(...d)+p));} }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "title": "The Research Writing Process",
+  "description": "Apply (L3 — Apply) the research methodology framework by mapping a research project's sources, their relationships, and their roles in the argument.",
+  "creator": "English Language Arts",
+  "date": "2026-05-12",
+  "subject": [
+    "English Language Arts",
+    "Research Writing",
+    "Citation"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "research-process-explorer",
+  "library": "vis-network",
+  "bloomLevel": 3,
+  "bloomVerb": "Apply",
+  "completion_status": "scaffold",
+  "chapter_number": 11,
+  "chapter_title": "Research, Citation, and Academic Integrity",
+  "chapter_dir": "11-research-citation"
+}

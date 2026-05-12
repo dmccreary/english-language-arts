@@ -149,6 +149,10 @@ Emerson's prose presents distinctive reading challenges. He was a reformed Unita
 
 #### Diagram: The American Intellectual Tradition Timeline
 
+
+<iframe src="../../sims/foundational-documents-timeline/main.html" width="100%" height="562px" scrolling="no"></iframe>
+[Run The American Intellectual Tradition Timeline Fullscreen](../../sims/foundational-documents-timeline/main.html)
+
 <details markdown="1">
 <summary>Interactive Timeline: American Foundational Writers and Documents</summary>
 Type: Interactive Timeline
@@ -260,6 +264,10 @@ Evaluating author credibility for informational texts involves several specific 
 The practice of evaluating author credibility is not about establishing a hierarchy of "approved" sources and dismissing everything else. It is about developing calibrated trust — understanding which sources are more reliable on which questions, and why, so that you can weight their claims appropriately when making analytical and civic judgments. Calibrated trust is a skill that improves with practice: the more you evaluate sources explicitly and systematically, the more quickly and accurately you will be able to assess credibility at first encounter, without laboriously running through every criterion each time.
 
 #### Diagram: Source Credibility Spectrum
+
+
+<iframe src="../../sims/source-credibility-explorer/main.html" width="100%" height="562px" scrolling="no"></iframe>
+[Run Source Credibility Spectrum Fullscreen](../../sims/source-credibility-explorer/main.html)
 
 <details markdown="1">
 <summary>Interactive Source Credibility and Viewpoint Comparison Tool</summary>

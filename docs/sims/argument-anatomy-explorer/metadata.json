@@ -1,0 +1,23 @@
+{
+  "title": "The Anatomy of an Argument",
+  "description": "Apply (L3 — Apply) the Toulmin model to identify and label the components of a real argument — claim, evidence, warrant, counterclaim, rebuttal — in a provided sample text.",
+  "creator": "English Language Arts",
+  "date": "2026-05-12",
+  "subject": [
+    "English Language Arts",
+    "Argumentation",
+    "Rhetoric"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "argument-anatomy-explorer",
+  "library": "vis-network",
+  "bloomLevel": 3,
+  "bloomVerb": "Apply",
+  "completion_status": "scaffold",
+  "chapter_number": 6,
+  "chapter_title": "Informational Text — Rhetoric, Argument, and Rhetorical Appeals",
+  "chapter_dir": "06-informational-text"
+}

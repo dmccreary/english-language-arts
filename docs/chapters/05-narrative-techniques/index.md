@@ -93,6 +93,10 @@ Within scenes, pacing is further controlled by sentence length and rhythm (as yo
 
 #### Diagram: Narrative Time — Scene, Summary, and Flashback
 
+
+<iframe src="../../sims/narrative-timeline-explorer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+[Run Narrative Time — Scene, Summary, and Flashback Fullscreen](../../sims/narrative-timeline-explorer/main.html)
+
 <details markdown="1">
 <summary>Interactive Narrative Timeline Explorer</summary>
 Type: Interactive Infographic
@@ -200,6 +204,10 @@ It is important to note that literary periods are constructs, not natural phenom
 | **Postmodern/Contemporary** | 1945–present | Self-reflexivity, pluralism, identity, globalism | Morrison, Pynchon, DFW, Lahiri |
 
 #### Diagram: American Literary Periods — Timeline Explorer
+
+
+<iframe src="../../sims/literary-periods-timeline/main.html" width="100%" height="582px" scrolling="no"></iframe>
+[Run American Literary Periods — Timeline Explorer Fullscreen](../../sims/literary-periods-timeline/main.html)
 
 <details markdown="1">
 <summary>Interactive American Literary Periods Timeline</summary>

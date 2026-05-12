@@ -1,0 +1,23 @@
+{
+  "title": "Figurative Language Explorer",
+  "description": "Identify (L1 — Remember) and distinguish (L2 — Understand) the nine major figures of speech by name, definition, and example, and recognize each when encountered in a literary passage.",
+  "creator": "English Language Arts",
+  "date": "2026-05-12",
+  "subject": [
+    "English Language Arts",
+    "Figurative Language",
+    "Literary Analysis"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "figurative-language-explorer",
+  "library": "p5.js",
+  "bloomLevel": 2,
+  "bloomVerb": "Distinguish",
+  "completion_status": "scaffold",
+  "chapter_number": 4,
+  "chapter_title": "Figurative Language, Tone, and Author's Style",
+  "chapter_dir": "04-figurative-language"
+}
