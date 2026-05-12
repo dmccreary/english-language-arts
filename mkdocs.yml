@@ -194,7 +194,7 @@ extra:
   # Intelligent-textbook URI scheme (see
   # https://dmccreary.github.io/intelligent-textbooks/uri-scheme/)
   schema: https://dmccreary.github.io/intelligent-textbooks/ns/textbook/v1
-  textbook_name: 'US High School English/Language Arts'
+  textbook_name: 'English Language Arts'
   textbook_version: '0.1'
 
   # Google Analytics — uncomment once a property ID exists:
