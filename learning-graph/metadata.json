@@ -1,0 +1,10 @@
+{
+  "title": "US High School English Language Arts",
+  "description": "A comprehensive learning graph for US High School English/Language Arts (Grades 9-12), aligned with the Common Core State Standards Initiative (CCSSI). Covers Reading Literature, Reading Informational Text, Writing, Speaking and Listening, Language, Critical Thinking, Media Literacy, Cognitive Bias, and Systems Thinking.",
+  "creator": "Dan McCreary",
+  "date": "2026-05-12",
+  "version": "1.0",
+  "format": "Learning Graph JSON v1.0",
+  "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+  "license": "CC BY-NC-SA 4.0 DEED"
+}
