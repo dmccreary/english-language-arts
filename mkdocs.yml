@@ -3,7 +3,7 @@
 # Use the book-installer skill to add features incrementally
 # (math, mascot, slides, learning graph viewer, etc.).
 
-site_name: 'US High School English/Language Arts'
+site_name: 'English Language Arts'
 site_description: 'An intelligent textbook for US high school English/Language Arts aligned with the Common Core State Standards (CCSS-ELA) developed by NGA and CCSSO.'
 site_author: 'Dan McCreary'
 site_url: 'https://dmccreary.github.io/english-language-arts/'
@@ -54,6 +54,7 @@ nav:
       - Graph Quality Analysis: learning-graph/quality-metrics.md
       - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
       - Mascot Style Guide: learning-graph/mascot-test.md
+      - FAQ Quality Report: learning-graph/faq-quality-report.md
 
   - MicroSims:
     - List of MicroSims: sims/index.md
@@ -69,6 +70,7 @@ nav:
     - Poetry Forms Comparison: sims/poetry-forms-explorer/index.md
     - Sentence Structure Analyzer: sims/sentence-structure-analyzer/index.md
     - Source Credibility Spectrum: sims/source-credibility-explorer/index.md
+    - Teen Media Consumption — Hours Per Day: sims/student-media-consumption/index.md
     - The American Intellectual Tradition Timeline: sims/foundational-documents-timeline/index.md
     - The Anatomy of an Argument: sims/argument-anatomy-explorer/index.md
     - The Essay Architecture Explorer: sims/essay-architecture-explorer/index.md
@@ -79,8 +81,12 @@ nav:
 
 
 
+
+
   - Appendices:
       - Appendix A — Modern Forms of Writing: appendicies/modern-forms-of-writing.md
+
+  - FAQ: faq.md
 
   - License: license.md
   - Contact: contact.md
@@ -89,8 +95,8 @@ nav:
 theme:
   name: material
   # Once a logo is generated, point this at docs/img/logo.png or a mascot pose:
-  # logo: img/logo.png
-  # favicon: img/favicon.ico
+  logo: img/mascot/neutral.png
+  favicon: img/favicon.ico
   palette:
     primary: 'indigo'
     accent: 'orange'
@@ -113,17 +119,17 @@ theme:
 plugins:
   - search
   # Uncomment after running `pip install "mkdocs-material[imaging]"`:
-  # - social
-  # Uncomment after running `pip install mkdocs-glightbox`:
-  # - glightbox:
-  #     touchNavigation: true
-  #     loop: false
-  #     effect: zoom
-  #     slide_effect: slide
-  #     width: 100%
-  #     height: auto
-  #     zoomable: true
-  #     draggable: true
+  - social
+  #  Uncomment after running `pip install mkdocs-glightbox`:
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
 
 # Markdown extensions
 markdown_extensions:

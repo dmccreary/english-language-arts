@@ -4,6 +4,11 @@ description: A survey of contemporary writing formats — blogs, YouTube scripts
 date: 2026-05-12
 ---
 
+<!--
+Prompt: There are many formats of writing discussed in the ELA course.  However, modern formats like a screenwriting script for TV or a graphic novel are not covered.  Add an appendix in @docs/appendicies that lists the modern forms of writing.  Include a blog, a script for a youtube video, a character sheet for a animated cartoon etc.  Call the file "modern-forms-of-writing.md".  Show that skills you learn in creating ELA format like the novel or short story apply.  Also discuss the differences such as the use of figures and drawining and illustrations on modern writing.
+Model: Sonnet 4.7 in high thinking mode
+-->
+
 # Appendix A — Modern Forms of Writing
 
 ## Overview
@@ -15,6 +20,24 @@ This appendix surveys the major modern writing forms you are most likely to enco
 !!! mascot-welcome "Pip Has Thoughts on This"
     <img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Pip the Bookworm waving welcome">
     Modern formats get a bad reputation in English class — as if a well-crafted YouTube script or a tightly paced graphic novel script is somehow less "serious" than a five-paragraph essay. Pip disagrees. These forms demand everything the traditional ones do — clarity, structure, evidence, voice — plus a layer of visual and sonic thinking that traditional writing does not require. They are harder in some ways, not easier. Let's look at them honestly.
+
+---
+
+## Where Students Actually Spend Their Time
+
+Before surveying the formats themselves, it is worth pausing on a factual question: how much of a typical high school student's day is already spent consuming these modern formats? The answer, documented annually by Common Sense Media and the U.S. Bureau of Labor Statistics, is striking.
+
+The interactive chart below draws on the *Common Sense Census: Media Use by Tweens and Teens, 2023* — the most comprehensive annual survey of youth media habits in the United States. It shows average daily hours of **entertainment** screen time (school and homework excluded) for US students in grades 9–12, broken down by media category. Use the toggle to compare boys and girls.
+
+<iframe src="../../sims/student-media-consumption/main.html" height="532px" width="100%" scrolling="no"></iframe>
+
+[View the Teen Media Consumption MicroSim Fullscreen](../../sims/student-media-consumption/main.html){ .md-button .md-button--primary }
+
+Two findings from this data are worth holding in mind as you read this appendix.
+
+First, the formats covered here — short-form video, streaming video, social media, video games — collectively account for the majority of a student's leisure hours. Students are not passive observers of these formats; they are already deeply fluent in how they work as audiences. The writing skills described in this appendix convert that audience fluency into creative and professional capability.
+
+Second, the reading bar is the shortest on the chart — approximately 30 minutes per day. This is not a reason for despair, but it is context. The ELA skills developed throughout this course — close reading, analysis, argument, voice — are the foundation for every format on that chart, including the ones students spend hours consuming. A student who can write a compelling short-form video script or a graphic novel scene has not abandoned the skills of literacy; they have extended them into the media environment they actually inhabit.
 
 ---
 

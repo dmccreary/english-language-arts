@@ -1,9 +1,21 @@
 ---
 title: 'US High School English/Language Arts'
 description: 'An intelligent textbook for US high school English/Language Arts aligned with the Common Core State Standards (CCSS-ELA) developed by NGA and CCSSO.'
+image: /img/cover.png
+og:image: /img/cover.png
+twitter:image: /img/cover.png
+hide:
+  - toc
 ---
+<style>
+.md-content__inner h1 {display: none !important;}
+</style>
 
 # US High School English/Language Arts
+
+<figure markdown>
+  ![English Language Arts](./img/cover.png){ width="100%" }
+</figure>
 
 An intelligent textbook for US high school English/Language Arts aligned with the Common Core State Standards (CCSS-ELA) developed by NGA and CCSSO.
 
