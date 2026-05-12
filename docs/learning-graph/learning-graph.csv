@@ -1,0 +1,296 @@
+ConceptID,ConceptLabel,Dependencies,TaxonomyID
+1,English Language Arts Overview,,FOUND
+2,Common Core ELA Standards,1,FOUND
+3,College and Career Readiness,2,FOUND
+4,Grades 9-10 Standards Band,2,FOUND
+5,Grades 11-12 Standards Band,4,FOUND
+6,Five ELA Strands,2,FOUND
+7,CCR Anchor Standards,3|6,FOUND
+8,Close Reading,1,FOUND
+9,Textual Evidence,8,FOUND
+10,Text Complexity,8,FOUND
+11,Lexile Level,10,FOUND
+12,Independent Reading,10|8,FOUND
+13,Academic Vocabulary,1,FOUND
+14,Domain-Specific Vocabulary,13,FOUND
+15,Literary Genres,1,RLIT
+16,Fiction,15,RLIT
+17,Nonfiction,15,RLIT
+18,Drama,15,RLIT
+19,Poetry,15,RLIT
+20,Short Story,16,RLIT
+21,Novel,16,RLIT
+22,Novella,16,RLIT
+23,Memoir,17,RLIT
+24,Essay,17,RLIT
+25,Epic Poetry,19,RLIT
+26,Tragedy,18,RLIT
+27,Comedy,18,RLIT
+28,Sonnet,19,RLIT
+29,Lyric Poetry,19,RLIT
+30,Free Verse,19,RLIT
+31,Theme,8|9,RLIT
+32,Central Idea,8|9,RLIT
+33,Character Development,16|8,RLIT
+34,Protagonist and Antagonist,33,RLIT
+35,Plot Structure,16,RLIT
+36,Exposition,35,RLIT
+37,Rising Action,35|36,RLIT
+38,Climax,37,RLIT
+39,Falling Action,38,RLIT
+40,Resolution,39,RLIT
+41,Conflict Types,33|35,RLIT
+42,Point of View,8,RLIT
+43,First-Person Narrator,42,RLIT
+44,Third-Person Narrator,42,RLIT
+45,Unreliable Narrator,43|44,RLIT
+46,Cultural Perspective,42|8,RLIT
+47,Author's Choices,8,RLIT
+48,Text Structure,8,RLIT
+49,Figurative Language,8|13,RLIT
+50,Metaphor,49,RLIT
+51,Simile,49,RLIT
+52,Personification,49,RLIT
+53,Hyperbole,49,RLIT
+54,Irony,49,RLIT
+55,Symbolism,49,RLIT
+56,Allusion,49|13,RLIT
+57,Motif,31|55,RLIT
+58,Imagery,49,RLIT
+59,Connotation and Denotation,13,RLIT
+60,Diction (Word Choice),59,RLIT
+61,Tone,60|47,RLIT
+62,Mood,61,RLIT
+63,Author's Style,60|61|64,RLIT
+64,Syntax and Sentence Structure,13,RLIT
+65,Narrative Techniques,35|42,RLIT
+66,Foreshadowing,65,RLIT
+67,Flashback,65,RLIT
+68,Pacing,65,RLIT
+69,Multiple Interpretations,8|9,RLIT
+70,Source Material and Adaptations,15|69,RLIT
+71,Comparing Artistic Mediums,70,RLIT
+72,Shakespeare,18|26,RLIT
+73,Elizabethan Drama,72,RLIT
+74,American Literary Periods,15|1,RLIT
+75,British Literary Periods,15|1,RLIT
+76,Romantic Period,74,RLIT
+77,Realism and Naturalism,74,RLIT
+78,Modernist Literature,74,RLIT
+79,Contemporary Literature,74,RLIT
+80,Mythology,15,RLIT
+81,Classical Literature,80,RLIT
+82,World Literature in Translation,15|81,RLIT
+83,American Literature,74|16|19,RLIT
+84,Informational Text,17,RINF
+85,Central Idea (Informational),84|32,RINF
+86,Supporting Details,85,RINF
+87,Summarizing,85|86,RINF
+88,Paraphrasing,87,RINF
+89,Rhetoric,84,RINF
+90,Argument,89,RINF
+91,Claims,90,RINF
+92,Counterclaims,91,RINF
+93,Evidence Types,90|9,RINF
+94,Reasoning,90|91,RINF
+95,Warrant,91|93,RINF
+96,Rhetorical Appeals,89,RINF
+97,Ethos,96,RINF
+98,Pathos,96,RINF
+99,Logos,96,RINF
+100,Kairos,96,RINF
+101,Author's Purpose,84|47,RINF
+102,Rhetorical Strategies,89|96,RINF
+103,Point of View (Informational),84|42,RINF
+104,US Foundational Documents,84|1,RINF
+105,Declaration of Independence,104,RINF
+106,US Constitution,104|105,RINF
+107,Bill of Rights,106,RINF
+108,Federalist Papers,104,RINF
+109,Gettysburg Address,104|114,RINF
+110,Letter from Birmingham Jail,104|115,RINF
+111,Presidential Addresses,104,RINF
+112,Ralph Waldo Emerson,84|76,RINF
+113,Henry David Thoreau,84|76,RINF
+114,Abraham Lincoln,104,RINF
+115,Martin Luther King Jr.,104,RINF
+116,Scientific Texts,84,RINF
+117,Technical Texts,84,RINF
+118,Historical Informational Texts,84|104,RINF
+119,Multiple Source Comparison,84|9,RINF
+120,Differing Viewpoints,119|103,RINF
+121,Author Credibility,97|84,RINF
+122,Argument Writing,90|91|92,WRITE
+123,Informative Writing,84|85,WRITE
+124,Explanatory Writing,123,WRITE
+125,Narrative Writing,65|35,WRITE
+126,Writing Modes Comparison,122|123|125,WRITE
+127,Writing Process,1,WRITE
+128,Prewriting and Planning,127,WRITE
+129,Drafting,128,WRITE
+130,Revising,129,WRITE
+131,Editing,130,WRITE
+132,Publishing,131,WRITE
+133,Task Purpose and Audience,127,WRITE
+134,Tone and Register,133|61,WRITE
+135,Essay Structure,127,WRITE
+136,Thesis Statement,135|122,WRITE
+137,Introduction Paragraph,135|136,WRITE
+138,Body Paragraph,135|136,WRITE
+139,Conclusion Paragraph,135|136,WRITE
+140,Topic Sentence,138,WRITE
+141,Transitions,138|140,WRITE
+142,Claim Development,122|136,WRITE
+143,Counterclaim Development,142|92,WRITE
+144,Evidence Integration,93|9,WRITE
+145,Quotation Integration,144|9,WRITE
+146,Research Writing,127|296,WRITE
+147,Short Research Projects,146,WRITE
+148,Sustained Research Paper,147|149,WRITE
+149,Research Question,296,WRITE
+150,Source Credibility,121|296,WRITE
+151,Primary Sources,150,WRITE
+152,Secondary Sources,150,WRITE
+153,Plagiarism,144|88,WRITE
+154,MLA Citation Format,153|144,WRITE
+155,APA Citation Format,153|144,WRITE
+156,Annotated Bibliography,154|155|150,WRITE
+157,Definition and Classification,123|135,WRITE
+158,Comparison and Contrast,123|135|119,WRITE
+159,Cause and Effect Writing,123|135,WRITE
+160,Problem and Solution Writing,123|135,WRITE
+161,Sensory Detail,125|58,WRITE
+162,Descriptive Language,161|60,WRITE
+163,Sequence of Events,125|35,WRITE
+164,Digital Writing Tools,127,WRITE
+165,Collaborative Writing,127|164,WRITE
+166,Peer Writing Workshop,130|165,WRITE
+167,Writing Rubrics,127,WRITE
+168,Self-Assessment of Writing,167|130,WRITE
+169,Academic Discussion,1,SPEAK
+170,Structured Discussion,169,SPEAK
+171,Collaborative Conversation,170,SPEAK
+172,Active Listening,169,SPEAK
+173,Speaking Skills,169,SPEAK
+174,Presentation Skills,173,SPEAK
+175,Oral Presentation,174,SPEAK
+176,Multimedia Presentation,175|177,SPEAK
+177,Digital Media Integration,164,SPEAK
+178,Visual Displays,177,SPEAK
+179,Formal English,188,SPEAK
+180,Code-Switching,179,SPEAK
+181,Civil Disagreement,171|172,SPEAK
+182,Evidence-Based Discussion,170|9,SPEAK
+183,Evaluating a Speaker,172|184,SPEAK
+184,Speaker's Reasoning,94|173,SPEAK
+185,Media Evaluation,172|169,SPEAK
+186,Diverse Media Formats,177|185,SPEAK
+187,Adapting Speech to Context,173|180,SPEAK
+188,Standard English Grammar,1,LANG
+189,Parts of Speech,188,LANG
+190,Nouns and Pronouns,189,LANG
+191,Verbs and Verb Tenses,189,LANG
+192,Adjectives and Adverbs,189,LANG
+193,Prepositions,189,LANG
+194,Conjunctions,189,LANG
+195,Sentence Types,188|189,LANG
+196,Simple Sentence,195,LANG
+197,Compound Sentence,195|194,LANG
+198,Complex Sentence,195|202,LANG
+199,Compound-Complex Sentence,197|198,LANG
+200,Phrases and Clauses,189|195,LANG
+201,Independent Clause,200,LANG
+202,Dependent Clause,200|201,LANG
+203,Participial Phrase,200|190,LANG
+204,Infinitive Phrase,200|191,LANG
+205,Capitalization Rules,188,LANG
+206,Punctuation Conventions,188,LANG
+207,Comma Usage,206|195,LANG
+208,Semicolon and Colon Use,206|197,LANG
+209,Apostrophe and Possessives,206|190,LANG
+210,Quotation Marks Usage,206,LANG
+211,Spelling Conventions,188,LANG
+212,Vocabulary Acquisition,13|188,LANG
+213,Context Clues,212|8,LANG
+214,Morphology,212,LANG
+215,Word Roots,214,LANG
+216,Prefixes and Suffixes,214|215,LANG
+217,Reference Materials,212,LANG
+218,Word Relationships,212|59,LANG
+219,Word Nuances,218|59,LANG
+220,Figurative vs. Literal Language,49|59,LANG
+221,Critical Thinking,1,CRIT
+222,Logical Reasoning,221,CRIT
+223,Questioning Assumptions,221,CRIT
+224,Annotation and Marking,8,CRIT
+225,Argumentation Skills,90|222,CRIT
+226,Rhetorical Analysis,89|102|221,CRIT
+227,Logical Fallacies,222|225,CRIT
+228,Ad Hominem Fallacy,227,CRIT
+229,Straw Man Fallacy,227,CRIT
+230,False Dichotomy,227,CRIT
+231,Slippery Slope Fallacy,227,CRIT
+232,Appeal to Authority,227,CRIT
+233,Circular Reasoning,227,CRIT
+234,Hasty Generalization,227,CRIT
+235,Media Literacy,221|1,MLIT
+236,Digital Literacy,235|177,MLIT
+237,Source Evaluation,150|235,MLIT
+238,Fact-Checking Skills,237|222,MLIT
+239,Misinformation Detection,238|235,MLIT
+240,Social Media Literacy,239|236,MLIT
+241,Propaganda Techniques,89|235,MLIT
+242,Emotional Manipulation in Media,241|98,MLIT
+243,Cognitive Bias,221|222,BIAS
+244,Confirmation Bias,243,BIAS
+245,Availability Heuristic,243,BIAS
+246,Anchoring Bias,243,BIAS
+247,In-Group Favoritism,243,BIAS
+248,Framing Effect,243|241,BIAS
+249,Dunning-Kruger Effect,243,BIAS
+250,Bandwagon Effect,243,BIAS
+251,Sunk Cost Fallacy,243,BIAS
+252,Hindsight Bias,243,BIAS
+253,Attribution Bias,243,BIAS
+254,Survivorship Bias,243,BIAS
+255,Recency Bias,243|245,BIAS
+256,Halo Effect,243,BIAS
+257,False Consensus Effect,243|247,BIAS
+258,Negativity Bias,243,BIAS
+259,Motivated Reasoning,244|243,BIAS
+260,Stereotyping,243|247,BIAS
+261,Systems Thinking,221|222,SYS
+262,Feedback Loops,261,SYS
+263,Balancing Feedback Loops,262,SYS
+264,Reinforcing Feedback Loops,262,SYS
+265,Causal Loop Diagrams,262|263|264,SYS
+266,Unintended Consequences,261|265,SYS
+267,Holistic Problem Analysis,261|221,SYS
+268,Second-Order Effects,266|265,SYS
+282,AI Impact on Writing,1|127,AIWR
+283,AI Writing Tools Overview,282,AIWR
+284,Cowriting with AI,283|127,AIWR
+285,AI for Brainstorming,284|128,AIWR
+286,AI Feedback on Writing,284|130,AIWR
+287,AI for Outlining and Org,285|135,AIWR
+288,Prompt Engineering for Writing,283|128,AIWR
+289,Ethical AI Use in Academics,282|221,AIWR
+290,Academic Dishonesty with AI,289|153,AIWR
+291,AI-Generated Text Detection,290|238,AIWR
+292,AI Disclosure and Citation,289|154,AIWR
+293,AI Limitations in Writing,283|221,AIWR
+294,Preserving Voice with AI,284|63,AIWR
+295,Critical Eval of AI Output,283|221|238,AIWR
+296,Research Methodology,8|221,RES
+297,Library and Database Research,296,RES
+298,Evaluating Research Sources,150|296,RES
+299,Synthesizing Multiple Sources,119|144|296,RES
+300,Capstone Project,3|7,CAP
+301,Senior Research Thesis,300|148|299,CAP
+302,Oral Defense,301|175,CAP
+303,Literary Portfolio,300|83|125,CAP
+304,Rhetorical Analysis Project,300|226|299,CAP
+305,Literary Criticism Portfolio,300|83|226,CAP
+306,Civic Engagement Portfolio,300|104|122,CAP
+307,Public Letter Writing,122|133,CAP
+308,Audience Awareness,133|174,CAP

@@ -77,10 +77,27 @@ The course is organized around the ten College and Career Readiness (CCR) Anchor
 - Figurative language, word relationships, nuances in word meaning
 - General academic and domain-specific vocabulary at the college and career readiness level
 
+### AI and Writing (AIW)
+
+Artificial intelligence tools — including large language models and AI writing assistants — are reshaping how students draft, revise, and research. This strand prepares students to use AI as a responsible, critical coauthor rather than a shortcut. Students explore both the productive and problematic dimensions of AI in academic writing contexts:
+
+- **Cowriting with AI**: using AI tools to brainstorm topics, generate outlines, explore counterarguments, and receive plain-language feedback on the clarity and structure of a draft
+- **AI feedback on writing**: interpreting AI suggestions critically, distinguishing helpful revision from stylistic flattening, and preserving the student's own voice
+- **Prompt engineering for writing**: crafting effective prompts that produce useful AI responses for academic tasks
+- **Ethical and academic-integrity considerations**: understanding when AI use constitutes academic dishonesty, how institutions define AI plagiarism, and how to disclose AI assistance transparently
+- **AI limitations in writing**: recognizing hallucination, factual error, formulaic prose, bias embedded in training data, and loss of authentic voice
+- **AI-generated text detection**: understanding how educators and platforms detect AI-generated work and what that means for student authorship
+- **AI disclosure and citation**: following emerging MLA and APA guidance for citing AI-assisted content
+
 ### Cross-Cutting Skills
 
 - Close reading and annotation of complex texts
 - Citing strong and thorough textual evidence
+- Critical thinking skills
+- Systems thinking skills that take a holistic view of problems and use causal loop diagrams to show balancing and reinforcing forces
+- Look for unintended consequences in systems thinking
+- Understand human cognitive bias
+- Learn skills to detect misinformation in social media
 - Argumentation and rhetorical analysis (ethos, pathos, logos)
 - Media literacy and evaluation of digital sources
 - Research methodology and citation conventions
@@ -135,6 +152,8 @@ After completing this course, students will be able to:
 - Compare and contrast multiple interpretations or adaptations of the same source material
 - Explain the conventions of standard English grammar, usage, and mechanics
 - Describe the differences among argument, informative, and narrative writing modes
+- Explain common cognitive biases (e.g., confirmation bias, availability heuristic, anchoring) and describe how they affect reading, reasoning, and interpretation of texts
+- Describe how systems thinking takes a holistic view of problems by identifying balancing and reinforcing feedback loops in causal loop diagrams
 
 ### Apply
 *Carrying out or using a procedure in a given situation.*
@@ -151,6 +170,12 @@ After completing this course, students will be able to:
 - Integrate quotations, paraphrases, and summaries from multiple sources into one's own writing
 - Adapt speech to a variety of contexts and tasks, using formal English when appropriate
 - Lead and participate in collegial discussions, posing and responding to questions
+- Apply critical thinking skills — including questioning assumptions, identifying evidence, and testing reasoning — when reading, writing, and discussing texts
+- Apply systems thinking to construct causal loop diagrams that show balancing and reinforcing forces in complex real-world situations
+- Apply strategies to detect misinformation in social media, including checking source credibility, identifying emotional manipulation, and cross-referencing claims with authoritative sources
+- Use AI writing tools as a cowriting partner: generate brainstorming lists, request outline suggestions, and solicit plain-language feedback on draft clarity and organization
+- Write effective prompts that elicit useful, task-specific responses from AI writing assistants for academic purposes
+- Apply institutional and MLA/APA guidance to disclose and cite AI-assisted content transparently
 
 ### Analyze
 *Breaking material into constituent parts and determining how the parts relate to one another and to an overall structure or purpose.*
@@ -166,6 +191,10 @@ After completing this course, students will be able to:
 - Analyze multiple accounts of the same event or topic, noting where the accounts differ in emphasis or evidence
 - Analyze the structure of complex sentences and the effect of syntactic choices on meaning
 - Analyze how authors of informational text structure exposition and argument
+- Analyze systems for unintended consequences by tracing feedback loops and identifying second-order effects in causal loop diagrams
+- Analyze how cognitive biases (e.g., confirmation bias, in-group favoritism) shape an author's perspective, argument, or a reader's interpretation
+- Analyze AI-generated writing samples to identify hallucinations, factual errors, stylistic flatness, and embedded bias
+- Analyze the differences between AI-assisted drafts and the student's own unassisted writing, including losses of voice, nuance, and original argument
 
 ### Evaluate
 *Making judgments based on criteria and standards through checking and critiquing.*
@@ -180,6 +209,9 @@ After completing this course, students will be able to:
 - Judge whether a text meets the standards of college and career readiness for complexity and rigor
 - Evaluate one's own writing against task, purpose, audience, and standards-based criteria
 - Make reasoned, evidence-based judgments about contested issues addressed in a body of texts
+- Evaluate social media posts, viral content, and online sources for misinformation by assessing evidence quality, source authority, logical validity, and the presence of manipulative rhetoric or cognitive-bias exploitation
+- Evaluate the academic integrity implications of a given AI use scenario, distinguishing legitimate cowriting from prohibited substitution of student effort
+- Judge whether an AI-assisted draft preserves the student's authentic argument and voice or has compromised them, and revise accordingly
 
 ### Create
 *Putting elements together to form a coherent or functional whole; reorganizing elements into a new pattern or structure.*

@@ -1,0 +1,3393 @@
+{
+  "metadata": {
+    "title": "US High School English Language Arts",
+    "description": "A comprehensive learning graph for US High School English/Language Arts (Grades 9-12), aligned with the Common Core State Standards Initiative (CCSSI). Covers Reading Literature, Reading Informational Text, Writing, Speaking and Listening, Language, Critical Thinking, Media Literacy, Cognitive Bias, and Systems Thinking.",
+    "creator": "Dan McCreary",
+    "date": "2026-05-12",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "FOUND": {
+      "classifierName": "Foundation Concepts",
+      "color": "SteelBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "RLIT": {
+      "classifierName": "Reading Literature",
+      "color": "DarkGreen",
+      "font": {
+        "color": "white"
+      }
+    },
+    "RINF": {
+      "classifierName": "Reading Informational Text",
+      "color": "Teal",
+      "font": {
+        "color": "white"
+      }
+    },
+    "WRITE": {
+      "classifierName": "Writing",
+      "color": "Gold",
+      "font": {
+        "color": "black"
+      }
+    },
+    "SPEAK": {
+      "classifierName": "Speaking and Listening",
+      "color": "DodgerBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "LANG": {
+      "classifierName": "Language",
+      "color": "LightSkyBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "CRIT": {
+      "classifierName": "Critical Thinking and Logic",
+      "color": "Crimson",
+      "font": {
+        "color": "white"
+      }
+    },
+    "MLIT": {
+      "classifierName": "Media and Digital Literacy",
+      "color": "OliveDrab",
+      "font": {
+        "color": "white"
+      }
+    },
+    "BIAS": {
+      "classifierName": "Cognitive Bias",
+      "color": "DarkOrchid",
+      "font": {
+        "color": "white"
+      }
+    },
+    "SYS": {
+      "classifierName": "Systems Thinking",
+      "color": "Orange",
+      "font": {
+        "color": "black"
+      }
+    },
+    "RES": {
+      "classifierName": "Research and Citation",
+      "color": "MediumPurple",
+      "font": {
+        "color": "white"
+      }
+    },
+    "CAP": {
+      "classifierName": "Capstone and Assessment",
+      "color": "DimGray",
+      "font": {
+        "color": "white"
+      }
+    },
+    "AIWR": {
+      "classifierName": "AI and Writing",
+      "color": "Coral",
+      "font": {
+        "color": "black"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "English Language Arts Overview",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 2,
+      "label": "Common Core ELA Standards",
+      "group": "FOUND"
+    },
+    {
+      "id": 3,
+      "label": "College and Career Readiness",
+      "group": "FOUND"
+    },
+    {
+      "id": 4,
+      "label": "Grades 9-10 Standards Band",
+      "group": "FOUND"
+    },
+    {
+      "id": 5,
+      "label": "Grades 11-12 Standards Band",
+      "group": "FOUND"
+    },
+    {
+      "id": 6,
+      "label": "Five ELA Strands",
+      "group": "FOUND"
+    },
+    {
+      "id": 7,
+      "label": "CCR Anchor Standards",
+      "group": "FOUND"
+    },
+    {
+      "id": 8,
+      "label": "Close Reading",
+      "group": "FOUND"
+    },
+    {
+      "id": 9,
+      "label": "Textual Evidence",
+      "group": "FOUND"
+    },
+    {
+      "id": 10,
+      "label": "Text Complexity",
+      "group": "FOUND"
+    },
+    {
+      "id": 11,
+      "label": "Lexile Level",
+      "group": "FOUND"
+    },
+    {
+      "id": 12,
+      "label": "Independent Reading",
+      "group": "FOUND"
+    },
+    {
+      "id": 13,
+      "label": "Academic Vocabulary",
+      "group": "FOUND"
+    },
+    {
+      "id": 14,
+      "label": "Domain-Specific Vocabulary",
+      "group": "FOUND"
+    },
+    {
+      "id": 15,
+      "label": "Literary Genres",
+      "group": "RLIT"
+    },
+    {
+      "id": 16,
+      "label": "Fiction",
+      "group": "RLIT"
+    },
+    {
+      "id": 17,
+      "label": "Nonfiction",
+      "group": "RLIT"
+    },
+    {
+      "id": 18,
+      "label": "Drama",
+      "group": "RLIT"
+    },
+    {
+      "id": 19,
+      "label": "Poetry",
+      "group": "RLIT"
+    },
+    {
+      "id": 20,
+      "label": "Short Story",
+      "group": "RLIT"
+    },
+    {
+      "id": 21,
+      "label": "Novel",
+      "group": "RLIT"
+    },
+    {
+      "id": 22,
+      "label": "Novella",
+      "group": "RLIT"
+    },
+    {
+      "id": 23,
+      "label": "Memoir",
+      "group": "RLIT"
+    },
+    {
+      "id": 24,
+      "label": "Essay",
+      "group": "RLIT"
+    },
+    {
+      "id": 25,
+      "label": "Epic Poetry",
+      "group": "RLIT"
+    },
+    {
+      "id": 26,
+      "label": "Tragedy",
+      "group": "RLIT"
+    },
+    {
+      "id": 27,
+      "label": "Comedy",
+      "group": "RLIT"
+    },
+    {
+      "id": 28,
+      "label": "Sonnet",
+      "group": "RLIT"
+    },
+    {
+      "id": 29,
+      "label": "Lyric Poetry",
+      "group": "RLIT"
+    },
+    {
+      "id": 30,
+      "label": "Free Verse",
+      "group": "RLIT"
+    },
+    {
+      "id": 31,
+      "label": "Theme",
+      "group": "RLIT"
+    },
+    {
+      "id": 32,
+      "label": "Central Idea",
+      "group": "RLIT"
+    },
+    {
+      "id": 33,
+      "label": "Character Development",
+      "group": "RLIT"
+    },
+    {
+      "id": 34,
+      "label": "Protagonist and Antagonist",
+      "group": "RLIT"
+    },
+    {
+      "id": 35,
+      "label": "Plot Structure",
+      "group": "RLIT"
+    },
+    {
+      "id": 36,
+      "label": "Exposition",
+      "group": "RLIT"
+    },
+    {
+      "id": 37,
+      "label": "Rising Action",
+      "group": "RLIT"
+    },
+    {
+      "id": 38,
+      "label": "Climax",
+      "group": "RLIT"
+    },
+    {
+      "id": 39,
+      "label": "Falling Action",
+      "group": "RLIT"
+    },
+    {
+      "id": 40,
+      "label": "Resolution",
+      "group": "RLIT"
+    },
+    {
+      "id": 41,
+      "label": "Conflict Types",
+      "group": "RLIT"
+    },
+    {
+      "id": 42,
+      "label": "Point of View",
+      "group": "RLIT"
+    },
+    {
+      "id": 43,
+      "label": "First-Person Narrator",
+      "group": "RLIT"
+    },
+    {
+      "id": 44,
+      "label": "Third-Person Narrator",
+      "group": "RLIT"
+    },
+    {
+      "id": 45,
+      "label": "Unreliable Narrator",
+      "group": "RLIT"
+    },
+    {
+      "id": 46,
+      "label": "Cultural Perspective",
+      "group": "RLIT"
+    },
+    {
+      "id": 47,
+      "label": "Author's Choices",
+      "group": "RLIT"
+    },
+    {
+      "id": 48,
+      "label": "Text Structure",
+      "group": "RLIT"
+    },
+    {
+      "id": 49,
+      "label": "Figurative Language",
+      "group": "RLIT"
+    },
+    {
+      "id": 50,
+      "label": "Metaphor",
+      "group": "RLIT"
+    },
+    {
+      "id": 51,
+      "label": "Simile",
+      "group": "RLIT"
+    },
+    {
+      "id": 52,
+      "label": "Personification",
+      "group": "RLIT"
+    },
+    {
+      "id": 53,
+      "label": "Hyperbole",
+      "group": "RLIT"
+    },
+    {
+      "id": 54,
+      "label": "Irony",
+      "group": "RLIT"
+    },
+    {
+      "id": 55,
+      "label": "Symbolism",
+      "group": "RLIT"
+    },
+    {
+      "id": 56,
+      "label": "Allusion",
+      "group": "RLIT"
+    },
+    {
+      "id": 57,
+      "label": "Motif",
+      "group": "RLIT"
+    },
+    {
+      "id": 58,
+      "label": "Imagery",
+      "group": "RLIT"
+    },
+    {
+      "id": 59,
+      "label": "Connotation and Denotation",
+      "group": "RLIT"
+    },
+    {
+      "id": 60,
+      "label": "Diction (Word Choice)",
+      "group": "RLIT"
+    },
+    {
+      "id": 61,
+      "label": "Tone",
+      "group": "RLIT"
+    },
+    {
+      "id": 62,
+      "label": "Mood",
+      "group": "RLIT"
+    },
+    {
+      "id": 63,
+      "label": "Author's Style",
+      "group": "RLIT"
+    },
+    {
+      "id": 64,
+      "label": "Syntax and Sentence Structure",
+      "group": "RLIT"
+    },
+    {
+      "id": 65,
+      "label": "Narrative Techniques",
+      "group": "RLIT"
+    },
+    {
+      "id": 66,
+      "label": "Foreshadowing",
+      "group": "RLIT"
+    },
+    {
+      "id": 67,
+      "label": "Flashback",
+      "group": "RLIT"
+    },
+    {
+      "id": 68,
+      "label": "Pacing",
+      "group": "RLIT"
+    },
+    {
+      "id": 69,
+      "label": "Multiple Interpretations",
+      "group": "RLIT"
+    },
+    {
+      "id": 70,
+      "label": "Source Material and Adaptations",
+      "group": "RLIT"
+    },
+    {
+      "id": 71,
+      "label": "Comparing Artistic Mediums",
+      "group": "RLIT"
+    },
+    {
+      "id": 72,
+      "label": "Shakespeare",
+      "group": "RLIT"
+    },
+    {
+      "id": 73,
+      "label": "Elizabethan Drama",
+      "group": "RLIT"
+    },
+    {
+      "id": 74,
+      "label": "American Literary Periods",
+      "group": "RLIT"
+    },
+    {
+      "id": 75,
+      "label": "British Literary Periods",
+      "group": "RLIT"
+    },
+    {
+      "id": 76,
+      "label": "Romantic Period",
+      "group": "RLIT"
+    },
+    {
+      "id": 77,
+      "label": "Realism and Naturalism",
+      "group": "RLIT"
+    },
+    {
+      "id": 78,
+      "label": "Modernist Literature",
+      "group": "RLIT"
+    },
+    {
+      "id": 79,
+      "label": "Contemporary Literature",
+      "group": "RLIT"
+    },
+    {
+      "id": 80,
+      "label": "Mythology",
+      "group": "RLIT"
+    },
+    {
+      "id": 81,
+      "label": "Classical Literature",
+      "group": "RLIT"
+    },
+    {
+      "id": 82,
+      "label": "World Literature in Translation",
+      "group": "RLIT"
+    },
+    {
+      "id": 83,
+      "label": "American Literature",
+      "group": "RLIT"
+    },
+    {
+      "id": 84,
+      "label": "Informational Text",
+      "group": "RINF"
+    },
+    {
+      "id": 85,
+      "label": "Central Idea (Informational)",
+      "group": "RINF"
+    },
+    {
+      "id": 86,
+      "label": "Supporting Details",
+      "group": "RINF"
+    },
+    {
+      "id": 87,
+      "label": "Summarizing",
+      "group": "RINF"
+    },
+    {
+      "id": 88,
+      "label": "Paraphrasing",
+      "group": "RINF"
+    },
+    {
+      "id": 89,
+      "label": "Rhetoric",
+      "group": "RINF"
+    },
+    {
+      "id": 90,
+      "label": "Argument",
+      "group": "RINF"
+    },
+    {
+      "id": 91,
+      "label": "Claims",
+      "group": "RINF"
+    },
+    {
+      "id": 92,
+      "label": "Counterclaims",
+      "group": "RINF"
+    },
+    {
+      "id": 93,
+      "label": "Evidence Types",
+      "group": "RINF"
+    },
+    {
+      "id": 94,
+      "label": "Reasoning",
+      "group": "RINF"
+    },
+    {
+      "id": 95,
+      "label": "Warrant",
+      "group": "RINF"
+    },
+    {
+      "id": 96,
+      "label": "Rhetorical Appeals",
+      "group": "RINF"
+    },
+    {
+      "id": 97,
+      "label": "Ethos",
+      "group": "RINF"
+    },
+    {
+      "id": 98,
+      "label": "Pathos",
+      "group": "RINF"
+    },
+    {
+      "id": 99,
+      "label": "Logos",
+      "group": "RINF"
+    },
+    {
+      "id": 100,
+      "label": "Kairos",
+      "group": "RINF"
+    },
+    {
+      "id": 101,
+      "label": "Author's Purpose",
+      "group": "RINF"
+    },
+    {
+      "id": 102,
+      "label": "Rhetorical Strategies",
+      "group": "RINF"
+    },
+    {
+      "id": 103,
+      "label": "Point of View (Informational)",
+      "group": "RINF"
+    },
+    {
+      "id": 104,
+      "label": "US Foundational Documents",
+      "group": "RINF"
+    },
+    {
+      "id": 105,
+      "label": "Declaration of Independence",
+      "group": "RINF"
+    },
+    {
+      "id": 106,
+      "label": "US Constitution",
+      "group": "RINF"
+    },
+    {
+      "id": 107,
+      "label": "Bill of Rights",
+      "group": "RINF"
+    },
+    {
+      "id": 108,
+      "label": "Federalist Papers",
+      "group": "RINF"
+    },
+    {
+      "id": 109,
+      "label": "Gettysburg Address",
+      "group": "RINF"
+    },
+    {
+      "id": 110,
+      "label": "Letter from Birmingham Jail",
+      "group": "RINF"
+    },
+    {
+      "id": 111,
+      "label": "Presidential Addresses",
+      "group": "RINF"
+    },
+    {
+      "id": 112,
+      "label": "Ralph Waldo Emerson",
+      "group": "RINF"
+    },
+    {
+      "id": 113,
+      "label": "Henry David Thoreau",
+      "group": "RINF"
+    },
+    {
+      "id": 114,
+      "label": "Abraham Lincoln",
+      "group": "RINF"
+    },
+    {
+      "id": 115,
+      "label": "Martin Luther King Jr.",
+      "group": "RINF"
+    },
+    {
+      "id": 116,
+      "label": "Scientific Texts",
+      "group": "RINF"
+    },
+    {
+      "id": 117,
+      "label": "Technical Texts",
+      "group": "RINF"
+    },
+    {
+      "id": 118,
+      "label": "Historical Informational Texts",
+      "group": "RINF"
+    },
+    {
+      "id": 119,
+      "label": "Multiple Source Comparison",
+      "group": "RINF"
+    },
+    {
+      "id": 120,
+      "label": "Differing Viewpoints",
+      "group": "RINF"
+    },
+    {
+      "id": 121,
+      "label": "Author Credibility",
+      "group": "RINF"
+    },
+    {
+      "id": 122,
+      "label": "Argument Writing",
+      "group": "WRITE"
+    },
+    {
+      "id": 123,
+      "label": "Informative Writing",
+      "group": "WRITE"
+    },
+    {
+      "id": 124,
+      "label": "Explanatory Writing",
+      "group": "WRITE"
+    },
+    {
+      "id": 125,
+      "label": "Narrative Writing",
+      "group": "WRITE"
+    },
+    {
+      "id": 126,
+      "label": "Writing Modes Comparison",
+      "group": "WRITE"
+    },
+    {
+      "id": 127,
+      "label": "Writing Process",
+      "group": "WRITE"
+    },
+    {
+      "id": 128,
+      "label": "Prewriting and Planning",
+      "group": "WRITE"
+    },
+    {
+      "id": 129,
+      "label": "Drafting",
+      "group": "WRITE"
+    },
+    {
+      "id": 130,
+      "label": "Revising",
+      "group": "WRITE"
+    },
+    {
+      "id": 131,
+      "label": "Editing",
+      "group": "WRITE"
+    },
+    {
+      "id": 132,
+      "label": "Publishing",
+      "group": "WRITE"
+    },
+    {
+      "id": 133,
+      "label": "Task Purpose and Audience",
+      "group": "WRITE"
+    },
+    {
+      "id": 134,
+      "label": "Tone and Register",
+      "group": "WRITE"
+    },
+    {
+      "id": 135,
+      "label": "Essay Structure",
+      "group": "WRITE"
+    },
+    {
+      "id": 136,
+      "label": "Thesis Statement",
+      "group": "WRITE"
+    },
+    {
+      "id": 137,
+      "label": "Introduction Paragraph",
+      "group": "WRITE"
+    },
+    {
+      "id": 138,
+      "label": "Body Paragraph",
+      "group": "WRITE"
+    },
+    {
+      "id": 139,
+      "label": "Conclusion Paragraph",
+      "group": "WRITE"
+    },
+    {
+      "id": 140,
+      "label": "Topic Sentence",
+      "group": "WRITE"
+    },
+    {
+      "id": 141,
+      "label": "Transitions",
+      "group": "WRITE"
+    },
+    {
+      "id": 142,
+      "label": "Claim Development",
+      "group": "WRITE"
+    },
+    {
+      "id": 143,
+      "label": "Counterclaim Development",
+      "group": "WRITE"
+    },
+    {
+      "id": 144,
+      "label": "Evidence Integration",
+      "group": "WRITE"
+    },
+    {
+      "id": 145,
+      "label": "Quotation Integration",
+      "group": "WRITE"
+    },
+    {
+      "id": 146,
+      "label": "Research Writing",
+      "group": "WRITE"
+    },
+    {
+      "id": 147,
+      "label": "Short Research Projects",
+      "group": "WRITE"
+    },
+    {
+      "id": 148,
+      "label": "Sustained Research Paper",
+      "group": "WRITE"
+    },
+    {
+      "id": 149,
+      "label": "Research Question",
+      "group": "WRITE"
+    },
+    {
+      "id": 150,
+      "label": "Source Credibility",
+      "group": "WRITE"
+    },
+    {
+      "id": 151,
+      "label": "Primary Sources",
+      "group": "WRITE"
+    },
+    {
+      "id": 152,
+      "label": "Secondary Sources",
+      "group": "WRITE"
+    },
+    {
+      "id": 153,
+      "label": "Plagiarism",
+      "group": "WRITE"
+    },
+    {
+      "id": 154,
+      "label": "MLA Citation Format",
+      "group": "WRITE"
+    },
+    {
+      "id": 155,
+      "label": "APA Citation Format",
+      "group": "WRITE"
+    },
+    {
+      "id": 156,
+      "label": "Annotated Bibliography",
+      "group": "WRITE"
+    },
+    {
+      "id": 157,
+      "label": "Definition and Classification",
+      "group": "WRITE"
+    },
+    {
+      "id": 158,
+      "label": "Comparison and Contrast",
+      "group": "WRITE"
+    },
+    {
+      "id": 159,
+      "label": "Cause and Effect Writing",
+      "group": "WRITE"
+    },
+    {
+      "id": 160,
+      "label": "Problem and Solution Writing",
+      "group": "WRITE"
+    },
+    {
+      "id": 161,
+      "label": "Sensory Detail",
+      "group": "WRITE"
+    },
+    {
+      "id": 162,
+      "label": "Descriptive Language",
+      "group": "WRITE"
+    },
+    {
+      "id": 163,
+      "label": "Sequence of Events",
+      "group": "WRITE"
+    },
+    {
+      "id": 164,
+      "label": "Digital Writing Tools",
+      "group": "WRITE"
+    },
+    {
+      "id": 165,
+      "label": "Collaborative Writing",
+      "group": "WRITE"
+    },
+    {
+      "id": 166,
+      "label": "Peer Writing Workshop",
+      "group": "WRITE"
+    },
+    {
+      "id": 167,
+      "label": "Writing Rubrics",
+      "group": "WRITE"
+    },
+    {
+      "id": 168,
+      "label": "Self-Assessment of Writing",
+      "group": "WRITE"
+    },
+    {
+      "id": 169,
+      "label": "Academic Discussion",
+      "group": "SPEAK"
+    },
+    {
+      "id": 170,
+      "label": "Structured Discussion",
+      "group": "SPEAK"
+    },
+    {
+      "id": 171,
+      "label": "Collaborative Conversation",
+      "group": "SPEAK"
+    },
+    {
+      "id": 172,
+      "label": "Active Listening",
+      "group": "SPEAK"
+    },
+    {
+      "id": 173,
+      "label": "Speaking Skills",
+      "group": "SPEAK"
+    },
+    {
+      "id": 174,
+      "label": "Presentation Skills",
+      "group": "SPEAK"
+    },
+    {
+      "id": 175,
+      "label": "Oral Presentation",
+      "group": "SPEAK"
+    },
+    {
+      "id": 176,
+      "label": "Multimedia Presentation",
+      "group": "SPEAK"
+    },
+    {
+      "id": 177,
+      "label": "Digital Media Integration",
+      "group": "SPEAK"
+    },
+    {
+      "id": 178,
+      "label": "Visual Displays",
+      "group": "SPEAK"
+    },
+    {
+      "id": 179,
+      "label": "Formal English",
+      "group": "SPEAK"
+    },
+    {
+      "id": 180,
+      "label": "Code-Switching",
+      "group": "SPEAK"
+    },
+    {
+      "id": 181,
+      "label": "Civil Disagreement",
+      "group": "SPEAK"
+    },
+    {
+      "id": 182,
+      "label": "Evidence-Based Discussion",
+      "group": "SPEAK"
+    },
+    {
+      "id": 183,
+      "label": "Evaluating a Speaker",
+      "group": "SPEAK"
+    },
+    {
+      "id": 184,
+      "label": "Speaker's Reasoning",
+      "group": "SPEAK"
+    },
+    {
+      "id": 185,
+      "label": "Media Evaluation",
+      "group": "SPEAK"
+    },
+    {
+      "id": 186,
+      "label": "Diverse Media Formats",
+      "group": "SPEAK"
+    },
+    {
+      "id": 187,
+      "label": "Adapting Speech to Context",
+      "group": "SPEAK"
+    },
+    {
+      "id": 188,
+      "label": "Standard English Grammar",
+      "group": "LANG"
+    },
+    {
+      "id": 189,
+      "label": "Parts of Speech",
+      "group": "LANG"
+    },
+    {
+      "id": 190,
+      "label": "Nouns and Pronouns",
+      "group": "LANG"
+    },
+    {
+      "id": 191,
+      "label": "Verbs and Verb Tenses",
+      "group": "LANG"
+    },
+    {
+      "id": 192,
+      "label": "Adjectives and Adverbs",
+      "group": "LANG"
+    },
+    {
+      "id": 193,
+      "label": "Prepositions",
+      "group": "LANG"
+    },
+    {
+      "id": 194,
+      "label": "Conjunctions",
+      "group": "LANG"
+    },
+    {
+      "id": 195,
+      "label": "Sentence Types",
+      "group": "LANG"
+    },
+    {
+      "id": 196,
+      "label": "Simple Sentence",
+      "group": "LANG"
+    },
+    {
+      "id": 197,
+      "label": "Compound Sentence",
+      "group": "LANG"
+    },
+    {
+      "id": 198,
+      "label": "Complex Sentence",
+      "group": "LANG"
+    },
+    {
+      "id": 199,
+      "label": "Compound-Complex Sentence",
+      "group": "LANG"
+    },
+    {
+      "id": 200,
+      "label": "Phrases and Clauses",
+      "group": "LANG"
+    },
+    {
+      "id": 201,
+      "label": "Independent Clause",
+      "group": "LANG"
+    },
+    {
+      "id": 202,
+      "label": "Dependent Clause",
+      "group": "LANG"
+    },
+    {
+      "id": 203,
+      "label": "Participial Phrase",
+      "group": "LANG"
+    },
+    {
+      "id": 204,
+      "label": "Infinitive Phrase",
+      "group": "LANG"
+    },
+    {
+      "id": 205,
+      "label": "Capitalization Rules",
+      "group": "LANG"
+    },
+    {
+      "id": 206,
+      "label": "Punctuation Conventions",
+      "group": "LANG"
+    },
+    {
+      "id": 207,
+      "label": "Comma Usage",
+      "group": "LANG"
+    },
+    {
+      "id": 208,
+      "label": "Semicolon and Colon Use",
+      "group": "LANG"
+    },
+    {
+      "id": 209,
+      "label": "Apostrophe and Possessives",
+      "group": "LANG"
+    },
+    {
+      "id": 210,
+      "label": "Quotation Marks Usage",
+      "group": "LANG"
+    },
+    {
+      "id": 211,
+      "label": "Spelling Conventions",
+      "group": "LANG"
+    },
+    {
+      "id": 212,
+      "label": "Vocabulary Acquisition",
+      "group": "LANG"
+    },
+    {
+      "id": 213,
+      "label": "Context Clues",
+      "group": "LANG"
+    },
+    {
+      "id": 214,
+      "label": "Morphology",
+      "group": "LANG"
+    },
+    {
+      "id": 215,
+      "label": "Word Roots",
+      "group": "LANG"
+    },
+    {
+      "id": 216,
+      "label": "Prefixes and Suffixes",
+      "group": "LANG"
+    },
+    {
+      "id": 217,
+      "label": "Reference Materials",
+      "group": "LANG"
+    },
+    {
+      "id": 218,
+      "label": "Word Relationships",
+      "group": "LANG"
+    },
+    {
+      "id": 219,
+      "label": "Word Nuances",
+      "group": "LANG"
+    },
+    {
+      "id": 220,
+      "label": "Figurative vs. Literal Language",
+      "group": "LANG"
+    },
+    {
+      "id": 221,
+      "label": "Critical Thinking",
+      "group": "CRIT"
+    },
+    {
+      "id": 222,
+      "label": "Logical Reasoning",
+      "group": "CRIT"
+    },
+    {
+      "id": 223,
+      "label": "Questioning Assumptions",
+      "group": "CRIT"
+    },
+    {
+      "id": 224,
+      "label": "Annotation and Marking",
+      "group": "CRIT"
+    },
+    {
+      "id": 225,
+      "label": "Argumentation Skills",
+      "group": "CRIT"
+    },
+    {
+      "id": 226,
+      "label": "Rhetorical Analysis",
+      "group": "CRIT"
+    },
+    {
+      "id": 227,
+      "label": "Logical Fallacies",
+      "group": "CRIT"
+    },
+    {
+      "id": 228,
+      "label": "Ad Hominem Fallacy",
+      "group": "CRIT"
+    },
+    {
+      "id": 229,
+      "label": "Straw Man Fallacy",
+      "group": "CRIT"
+    },
+    {
+      "id": 230,
+      "label": "False Dichotomy",
+      "group": "CRIT"
+    },
+    {
+      "id": 231,
+      "label": "Slippery Slope Fallacy",
+      "group": "CRIT"
+    },
+    {
+      "id": 232,
+      "label": "Appeal to Authority",
+      "group": "CRIT"
+    },
+    {
+      "id": 233,
+      "label": "Circular Reasoning",
+      "group": "CRIT"
+    },
+    {
+      "id": 234,
+      "label": "Hasty Generalization",
+      "group": "CRIT"
+    },
+    {
+      "id": 235,
+      "label": "Media Literacy",
+      "group": "MLIT"
+    },
+    {
+      "id": 236,
+      "label": "Digital Literacy",
+      "group": "MLIT"
+    },
+    {
+      "id": 237,
+      "label": "Source Evaluation",
+      "group": "MLIT"
+    },
+    {
+      "id": 238,
+      "label": "Fact-Checking Skills",
+      "group": "MLIT"
+    },
+    {
+      "id": 239,
+      "label": "Misinformation Detection",
+      "group": "MLIT"
+    },
+    {
+      "id": 240,
+      "label": "Social Media Literacy",
+      "group": "MLIT"
+    },
+    {
+      "id": 241,
+      "label": "Propaganda Techniques",
+      "group": "MLIT"
+    },
+    {
+      "id": 242,
+      "label": "Emotional Manipulation in Media",
+      "group": "MLIT"
+    },
+    {
+      "id": 243,
+      "label": "Cognitive Bias",
+      "group": "BIAS"
+    },
+    {
+      "id": 244,
+      "label": "Confirmation Bias",
+      "group": "BIAS"
+    },
+    {
+      "id": 245,
+      "label": "Availability Heuristic",
+      "group": "BIAS"
+    },
+    {
+      "id": 246,
+      "label": "Anchoring Bias",
+      "group": "BIAS"
+    },
+    {
+      "id": 247,
+      "label": "In-Group Favoritism",
+      "group": "BIAS"
+    },
+    {
+      "id": 248,
+      "label": "Framing Effect",
+      "group": "BIAS"
+    },
+    {
+      "id": 249,
+      "label": "Dunning-Kruger Effect",
+      "group": "BIAS"
+    },
+    {
+      "id": 250,
+      "label": "Bandwagon Effect",
+      "group": "BIAS"
+    },
+    {
+      "id": 251,
+      "label": "Sunk Cost Fallacy",
+      "group": "BIAS"
+    },
+    {
+      "id": 252,
+      "label": "Hindsight Bias",
+      "group": "BIAS"
+    },
+    {
+      "id": 253,
+      "label": "Attribution Bias",
+      "group": "BIAS"
+    },
+    {
+      "id": 254,
+      "label": "Survivorship Bias",
+      "group": "BIAS"
+    },
+    {
+      "id": 255,
+      "label": "Recency Bias",
+      "group": "BIAS"
+    },
+    {
+      "id": 256,
+      "label": "Halo Effect",
+      "group": "BIAS"
+    },
+    {
+      "id": 257,
+      "label": "False Consensus Effect",
+      "group": "BIAS"
+    },
+    {
+      "id": 258,
+      "label": "Negativity Bias",
+      "group": "BIAS"
+    },
+    {
+      "id": 259,
+      "label": "Motivated Reasoning",
+      "group": "BIAS"
+    },
+    {
+      "id": 260,
+      "label": "Stereotyping",
+      "group": "BIAS"
+    },
+    {
+      "id": 261,
+      "label": "Systems Thinking",
+      "group": "SYS"
+    },
+    {
+      "id": 262,
+      "label": "Feedback Loops",
+      "group": "SYS"
+    },
+    {
+      "id": 263,
+      "label": "Balancing Feedback Loops",
+      "group": "SYS"
+    },
+    {
+      "id": 264,
+      "label": "Reinforcing Feedback Loops",
+      "group": "SYS"
+    },
+    {
+      "id": 265,
+      "label": "Causal Loop Diagrams",
+      "group": "SYS"
+    },
+    {
+      "id": 266,
+      "label": "Unintended Consequences",
+      "group": "SYS"
+    },
+    {
+      "id": 267,
+      "label": "Holistic Problem Analysis",
+      "group": "SYS"
+    },
+    {
+      "id": 268,
+      "label": "Second-Order Effects",
+      "group": "SYS"
+    },
+    {
+      "id": 282,
+      "label": "AI Impact on Writing",
+      "group": "AIWR"
+    },
+    {
+      "id": 283,
+      "label": "AI Writing Tools Overview",
+      "group": "AIWR"
+    },
+    {
+      "id": 284,
+      "label": "Cowriting with AI",
+      "group": "AIWR"
+    },
+    {
+      "id": 285,
+      "label": "AI for Brainstorming",
+      "group": "AIWR"
+    },
+    {
+      "id": 286,
+      "label": "AI Feedback on Writing",
+      "group": "AIWR"
+    },
+    {
+      "id": 287,
+      "label": "AI for Outlining and Org",
+      "group": "AIWR"
+    },
+    {
+      "id": 288,
+      "label": "Prompt Engineering for Writing",
+      "group": "AIWR"
+    },
+    {
+      "id": 289,
+      "label": "Ethical AI Use in Academics",
+      "group": "AIWR"
+    },
+    {
+      "id": 290,
+      "label": "Academic Dishonesty with AI",
+      "group": "AIWR"
+    },
+    {
+      "id": 291,
+      "label": "AI-Generated Text Detection",
+      "group": "AIWR"
+    },
+    {
+      "id": 292,
+      "label": "AI Disclosure and Citation",
+      "group": "AIWR"
+    },
+    {
+      "id": 293,
+      "label": "AI Limitations in Writing",
+      "group": "AIWR"
+    },
+    {
+      "id": 294,
+      "label": "Preserving Voice with AI",
+      "group": "AIWR"
+    },
+    {
+      "id": 295,
+      "label": "Critical Eval of AI Output",
+      "group": "AIWR"
+    },
+    {
+      "id": 296,
+      "label": "Research Methodology",
+      "group": "RES"
+    },
+    {
+      "id": 297,
+      "label": "Library and Database Research",
+      "group": "RES"
+    },
+    {
+      "id": 298,
+      "label": "Evaluating Research Sources",
+      "group": "RES"
+    },
+    {
+      "id": 299,
+      "label": "Synthesizing Multiple Sources",
+      "group": "RES"
+    },
+    {
+      "id": 300,
+      "label": "Capstone Project",
+      "group": "CAP"
+    },
+    {
+      "id": 301,
+      "label": "Senior Research Thesis",
+      "group": "CAP"
+    },
+    {
+      "id": 302,
+      "label": "Oral Defense",
+      "group": "CAP"
+    },
+    {
+      "id": 303,
+      "label": "Literary Portfolio",
+      "group": "CAP"
+    },
+    {
+      "id": 304,
+      "label": "Rhetorical Analysis Project",
+      "group": "CAP"
+    },
+    {
+      "id": 305,
+      "label": "Literary Criticism Portfolio",
+      "group": "CAP"
+    },
+    {
+      "id": 306,
+      "label": "Civic Engagement Portfolio",
+      "group": "CAP"
+    },
+    {
+      "id": 307,
+      "label": "Public Letter Writing",
+      "group": "CAP"
+    },
+    {
+      "id": 308,
+      "label": "Audience Awareness",
+      "group": "CAP"
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 5,
+      "to": 4
+    },
+    {
+      "from": 6,
+      "to": 2
+    },
+    {
+      "from": 7,
+      "to": 3
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 8,
+      "to": 1
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 10,
+      "to": 8
+    },
+    {
+      "from": 11,
+      "to": 10
+    },
+    {
+      "from": 12,
+      "to": 10
+    },
+    {
+      "from": 12,
+      "to": 8
+    },
+    {
+      "from": 13,
+      "to": 1
+    },
+    {
+      "from": 14,
+      "to": 13
+    },
+    {
+      "from": 15,
+      "to": 1
+    },
+    {
+      "from": 16,
+      "to": 15
+    },
+    {
+      "from": 17,
+      "to": 15
+    },
+    {
+      "from": 18,
+      "to": 15
+    },
+    {
+      "from": 19,
+      "to": 15
+    },
+    {
+      "from": 20,
+      "to": 16
+    },
+    {
+      "from": 21,
+      "to": 16
+    },
+    {
+      "from": 22,
+      "to": 16
+    },
+    {
+      "from": 23,
+      "to": 17
+    },
+    {
+      "from": 24,
+      "to": 17
+    },
+    {
+      "from": 25,
+      "to": 19
+    },
+    {
+      "from": 26,
+      "to": 18
+    },
+    {
+      "from": 27,
+      "to": 18
+    },
+    {
+      "from": 28,
+      "to": 19
+    },
+    {
+      "from": 29,
+      "to": 19
+    },
+    {
+      "from": 30,
+      "to": 19
+    },
+    {
+      "from": 31,
+      "to": 8
+    },
+    {
+      "from": 31,
+      "to": 9
+    },
+    {
+      "from": 32,
+      "to": 8
+    },
+    {
+      "from": 32,
+      "to": 9
+    },
+    {
+      "from": 33,
+      "to": 16
+    },
+    {
+      "from": 33,
+      "to": 8
+    },
+    {
+      "from": 34,
+      "to": 33
+    },
+    {
+      "from": 35,
+      "to": 16
+    },
+    {
+      "from": 36,
+      "to": 35
+    },
+    {
+      "from": 37,
+      "to": 35
+    },
+    {
+      "from": 37,
+      "to": 36
+    },
+    {
+      "from": 38,
+      "to": 37
+    },
+    {
+      "from": 39,
+      "to": 38
+    },
+    {
+      "from": 40,
+      "to": 39
+    },
+    {
+      "from": 41,
+      "to": 33
+    },
+    {
+      "from": 41,
+      "to": 35
+    },
+    {
+      "from": 42,
+      "to": 8
+    },
+    {
+      "from": 43,
+      "to": 42
+    },
+    {
+      "from": 44,
+      "to": 42
+    },
+    {
+      "from": 45,
+      "to": 43
+    },
+    {
+      "from": 45,
+      "to": 44
+    },
+    {
+      "from": 46,
+      "to": 42
+    },
+    {
+      "from": 46,
+      "to": 8
+    },
+    {
+      "from": 47,
+      "to": 8
+    },
+    {
+      "from": 48,
+      "to": 8
+    },
+    {
+      "from": 49,
+      "to": 8
+    },
+    {
+      "from": 49,
+      "to": 13
+    },
+    {
+      "from": 50,
+      "to": 49
+    },
+    {
+      "from": 51,
+      "to": 49
+    },
+    {
+      "from": 52,
+      "to": 49
+    },
+    {
+      "from": 53,
+      "to": 49
+    },
+    {
+      "from": 54,
+      "to": 49
+    },
+    {
+      "from": 55,
+      "to": 49
+    },
+    {
+      "from": 56,
+      "to": 49
+    },
+    {
+      "from": 56,
+      "to": 13
+    },
+    {
+      "from": 57,
+      "to": 31
+    },
+    {
+      "from": 57,
+      "to": 55
+    },
+    {
+      "from": 58,
+      "to": 49
+    },
+    {
+      "from": 59,
+      "to": 13
+    },
+    {
+      "from": 60,
+      "to": 59
+    },
+    {
+      "from": 61,
+      "to": 60
+    },
+    {
+      "from": 61,
+      "to": 47
+    },
+    {
+      "from": 62,
+      "to": 61
+    },
+    {
+      "from": 63,
+      "to": 60
+    },
+    {
+      "from": 63,
+      "to": 61
+    },
+    {
+      "from": 63,
+      "to": 64
+    },
+    {
+      "from": 64,
+      "to": 13
+    },
+    {
+      "from": 65,
+      "to": 35
+    },
+    {
+      "from": 65,
+      "to": 42
+    },
+    {
+      "from": 66,
+      "to": 65
+    },
+    {
+      "from": 67,
+      "to": 65
+    },
+    {
+      "from": 68,
+      "to": 65
+    },
+    {
+      "from": 69,
+      "to": 8
+    },
+    {
+      "from": 69,
+      "to": 9
+    },
+    {
+      "from": 70,
+      "to": 15
+    },
+    {
+      "from": 70,
+      "to": 69
+    },
+    {
+      "from": 71,
+      "to": 70
+    },
+    {
+      "from": 72,
+      "to": 18
+    },
+    {
+      "from": 72,
+      "to": 26
+    },
+    {
+      "from": 73,
+      "to": 72
+    },
+    {
+      "from": 74,
+      "to": 15
+    },
+    {
+      "from": 74,
+      "to": 1
+    },
+    {
+      "from": 75,
+      "to": 15
+    },
+    {
+      "from": 75,
+      "to": 1
+    },
+    {
+      "from": 76,
+      "to": 74
+    },
+    {
+      "from": 77,
+      "to": 74
+    },
+    {
+      "from": 78,
+      "to": 74
+    },
+    {
+      "from": 79,
+      "to": 74
+    },
+    {
+      "from": 80,
+      "to": 15
+    },
+    {
+      "from": 81,
+      "to": 80
+    },
+    {
+      "from": 82,
+      "to": 15
+    },
+    {
+      "from": 82,
+      "to": 81
+    },
+    {
+      "from": 83,
+      "to": 74
+    },
+    {
+      "from": 83,
+      "to": 16
+    },
+    {
+      "from": 83,
+      "to": 19
+    },
+    {
+      "from": 84,
+      "to": 17
+    },
+    {
+      "from": 85,
+      "to": 84
+    },
+    {
+      "from": 85,
+      "to": 32
+    },
+    {
+      "from": 86,
+      "to": 85
+    },
+    {
+      "from": 87,
+      "to": 85
+    },
+    {
+      "from": 87,
+      "to": 86
+    },
+    {
+      "from": 88,
+      "to": 87
+    },
+    {
+      "from": 89,
+      "to": 84
+    },
+    {
+      "from": 90,
+      "to": 89
+    },
+    {
+      "from": 91,
+      "to": 90
+    },
+    {
+      "from": 92,
+      "to": 91
+    },
+    {
+      "from": 93,
+      "to": 90
+    },
+    {
+      "from": 93,
+      "to": 9
+    },
+    {
+      "from": 94,
+      "to": 90
+    },
+    {
+      "from": 94,
+      "to": 91
+    },
+    {
+      "from": 95,
+      "to": 91
+    },
+    {
+      "from": 95,
+      "to": 93
+    },
+    {
+      "from": 96,
+      "to": 89
+    },
+    {
+      "from": 97,
+      "to": 96
+    },
+    {
+      "from": 98,
+      "to": 96
+    },
+    {
+      "from": 99,
+      "to": 96
+    },
+    {
+      "from": 100,
+      "to": 96
+    },
+    {
+      "from": 101,
+      "to": 84
+    },
+    {
+      "from": 101,
+      "to": 47
+    },
+    {
+      "from": 102,
+      "to": 89
+    },
+    {
+      "from": 102,
+      "to": 96
+    },
+    {
+      "from": 103,
+      "to": 84
+    },
+    {
+      "from": 103,
+      "to": 42
+    },
+    {
+      "from": 104,
+      "to": 84
+    },
+    {
+      "from": 104,
+      "to": 1
+    },
+    {
+      "from": 105,
+      "to": 104
+    },
+    {
+      "from": 106,
+      "to": 104
+    },
+    {
+      "from": 106,
+      "to": 105
+    },
+    {
+      "from": 107,
+      "to": 106
+    },
+    {
+      "from": 108,
+      "to": 104
+    },
+    {
+      "from": 109,
+      "to": 104
+    },
+    {
+      "from": 109,
+      "to": 114
+    },
+    {
+      "from": 110,
+      "to": 104
+    },
+    {
+      "from": 110,
+      "to": 115
+    },
+    {
+      "from": 111,
+      "to": 104
+    },
+    {
+      "from": 112,
+      "to": 84
+    },
+    {
+      "from": 112,
+      "to": 76
+    },
+    {
+      "from": 113,
+      "to": 84
+    },
+    {
+      "from": 113,
+      "to": 76
+    },
+    {
+      "from": 114,
+      "to": 104
+    },
+    {
+      "from": 115,
+      "to": 104
+    },
+    {
+      "from": 116,
+      "to": 84
+    },
+    {
+      "from": 117,
+      "to": 84
+    },
+    {
+      "from": 118,
+      "to": 84
+    },
+    {
+      "from": 118,
+      "to": 104
+    },
+    {
+      "from": 119,
+      "to": 84
+    },
+    {
+      "from": 119,
+      "to": 9
+    },
+    {
+      "from": 120,
+      "to": 119
+    },
+    {
+      "from": 120,
+      "to": 103
+    },
+    {
+      "from": 121,
+      "to": 97
+    },
+    {
+      "from": 121,
+      "to": 84
+    },
+    {
+      "from": 122,
+      "to": 90
+    },
+    {
+      "from": 122,
+      "to": 91
+    },
+    {
+      "from": 122,
+      "to": 92
+    },
+    {
+      "from": 123,
+      "to": 84
+    },
+    {
+      "from": 123,
+      "to": 85
+    },
+    {
+      "from": 124,
+      "to": 123
+    },
+    {
+      "from": 125,
+      "to": 65
+    },
+    {
+      "from": 125,
+      "to": 35
+    },
+    {
+      "from": 126,
+      "to": 122
+    },
+    {
+      "from": 126,
+      "to": 123
+    },
+    {
+      "from": 126,
+      "to": 125
+    },
+    {
+      "from": 127,
+      "to": 1
+    },
+    {
+      "from": 128,
+      "to": 127
+    },
+    {
+      "from": 129,
+      "to": 128
+    },
+    {
+      "from": 130,
+      "to": 129
+    },
+    {
+      "from": 131,
+      "to": 130
+    },
+    {
+      "from": 132,
+      "to": 131
+    },
+    {
+      "from": 133,
+      "to": 127
+    },
+    {
+      "from": 134,
+      "to": 133
+    },
+    {
+      "from": 134,
+      "to": 61
+    },
+    {
+      "from": 135,
+      "to": 127
+    },
+    {
+      "from": 136,
+      "to": 135
+    },
+    {
+      "from": 136,
+      "to": 122
+    },
+    {
+      "from": 137,
+      "to": 135
+    },
+    {
+      "from": 137,
+      "to": 136
+    },
+    {
+      "from": 138,
+      "to": 135
+    },
+    {
+      "from": 138,
+      "to": 136
+    },
+    {
+      "from": 139,
+      "to": 135
+    },
+    {
+      "from": 139,
+      "to": 136
+    },
+    {
+      "from": 140,
+      "to": 138
+    },
+    {
+      "from": 141,
+      "to": 138
+    },
+    {
+      "from": 141,
+      "to": 140
+    },
+    {
+      "from": 142,
+      "to": 122
+    },
+    {
+      "from": 142,
+      "to": 136
+    },
+    {
+      "from": 143,
+      "to": 142
+    },
+    {
+      "from": 143,
+      "to": 92
+    },
+    {
+      "from": 144,
+      "to": 93
+    },
+    {
+      "from": 144,
+      "to": 9
+    },
+    {
+      "from": 145,
+      "to": 144
+    },
+    {
+      "from": 145,
+      "to": 9
+    },
+    {
+      "from": 146,
+      "to": 127
+    },
+    {
+      "from": 146,
+      "to": 296
+    },
+    {
+      "from": 147,
+      "to": 146
+    },
+    {
+      "from": 148,
+      "to": 147
+    },
+    {
+      "from": 148,
+      "to": 149
+    },
+    {
+      "from": 149,
+      "to": 296
+    },
+    {
+      "from": 150,
+      "to": 121
+    },
+    {
+      "from": 150,
+      "to": 296
+    },
+    {
+      "from": 151,
+      "to": 150
+    },
+    {
+      "from": 152,
+      "to": 150
+    },
+    {
+      "from": 153,
+      "to": 144
+    },
+    {
+      "from": 153,
+      "to": 88
+    },
+    {
+      "from": 154,
+      "to": 153
+    },
+    {
+      "from": 154,
+      "to": 144
+    },
+    {
+      "from": 155,
+      "to": 153
+    },
+    {
+      "from": 155,
+      "to": 144
+    },
+    {
+      "from": 156,
+      "to": 154
+    },
+    {
+      "from": 156,
+      "to": 155
+    },
+    {
+      "from": 156,
+      "to": 150
+    },
+    {
+      "from": 157,
+      "to": 123
+    },
+    {
+      "from": 157,
+      "to": 135
+    },
+    {
+      "from": 158,
+      "to": 123
+    },
+    {
+      "from": 158,
+      "to": 135
+    },
+    {
+      "from": 158,
+      "to": 119
+    },
+    {
+      "from": 159,
+      "to": 123
+    },
+    {
+      "from": 159,
+      "to": 135
+    },
+    {
+      "from": 160,
+      "to": 123
+    },
+    {
+      "from": 160,
+      "to": 135
+    },
+    {
+      "from": 161,
+      "to": 125
+    },
+    {
+      "from": 161,
+      "to": 58
+    },
+    {
+      "from": 162,
+      "to": 161
+    },
+    {
+      "from": 162,
+      "to": 60
+    },
+    {
+      "from": 163,
+      "to": 125
+    },
+    {
+      "from": 163,
+      "to": 35
+    },
+    {
+      "from": 164,
+      "to": 127
+    },
+    {
+      "from": 165,
+      "to": 127
+    },
+    {
+      "from": 165,
+      "to": 164
+    },
+    {
+      "from": 166,
+      "to": 130
+    },
+    {
+      "from": 166,
+      "to": 165
+    },
+    {
+      "from": 167,
+      "to": 127
+    },
+    {
+      "from": 168,
+      "to": 167
+    },
+    {
+      "from": 168,
+      "to": 130
+    },
+    {
+      "from": 169,
+      "to": 1
+    },
+    {
+      "from": 170,
+      "to": 169
+    },
+    {
+      "from": 171,
+      "to": 170
+    },
+    {
+      "from": 172,
+      "to": 169
+    },
+    {
+      "from": 173,
+      "to": 169
+    },
+    {
+      "from": 174,
+      "to": 173
+    },
+    {
+      "from": 175,
+      "to": 174
+    },
+    {
+      "from": 176,
+      "to": 175
+    },
+    {
+      "from": 176,
+      "to": 177
+    },
+    {
+      "from": 177,
+      "to": 164
+    },
+    {
+      "from": 178,
+      "to": 177
+    },
+    {
+      "from": 179,
+      "to": 188
+    },
+    {
+      "from": 180,
+      "to": 179
+    },
+    {
+      "from": 181,
+      "to": 171
+    },
+    {
+      "from": 181,
+      "to": 172
+    },
+    {
+      "from": 182,
+      "to": 170
+    },
+    {
+      "from": 182,
+      "to": 9
+    },
+    {
+      "from": 183,
+      "to": 172
+    },
+    {
+      "from": 183,
+      "to": 184
+    },
+    {
+      "from": 184,
+      "to": 94
+    },
+    {
+      "from": 184,
+      "to": 173
+    },
+    {
+      "from": 185,
+      "to": 172
+    },
+    {
+      "from": 185,
+      "to": 169
+    },
+    {
+      "from": 186,
+      "to": 177
+    },
+    {
+      "from": 186,
+      "to": 185
+    },
+    {
+      "from": 187,
+      "to": 173
+    },
+    {
+      "from": 187,
+      "to": 180
+    },
+    {
+      "from": 188,
+      "to": 1
+    },
+    {
+      "from": 189,
+      "to": 188
+    },
+    {
+      "from": 190,
+      "to": 189
+    },
+    {
+      "from": 191,
+      "to": 189
+    },
+    {
+      "from": 192,
+      "to": 189
+    },
+    {
+      "from": 193,
+      "to": 189
+    },
+    {
+      "from": 194,
+      "to": 189
+    },
+    {
+      "from": 195,
+      "to": 188
+    },
+    {
+      "from": 195,
+      "to": 189
+    },
+    {
+      "from": 196,
+      "to": 195
+    },
+    {
+      "from": 197,
+      "to": 195
+    },
+    {
+      "from": 197,
+      "to": 194
+    },
+    {
+      "from": 198,
+      "to": 195
+    },
+    {
+      "from": 198,
+      "to": 202
+    },
+    {
+      "from": 199,
+      "to": 197
+    },
+    {
+      "from": 199,
+      "to": 198
+    },
+    {
+      "from": 200,
+      "to": 189
+    },
+    {
+      "from": 200,
+      "to": 195
+    },
+    {
+      "from": 201,
+      "to": 200
+    },
+    {
+      "from": 202,
+      "to": 200
+    },
+    {
+      "from": 202,
+      "to": 201
+    },
+    {
+      "from": 203,
+      "to": 200
+    },
+    {
+      "from": 203,
+      "to": 190
+    },
+    {
+      "from": 204,
+      "to": 200
+    },
+    {
+      "from": 204,
+      "to": 191
+    },
+    {
+      "from": 205,
+      "to": 188
+    },
+    {
+      "from": 206,
+      "to": 188
+    },
+    {
+      "from": 207,
+      "to": 206
+    },
+    {
+      "from": 207,
+      "to": 195
+    },
+    {
+      "from": 208,
+      "to": 206
+    },
+    {
+      "from": 208,
+      "to": 197
+    },
+    {
+      "from": 209,
+      "to": 206
+    },
+    {
+      "from": 209,
+      "to": 190
+    },
+    {
+      "from": 210,
+      "to": 206
+    },
+    {
+      "from": 211,
+      "to": 188
+    },
+    {
+      "from": 212,
+      "to": 13
+    },
+    {
+      "from": 212,
+      "to": 188
+    },
+    {
+      "from": 213,
+      "to": 212
+    },
+    {
+      "from": 213,
+      "to": 8
+    },
+    {
+      "from": 214,
+      "to": 212
+    },
+    {
+      "from": 215,
+      "to": 214
+    },
+    {
+      "from": 216,
+      "to": 214
+    },
+    {
+      "from": 216,
+      "to": 215
+    },
+    {
+      "from": 217,
+      "to": 212
+    },
+    {
+      "from": 218,
+      "to": 212
+    },
+    {
+      "from": 218,
+      "to": 59
+    },
+    {
+      "from": 219,
+      "to": 218
+    },
+    {
+      "from": 219,
+      "to": 59
+    },
+    {
+      "from": 220,
+      "to": 49
+    },
+    {
+      "from": 220,
+      "to": 59
+    },
+    {
+      "from": 221,
+      "to": 1
+    },
+    {
+      "from": 222,
+      "to": 221
+    },
+    {
+      "from": 223,
+      "to": 221
+    },
+    {
+      "from": 224,
+      "to": 8
+    },
+    {
+      "from": 225,
+      "to": 90
+    },
+    {
+      "from": 225,
+      "to": 222
+    },
+    {
+      "from": 226,
+      "to": 89
+    },
+    {
+      "from": 226,
+      "to": 102
+    },
+    {
+      "from": 226,
+      "to": 221
+    },
+    {
+      "from": 227,
+      "to": 222
+    },
+    {
+      "from": 227,
+      "to": 225
+    },
+    {
+      "from": 228,
+      "to": 227
+    },
+    {
+      "from": 229,
+      "to": 227
+    },
+    {
+      "from": 230,
+      "to": 227
+    },
+    {
+      "from": 231,
+      "to": 227
+    },
+    {
+      "from": 232,
+      "to": 227
+    },
+    {
+      "from": 233,
+      "to": 227
+    },
+    {
+      "from": 234,
+      "to": 227
+    },
+    {
+      "from": 235,
+      "to": 221
+    },
+    {
+      "from": 235,
+      "to": 1
+    },
+    {
+      "from": 236,
+      "to": 235
+    },
+    {
+      "from": 236,
+      "to": 177
+    },
+    {
+      "from": 237,
+      "to": 150
+    },
+    {
+      "from": 237,
+      "to": 235
+    },
+    {
+      "from": 238,
+      "to": 237
+    },
+    {
+      "from": 238,
+      "to": 222
+    },
+    {
+      "from": 239,
+      "to": 238
+    },
+    {
+      "from": 239,
+      "to": 235
+    },
+    {
+      "from": 240,
+      "to": 239
+    },
+    {
+      "from": 240,
+      "to": 236
+    },
+    {
+      "from": 241,
+      "to": 89
+    },
+    {
+      "from": 241,
+      "to": 235
+    },
+    {
+      "from": 242,
+      "to": 241
+    },
+    {
+      "from": 242,
+      "to": 98
+    },
+    {
+      "from": 243,
+      "to": 221
+    },
+    {
+      "from": 243,
+      "to": 222
+    },
+    {
+      "from": 244,
+      "to": 243
+    },
+    {
+      "from": 245,
+      "to": 243
+    },
+    {
+      "from": 246,
+      "to": 243
+    },
+    {
+      "from": 247,
+      "to": 243
+    },
+    {
+      "from": 248,
+      "to": 243
+    },
+    {
+      "from": 248,
+      "to": 241
+    },
+    {
+      "from": 249,
+      "to": 243
+    },
+    {
+      "from": 250,
+      "to": 243
+    },
+    {
+      "from": 251,
+      "to": 243
+    },
+    {
+      "from": 252,
+      "to": 243
+    },
+    {
+      "from": 253,
+      "to": 243
+    },
+    {
+      "from": 254,
+      "to": 243
+    },
+    {
+      "from": 255,
+      "to": 243
+    },
+    {
+      "from": 255,
+      "to": 245
+    },
+    {
+      "from": 256,
+      "to": 243
+    },
+    {
+      "from": 257,
+      "to": 243
+    },
+    {
+      "from": 257,
+      "to": 247
+    },
+    {
+      "from": 258,
+      "to": 243
+    },
+    {
+      "from": 259,
+      "to": 244
+    },
+    {
+      "from": 259,
+      "to": 243
+    },
+    {
+      "from": 260,
+      "to": 243
+    },
+    {
+      "from": 260,
+      "to": 247
+    },
+    {
+      "from": 261,
+      "to": 221
+    },
+    {
+      "from": 261,
+      "to": 222
+    },
+    {
+      "from": 262,
+      "to": 261
+    },
+    {
+      "from": 263,
+      "to": 262
+    },
+    {
+      "from": 264,
+      "to": 262
+    },
+    {
+      "from": 265,
+      "to": 262
+    },
+    {
+      "from": 265,
+      "to": 263
+    },
+    {
+      "from": 265,
+      "to": 264
+    },
+    {
+      "from": 266,
+      "to": 261
+    },
+    {
+      "from": 266,
+      "to": 265
+    },
+    {
+      "from": 267,
+      "to": 261
+    },
+    {
+      "from": 267,
+      "to": 221
+    },
+    {
+      "from": 268,
+      "to": 266
+    },
+    {
+      "from": 268,
+      "to": 265
+    },
+    {
+      "from": 282,
+      "to": 1
+    },
+    {
+      "from": 282,
+      "to": 127
+    },
+    {
+      "from": 283,
+      "to": 282
+    },
+    {
+      "from": 284,
+      "to": 283
+    },
+    {
+      "from": 284,
+      "to": 127
+    },
+    {
+      "from": 285,
+      "to": 284
+    },
+    {
+      "from": 285,
+      "to": 128
+    },
+    {
+      "from": 286,
+      "to": 284
+    },
+    {
+      "from": 286,
+      "to": 130
+    },
+    {
+      "from": 287,
+      "to": 285
+    },
+    {
+      "from": 287,
+      "to": 135
+    },
+    {
+      "from": 288,
+      "to": 283
+    },
+    {
+      "from": 288,
+      "to": 128
+    },
+    {
+      "from": 289,
+      "to": 282
+    },
+    {
+      "from": 289,
+      "to": 221
+    },
+    {
+      "from": 290,
+      "to": 289
+    },
+    {
+      "from": 290,
+      "to": 153
+    },
+    {
+      "from": 291,
+      "to": 290
+    },
+    {
+      "from": 291,
+      "to": 238
+    },
+    {
+      "from": 292,
+      "to": 289
+    },
+    {
+      "from": 292,
+      "to": 154
+    },
+    {
+      "from": 293,
+      "to": 283
+    },
+    {
+      "from": 293,
+      "to": 221
+    },
+    {
+      "from": 294,
+      "to": 284
+    },
+    {
+      "from": 294,
+      "to": 63
+    },
+    {
+      "from": 295,
+      "to": 283
+    },
+    {
+      "from": 295,
+      "to": 221
+    },
+    {
+      "from": 295,
+      "to": 238
+    },
+    {
+      "from": 296,
+      "to": 8
+    },
+    {
+      "from": 296,
+      "to": 221
+    },
+    {
+      "from": 297,
+      "to": 296
+    },
+    {
+      "from": 298,
+      "to": 150
+    },
+    {
+      "from": 298,
+      "to": 296
+    },
+    {
+      "from": 299,
+      "to": 119
+    },
+    {
+      "from": 299,
+      "to": 144
+    },
+    {
+      "from": 299,
+      "to": 296
+    },
+    {
+      "from": 300,
+      "to": 3
+    },
+    {
+      "from": 300,
+      "to": 7
+    },
+    {
+      "from": 301,
+      "to": 300
+    },
+    {
+      "from": 301,
+      "to": 148
+    },
+    {
+      "from": 301,
+      "to": 299
+    },
+    {
+      "from": 302,
+      "to": 301
+    },
+    {
+      "from": 302,
+      "to": 175
+    },
+    {
+      "from": 303,
+      "to": 300
+    },
+    {
+      "from": 303,
+      "to": 83
+    },
+    {
+      "from": 303,
+      "to": 125
+    },
+    {
+      "from": 304,
+      "to": 300
+    },
+    {
+      "from": 304,
+      "to": 226
+    },
+    {
+      "from": 304,
+      "to": 299
+    },
+    {
+      "from": 305,
+      "to": 300
+    },
+    {
+      "from": 305,
+      "to": 83
+    },
+    {
+      "from": 305,
+      "to": 226
+    },
+    {
+      "from": 306,
+      "to": 300
+    },
+    {
+      "from": 306,
+      "to": 104
+    },
+    {
+      "from": 306,
+      "to": 122
+    },
+    {
+      "from": 307,
+      "to": 122
+    },
+    {
+      "from": 307,
+      "to": 133
+    },
+    {
+      "from": 308,
+      "to": 133
+    },
+    {
+      "from": 308,
+      "to": 174
+    }
+  ]
+}
