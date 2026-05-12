@@ -298,6 +298,7 @@ Type: MicroSim
   - Bands overlap; render them with 50% opacity so overlaps are visible
 
 - Sample texts: Ten representative texts are plotted as labeled dots on the number line at their approximate Lexile positions. Examples (use approximate values):
+
   - *The Hunger Games* (Suzanne Collins): 810L
   - *To Kill a Mockingbird* (Harper Lee): 870L
   - *The Great Gatsby* (F. Scott Fitzgerald): 1010L
