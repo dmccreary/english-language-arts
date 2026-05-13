@@ -1,0 +1,23 @@
+{
+  "title": "Source Credibility Spectrum",
+  "description": "Evaluate (L5 — Evaluate) multiple sources on the same issue by mapping their credibility indicators and viewpoints on a comparative visual display.",
+  "creator": "English Language Arts",
+  "date": "2026-05-12",
+  "subject": [
+    "English Language Arts",
+    "Media Literacy",
+    "Source Evaluation"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "source-credibility-explorer",
+  "library": "Chart.js",
+  "bloomLevel": 5,
+  "bloomVerb": "Evaluate",
+  "completion_status": "scaffold",
+  "chapter_number": 7,
+  "chapter_title": "US Foundational Documents and Informational Sources",
+  "chapter_dir": "07-foundational-documents"
+}

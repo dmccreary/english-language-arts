@@ -1,0 +1,14 @@
+{
+  "sim_id": "sentence-structure-analyzer",
+  "diagram_name": "Sentence Structure Analyzer",
+  "chapter_number": 12,
+  "chapter_title": "Standard English Grammar and Sentence Structure",
+  "chapter_dir": "12-grammar",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Apply (L3 — Apply) knowledge of sentence types and clause structure by correctly identifying and labeling the components of sample sentences.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-12",
+  "specification": "Type: Interactive Diagram\n**sim-id:** sentence-structure-analyzer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Apply (L3 — Apply) knowledge of sentence types and clause structure by correctly identifying and labeling the components of sample sentences.\n\n**Description:** A visual sentence parsing tool with two modes.\n\n**Explore Mode:** Five pre-loaded sentences, one of each type (simple, compound, complex, compound-complex) plus one with multiple phrase types. Each sentence is displayed word by word in a horizontal layout. The user clicks on any word or group of words to tag it: a dropdown menu offers grammatical labels (subject, verb, direct object, independent clause, dependent clause, prepositional phrase, participial phrase, infinitive phrase, appositive, adjective clause, adverb clause, noun clause). Tagged elements are highlighted in distinct colors. A \"Check\" button compares the user's tagging to the correct analysis and provides specific feedback.\n\n**Build Mode:** The user types a sentence in a text box. The tool parses the sentence using basic NLP patterns and highlights likely clause boundaries, identifying coordinating conjunctions and common subordinating conjunctions. The highlighting is color-coded by likely clause type. A \"How did I do?\" panel shows the tool's analysis alongside the original sentence for comparison. Note: this is a pedagogical heuristic tool, not a perfect parser — it will make errors on complex or ambiguous sentences, which is itself a learning opportunity.\n\n**Canvas:** Minimum 600px wide, minimum 400px height. Responsive layout."
+}

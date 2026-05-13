@@ -1,0 +1,22 @@
+{
+  "title": "The Literary Genre Landscape",
+  "description": "Classify (L2 — Understand) the four major literary categories and their subgenres by identifying where specific texts fit within the genre landscape.",
+  "creator": "English Language Arts",
+  "date": "2026-05-12",
+  "subject": [
+    "English Language Arts",
+    "Literary Genres"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "literary-genre-explorer",
+  "library": "vis-network",
+  "bloomLevel": 2,
+  "bloomVerb": "Classify",
+  "completion_status": "scaffold",
+  "chapter_number": 2,
+  "chapter_title": "Literary Genres and Text Forms",
+  "chapter_dir": "02-literary-genres"
+}

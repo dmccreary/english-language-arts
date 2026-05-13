@@ -1,0 +1,14 @@
+{
+  "sim_id": "research-process-explorer",
+  "diagram_name": "The Research Writing Process",
+  "chapter_number": 11,
+  "chapter_title": "Research, Citation, and Academic Integrity",
+  "chapter_dir": "11-research-citation",
+  "library": "vis-network",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Apply (L3 — Apply) the research methodology framework by mapping a research project's sources, their relationships, and their roles in the argument.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-12",
+  "specification": "Type: Interactive Flowchart and Node Map\n**sim-id:** research-process-explorer<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Learning Objective:** Apply (L3 — Apply) the research methodology framework by mapping a research project's sources, their relationships, and their roles in the argument.\n\n**Description:** A two-panel tool. Left panel: a flowchart of the five-phase research methodology (Background Research → Research Question → Focused Research → Reading/Notes → Synthesis/Outline → Draft), with each phase as a clickable node. Right panel: a node-and-edge source map that the user can build by adding sources.\n\n**Interactions:**\n- Clicking any phase node opens a guide explaining what the phase involves, what its outputs are, and common pitfalls.\n- In the right panel, an \"Add Source\" button opens a form: the user enters the source's author, title, type (primary/secondary), and a one-sentence description of its relevance. The source appears as a labeled node.\n- The user can draw edges between source nodes by clicking \"Connect Sources\" and selecting two nodes. An edge-label field prompts: \"How do these sources relate?\" (options: Agrees with, Contradicts, Extends, Provides context for).\n- A \"Generate Synthesis Note\" button produces a brief synthesis paragraph the user can use as a starting point for their introduction or body synthesis.\n\n**Canvas:** Responsive, minimum 700px wide, split-panel layout collapses to single-panel on small screens."
+}

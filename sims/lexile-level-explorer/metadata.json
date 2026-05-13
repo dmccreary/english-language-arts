@@ -1,0 +1,23 @@
+{
+  "title": "Lexile Level Explorer — Text Complexity in Action",
+  "description": "Apply understanding of Lexile levels to identify appropriately challenging texts for a given reader (Bloom Level 3 — Apply: use, demonstrate).",
+  "creator": "English Language Arts",
+  "date": "2026-05-12",
+  "subject": [
+    "English Language Arts",
+    "Text Complexity",
+    "Reading"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "lexile-level-explorer",
+  "library": "p5.js",
+  "bloomLevel": 3,
+  "bloomVerb": "Apply",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "Chapter 1 — Foundations of English Language Arts",
+  "chapter_dir": "01-foundations"
+}

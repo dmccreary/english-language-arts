@@ -1,0 +1,23 @@
+{
+  "title": "Poetry Forms Comparison",
+  "description": "Compare and contrast (L2 — Understand) the four major poetry forms covered in this chapter by examining their key formal characteristics side by side.",
+  "creator": "English Language Arts",
+  "date": "2026-05-12",
+  "subject": [
+    "English Language Arts",
+    "Poetry",
+    "Literary Forms"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "poetry-forms-explorer",
+  "library": "p5.js",
+  "bloomLevel": 2,
+  "bloomVerb": "Compare and Contrast",
+  "completion_status": "scaffold",
+  "chapter_number": 2,
+  "chapter_title": "Literary Genres and Text Forms",
+  "chapter_dir": "02-literary-genres"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "The Five ELA Strands — Interactive Overview",
+  "description": "Recall the five ELA strands and explain how they form an interconnected system (Bloom Level 2 — Understand: explain, classify).",
+  "creator": "English Language Arts",
+  "date": "2026-05-12",
+  "subject": [
+    "English Language Arts",
+    "ELA Foundations"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "five-ela-strands",
+  "library": "Mermaid",
+  "bloomLevel": 2,
+  "bloomVerb": "Explain",
+  "completion_status": "scaffold",
+  "chapter_number": 1,
+  "chapter_title": "Chapter 1 — Foundations of English Language Arts",
+  "chapter_dir": "01-foundations"
+}

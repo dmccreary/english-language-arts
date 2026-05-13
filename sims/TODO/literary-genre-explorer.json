@@ -1,0 +1,14 @@
+{
+  "sim_id": "literary-genre-explorer",
+  "diagram_name": "The Literary Genre Landscape",
+  "chapter_number": 2,
+  "chapter_title": "Literary Genres and Text Forms",
+  "chapter_dir": "02-literary-genres",
+  "library": "vis-network",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Classify (L2 — Understand) the four major literary categories and their subgenres by identifying where specific texts fit within the genre landscape.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-12",
+  "specification": "Type: Interactive Infographic\n**sim-id:** literary-genre-explorer<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Learning Objective:** Classify (L2 — Understand) the four major literary categories and their subgenres by identifying where specific texts fit within the genre landscape.\n\n**Description:** An interactive network graph in which four central hub nodes represent the four major literary categories (Fiction, Nonfiction, Drama, Poetry), each with a distinct color. From each central node, smaller child nodes extend outward representing the subgenres covered in this chapter. The layout uses a hierarchical or force-directed arrangement with the four hubs evenly spaced.\n\n**Nodes and Colors:**\n- Fiction (large node, blue #1565C0): connected child nodes for Short Story, Novel, Novella (medium blue nodes)\n- Nonfiction (large node, green #2E7D32): connected child nodes for Memoir, Essay (medium green nodes)\n- Drama (large node, purple #6A1B9A): connected child nodes for Tragedy, Comedy (medium purple nodes)\n- Poetry (large node, orange #E65100): connected child nodes for Epic Poetry, Sonnet, Lyric Poetry, Free Verse (medium orange nodes)\n\n**Interactions:**\n- Hovering over any node displays a tooltip with a one-sentence definition of that genre or subgenre.\n- Clicking on a subgenre node opens a side panel (or inline infobox below the graph) with: (1) a one-paragraph description of the form, (2) two or three canonical examples (title and author), and (3) a key close-reading question specific to that form.\n- Clicking on a major category node highlights all its subgenres and dims the rest, allowing the reader to focus on one category at a time.\n- A \"Reset\" button returns all nodes to default visibility.\n\n**Canvas:** Responsive, fills available width. Minimum height 420px. Graph re-renders on window resize.\n\n**Visual style:** Clean white background, hub nodes larger than child nodes, thin grey connector lines, readable sans-serif labels in white on colored nodes. Node borders are 2px darker than fill.\n\n**Data:** All 16 genre concepts from this chapter's concept list must appear as nodes. The four major categories appear as hub nodes; the twelve subgenres appear as child nodes connected to their parent category hub."
+}

@@ -1,0 +1,14 @@
+{
+  "sim_id": "causal-loop-diagram-explorer",
+  "diagram_name": "Causal Loop Diagram Explorer",
+  "chapter_number": 16,
+  "chapter_title": "Systems Thinking and AI in Writing",
+  "chapter_dir": "16-systems-thinking-ai",
+  "library": "vis-network",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Apply (L3 — Apply) systems thinking by constructing and interpreting causal loop diagrams for real-world and literary scenarios.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-12",
+  "specification": "Type: Interactive Diagram\n**sim-id:** causal-loop-diagram-explorer<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Learning Objective:** Apply (L3 — Apply) systems thinking by constructing and interpreting causal loop diagrams for real-world and literary scenarios.\n\n**Description:** A two-mode interactive tool for causal loop diagram construction and analysis.\n\n**Explore Mode:** Five pre-built CLDs covering: thermostat regulation (classic balancing loop), compound interest (reinforcing loop), echo chamber dynamics, poverty trap, and a literary example (the social dynamics of *The Great Gatsby*). Each CLD is displayed as a vis-network graph with labeled variables, directional arrows, and +/- signs on edges. Clicking any arrow reveals a brief explanation of the causal relationship it represents. Clicking on any closed loop highlights the loop and labels it R (reinforcing) or B (balancing), with an explanation of how to count minus signs to identify loop type.\n\n**Build Mode:** The user creates their own CLD by adding variables (nodes) and causal arrows (edges). Edge creation prompts the user to specify + or - polarity. After creating at least three connected nodes, a \"Detect loops\" button identifies all closed loops in the current diagram and labels each as R or B, with the minus-sign count shown. A \"What would happen if...\" panel allows the user to select any variable and specify \"increase\" or \"decrease,\" and the tool traces what that change would likely produce in the other variables, following the arrows.\n\n**Canvas:** Minimum 800px wide, minimum 500px tall. Node and edge labels fully legible; edge arrows clearly directional."
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Cognitive Bias Spotter",
+  "description": "Apply (L3 — Apply) knowledge of cognitive biases by correctly identifying which bias or biases are operating in realistic scenario descriptions.",
+  "creator": "English Language Arts",
+  "date": "2026-05-12",
+  "subject": [
+    "English Language Arts",
+    "Media Literacy",
+    "Critical Thinking"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "cognitive-bias-spotter",
+  "library": "p5.js",
+  "bloomLevel": 3,
+  "bloomVerb": "Apply",
+  "completion_status": "scaffold",
+  "chapter_number": 15,
+  "chapter_title": "Media Literacy and Cognitive Bias",
+  "chapter_dir": "15-media-literacy"
+}

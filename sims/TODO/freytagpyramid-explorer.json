@@ -1,0 +1,14 @@
+{
+  "sim_id": "freytagpyramid-explorer",
+  "diagram_name": "Freytag's Pyramid — Plot Structure Explorer",
+  "chapter_number": 3,
+  "chapter_title": "Narrative Elements — Plot, Character, and Point of View",
+  "chapter_dir": "03-narrative-elements",
+  "library": "p5.js",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Identify (L1 — Remember) and apply (L3 — Apply) the five stages of Freytag's Pyramid by locating them in a familiar narrative and understanding their structural role.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-12",
+  "specification": "Type: Interactive Infographic\n**sim-id:** freytagpyramid-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Learning Objective:** Identify (L1 — Remember) and apply (L3 — Apply) the five stages of Freytag's Pyramid by locating them in a familiar narrative and understanding their structural role.\n\n**Description:** A visual representation of Freytag's Pyramid — a triangular arc drawn on a canvas with the five plot stages labeled at their respective positions. The arc rises from left (Exposition) through Rising Action to Climax at the peak, then descends through Falling Action to Resolution at the lower right. The shape is rendered as a smooth curve rather than sharp angles.\n\n**Visual elements:**\n- A clean coordinate system with the narrative arc as a thick colored line (deep blue #1565C0)\n- Five labeled points on the arc with circular markers:\n  1. Exposition (far left, baseline): light green (#66BB6A)\n  2. Rising Action (ascending slope): amber (#FFA726)\n  3. Climax (peak): red (#E53935)\n  4. Falling Action (descending slope): purple (#7B1FA2)\n  5. Resolution (far right, baseline): teal (#00897B)\n- Each label sits above or below its marker point with a short descriptor (e.g., \"Rising Action — Complications build\")\n\n**Interactions:**\n- Clicking on any of the five stage markers opens an info panel that displays: (1) the stage name and definition, (2) what typically happens at this stage, (3) two examples drawn from well-known texts (*Romeo and Juliet*, *To Kill a Mockingbird*, *The Hunger Games*), and (4) a close-reading question for that stage.\n- A dropdown menu lets the reader select one of three example narratives (*Romeo and Juliet*, *To Kill a Mockingbird*, *The Hunger Games*), which updates the example content in each info panel to be specific to the selected work.\n- Hovering over the arc between stage markers highlights the arc segment for that stage and displays a tooltip with the stage name.\n\n**Canvas:** Responsive, fills available width. Minimum height 350px. Re-renders on window resize. Pyramid arc proportions adjust to canvas dimensions.\n\n**Visual style:** White background, subtle grid lines, clean sans-serif labels, colored markers as described above."
+}

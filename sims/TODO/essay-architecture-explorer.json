@@ -1,0 +1,14 @@
+{
+  "sim_id": "essay-architecture-explorer",
+  "diagram_name": "The Essay Architecture Explorer",
+  "chapter_number": 10,
+  "chapter_title": "Writing Modes and Essay Development",
+  "chapter_dir": "10-writing-modes",
+  "library": "vis-network",
+  "bloom_level": null,
+  "bloom_verb": null,
+  "learning_objective": "Apply (L3 — Apply) the structural conventions of argumentative essays by identifying and labeling the components of a sample essay and by assembling the components of an original essay structure.",
+  "completion_status": "specified",
+  "extracted_date": "2026-05-12",
+  "specification": "Type: Interactive Diagram\n**sim-id:** essay-architecture-explorer<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Learning Objective:** Apply (L3 — Apply) the structural conventions of argumentative essays by identifying and labeling the components of a sample essay and by assembling the components of an original essay structure.\n\n**Description:** A node-and-edge diagram displaying the hierarchical structure of a five-paragraph argumentative essay. Six major nodes: Introduction (top), Body Paragraph 1, Body Paragraph 2, Body Paragraph 3, Counterclaim Paragraph, Conclusion (bottom). Each node has child nodes showing its internal structure: Introduction → Hook, Context, Thesis; each Body Paragraph → Topic Sentence, Evidence, Analysis, Link; Counterclaim → Acknowledge, Concede, Rebut; Conclusion → Synthesis, So What?, Significance.\n\n**Interactions:**\n- Clicking any node expands it to show its sub-components with brief definitions and a color-coded example sentence from a sample essay on a high school topic (the standardized testing debate, by default).\n- A \"Switch Essay Topic\" dropdown changes the example sentences to a different topic (uniform policy; social media regulation; summer reading requirement) while keeping the structure constant.\n- A \"Build My Essay\" mode provides a guided form: the user fills in their own thesis, three body claims, counterclaim, and conclusion synthesis. When complete, the diagram assembles these into a color-coded visual structure and generates a downloadable outline.\n\n**Canvas:** Responsive, minimum 600px wide, minimum 500px height. Vertical scroll on small screens."
+}

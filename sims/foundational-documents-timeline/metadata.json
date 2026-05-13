@@ -1,0 +1,23 @@
+{
+  "title": "The American Intellectual Tradition Timeline",
+  "description": "Understand (L2 — Understand) the chronological relationships among key foundational documents and writers, and identify which documents responded to or built on earlier ones.",
+  "creator": "English Language Arts",
+  "date": "2026-05-12",
+  "subject": [
+    "English Language Arts",
+    "American Literature",
+    "Foundational Documents"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "foundational-documents-timeline",
+  "library": "vis-timeline",
+  "bloomLevel": 2,
+  "bloomVerb": "Understand",
+  "completion_status": "scaffold",
+  "chapter_number": 7,
+  "chapter_title": "US Foundational Documents and Informational Sources",
+  "chapter_dir": "07-foundational-documents"
+}

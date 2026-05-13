@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+<title>Source Credibility Explorer</title>
+<!-- CANVAS_HEIGHT: 560 -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f5f7fa; }
+.outer { width: 100%; height: 560px; display: flex; flex-direction: column; }
+.header { background: #1a237e; color: white; padding: 8px 14px; flex-shrink: 0; }
+.header h1 { font-size: 15px; }
+.header p  { font-size: 11px; color: #c5cae9; }
+.main { display: flex; flex: 1; overflow: hidden; }
+.chart-area { flex: 1; padding: 8px; position: relative; }
+canvas { width: 100% !important; height: 100% !important; }
+.sidebar {
+  width: 240px; background: #f0f4ff; border-left: 2px solid #c5cae9;
+  padding: 10px; overflow-y: auto; display: flex; flex-direction: column; gap: 8px;
+}
+.sidebar h3 { font-size: 12px; color: #3949ab; border-bottom: 1px solid #c5cae9; padding-bottom: 4px; }
+.info-box { background: white; border-radius: 6px; border: 1px solid #c5cae9; padding: 8px; font-size: 11px; }
+.source-name { font-size: 13px; font-weight: bold; color: #1a237e; margin-bottom: 4px; }
+.source-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-bottom: 6px; }
+.meta-item { font-size: 10px; background: #e8eaf6; border-radius: 3px; padding: 2px 4px; }
+.meta-label { color: #555; display: block; font-size: 9px; }
+.source-desc { font-size: 11px; color: #333; line-height: 1.4; margin-bottom: 6px; }
+.eval-q { font-size: 10px; font-style: italic; color: #444; background: #fffde7; padding: 4px 6px; border-radius: 4px; }
+.filter-row { display: flex; flex-wrap: wrap; gap: 4px; }
+.filter-btn { font-size: 11px; padding: 3px 8px; border: 1px solid #aaa; border-radius: 10px; cursor: pointer; background: white; }
+.filter-btn.active { background: #1a237e; color: white; border-color: #1a237e; }
+.quadrant-guide { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; font-size: 10px; }
+.quad { border-radius: 4px; padding: 4px; line-height: 1.3; }
+</style>
+</head>
+<body>
+<div class="outer">
+  <div class="header">
+    <h1>Source Credibility Explorer</h1>
+    <p>Map news and media sources by perspective and credibility indicators — hover over a dot to identify it</p>
+  </div>
+  <div class="main">
+    <div class="chart-area"><canvas id="chart"></canvas></div>
+    <div class="sidebar">
+      <h3>Source Details</h3>
+      <div class="info-box" id="source-info">
+        <div style="color:#888;font-style:italic;font-size:11px">Hover over a dot to see source details and evaluation questions.</div>
+      </div>
+
+      <h3>Filter by Category</h3>
+      <div class="filter-row" id="filters"></div>
+
+      <h3>Reading the Chart</h3>
+      <div class="quadrant-guide">
+        <div class="quad" style="background:#E3F2FD">↑ Left: High-credibility progressive sources</div>
+        <div class="quad" style="background:#E8F5E9">↑ Right: High-credibility conservative sources</div>
+        <div class="quad" style="background:#FFF9C4">↓ Left: Low-credibility left-leaning sources</div>
+        <div class="quad" style="background:#FFEBEE">↓ Right: Low-credibility right-leaning sources</div>
+      </div>
+      <div class="info-box" style="font-size:10px;color:#555">
+        <strong>Note:</strong> Credibility ratings reflect scholarly media analysis (AllSides, Ad Fontes Media). They measure factors like factual accuracy, editorial standards, and transparency — not ideological correctness.
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// x: ideological position (-100 = far left, 0 = center, 100 = far right)
+// y: credibility (0 = very low, 100 = very high)
+const SOURCES = [
+  // High credibility, center
+  { name: "Associated Press",    x:  -5, y: 92, cat: "News Wire",   color: "#1565C0",
+    desc: "The AP is a not-for-profit news cooperative, widely regarded as a gold standard for factual, minimally opinionated reporting.",
+    credIndicators: "High: Independent nonprofit, strong editorial standards, fact-checked",
+    question: "Why might a news wire service tend to have higher credibility scores than partisan opinion sites?" },
+  { name: "Reuters",             x:  -3, y: 91, cat: "News Wire",   color: "#1565C0",
+    desc: "British-based international news agency. Known for international reporting and minimal domestic partisan framing.",
+    credIndicators: "High: International ownership reduces domestic partisan pressure",
+    question: "Does a news organization's country of origin affect its framing of American politics? How?" },
+  { name: "BBC",                 x:  -8, y: 88, cat: "Public Media", color: "#2E7D32",
+    desc: "British public broadcaster. Strong editorial standards; some research shows slight center-left perspective on social issues.",
+    credIndicators: "High: Public funding model, editorial charter, international perspective",
+    question: "How might public media funding (taxpayer-supported vs. advertiser-supported) affect news coverage?" },
+  { name: "NPR",                 x: -15, y: 85, cat: "Public Media", color: "#2E7D32",
+    desc: "US public radio network. High factual accuracy; research places it center-left on social issues.",
+    credIndicators: "High: Member-station model, editorial standards, no advertisers",
+    question: "NPR is publicly funded but editorially independent. Does public funding mean government control?" },
+  // Center-left, moderate-high credibility
+  { name: "New York Times",      x: -18, y: 80, cat: "Newspaper",   color: "#42A5F5",
+    desc: "Major US newspaper with strong investigative journalism. Editorial board leans center-left; news division has strong fact-checking.",
+    credIndicators: "Moderate-High: Long reporting history, some news/opinion blending",
+    question: "The New York Times has both a news division and an opinion section. Why is this distinction important for readers?" },
+  { name: "Washington Post",     x: -16, y: 78, cat: "Newspaper",   color: "#42A5F5",
+    desc: "Major newspaper (owned by Jeff Bezos). Strong investigative unit. News leans center-left; opinion section has various voices.",
+    credIndicators: "Moderate-High: Strong investigative reporting, ownership transparency concerns",
+    question: "Does the owner's identity or ideology affect news coverage? How would you investigate this claim?" },
+  { name: "The Atlantic",        x: -20, y: 74, cat: "Magazine",    color: "#90CAF9",
+    desc: "Long-form journalism and opinion magazine. Generally center-left perspective on culture and politics.",
+    credIndicators: "Moderate: Long-form analysis, opinion-heavy, strong editorial standards",
+    question: "Long-form journalism often mixes reporting with interpretation. How do you distinguish the factual claims from the author's analysis?" },
+  // Center-right, moderate-high credibility
+  { name: "Wall Street Journal", x:  20, y: 82, cat: "Newspaper",   color: "#E65100",
+    desc: "Major financial/business newspaper. News division has strong credibility; opinion section is considerably more conservative.",
+    credIndicators: "Moderate-High: Strong business/financial reporting; opinion section is very different from news",
+    question: "The WSJ has separate news and opinion sections with very different perspectives. What does this tell us about news organizations?" },
+  { name: "The Economist",       x:  15, y: 86, cat: "Magazine",    color: "#E65100",
+    desc: "British weekly. Often labeled 'neoliberal' — economically conservative, socially moderate. High factual accuracy.",
+    credIndicators: "High: International, no bylines (institutional voice), strong fact standards",
+    question: "The Economist doesn't use bylines (author names). What are the pros and cons of institutional versus individual authorship?" },
+  { name: "USA Today",           x:   0, y: 72, cat: "Newspaper",   color: "#6A1B9A",
+    desc: "Center-positioned general news. Broad readership focus. Generally moderate credibility with accessible style.",
+    credIndicators: "Moderate: Wide reach, broadly centrist, occasionally superficial coverage",
+    question: "Does 'accessible' or 'simple' writing in news necessarily mean lower quality reporting?" },
+  // Lower credibility sources
+  { name: "Breitbart",           x:  75, y: 25, cat: "Partisan",    color: "#C62828",
+    desc: "Far-right website. Publishes a mix of news and opinion with strong conservative partisan framing. Rated low on factual accuracy by multiple researchers.",
+    credIndicators: "Low: Frequent factual errors, extreme framing, limited source transparency",
+    question: "What specific media literacy strategies would help you evaluate a Breitbart claim before accepting it?" },
+  { name: "HuffPost",            x: -40, y: 55, cat: "Partisan",    color: "#F57F17",
+    desc: "Left-leaning digital news and opinion site. Has a news division with some strong reporting and an opinion section with explicit advocacy.",
+    credIndicators: "Mixed: Some factual reporting mixed with advocacy journalism",
+    question: "HuffPost began as an opinion blog. Does an organization's origin affect its credibility, even if it has since improved its standards?" },
+  { name: "Fox News",            x:  50, y: 40, cat: "Broadcast",   color: "#C62828",
+    desc: "US cable news network. Strong conservative perspective. News segments vary in quality; opinion programs (Hannity, Tucker Carlson) have lower factual ratings.",
+    credIndicators: "Low-Moderate: Opinion/news distinction often blurred; news division better than opinion programs",
+    question: "Fox News's news division vs. its opinion programming have very different credibility ratings. Why might a network air both?" },
+  { name: "MSNBC",               x: -45, y: 45, cat: "Broadcast",   color: "#F57F17",
+    desc: "Cable news with strong progressive/Democratic perspective. Opinion-heavy programming; news segments have moderate credibility.",
+    credIndicators: "Low-Moderate: Heavy opinion programming, selective framing common",
+    question: "Both Fox News and MSNBC are rated similarly on credibility but at opposite ends of the spectrum. What does this symmetry suggest?" },
+  // Technical/Nonpartisan zone
+  { name: "PolitiFact",          x:   2, y: 88, cat: "Fact-Check",  color: "#1B5E20",
+    desc: "Fact-checking organization that rates the accuracy of political claims on a 'Truth-O-Meter' scale.",
+    credIndicators: "High: Explicit methodology, transparent sourcing, Pulitzer Prize-winning",
+    question: "Fact-checkers are sometimes accused of bias. How could you evaluate a fact-checker's objectivity?" },
+  { name: "FactCheck.org",       x:   0, y: 87, cat: "Fact-Check",  color: "#1B5E20",
+    desc: "Non-partisan fact-checking site from the Annenberg Center at UPenn. Reviews political claims and social media misinformation.",
+    credIndicators: "High: Academic affiliation, transparent methodology, non-profit",
+    question: "Academic fact-checkers are funded differently from news organizations. How does funding model affect credibility?" }
+];
+
+const CATEGORIES = [...new Set(SOURCES.map(s => s.cat))];
+const CAT_COLORS = { "News Wire": "#1565C0", "Public Media": "#2E7D32", "Newspaper": "#42A5F5",
+  "Magazine": "#90CAF9", "Partisan": "#C62828", "Broadcast": "#F57F17", "Fact-Check": "#1B5E20" };
+
+let activeCategories = new Set(CATEGORIES);
+
+// Build filter buttons
+const filterContainer = document.getElementById("filters");
+CATEGORIES.forEach(cat => {
+  const btn = document.createElement("button");
+  btn.className = "filter-btn active";
+  btn.textContent = cat;
+  btn.dataset.cat = cat;
+  btn.addEventListener("click", () => {
+    if (activeCategories.has(cat)) {
+      if (activeCategories.size > 1) { activeCategories.delete(cat); btn.classList.remove("active"); }
+    } else {
+      activeCategories.add(cat); btn.classList.add("active");
+    }
+    updateChart();
+  });
+  filterContainer.appendChild(btn);
+});
+
+function getDatasets() {
+  return CATEGORIES.filter(cat => activeCategories.has(cat)).map(cat => {
+    const points = SOURCES.filter(s => s.cat === cat);
+    return {
+      label: cat,
+      data: points.map(s => ({ x: s.x, y: s.y, source: s })),
+      backgroundColor: points.map(s => s.color + "dd"),
+      borderColor: points.map(s => s.color),
+      borderWidth: 2,
+      pointRadius: 9,
+      pointHoverRadius: 12
+    };
+  });
+}
+
+const ctx = document.getElementById("chart").getContext("2d");
+let chart = new Chart(ctx, {
+  type: "scatter",
+  data: { datasets: getDatasets() },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    scales: {
+      x: {
+        min: -110, max: 110,
+        title: { display: true, text: "← Progressive  |  Centrist  |  Conservative →", font: { size: 12 } },
+        ticks: {
+          callback: v => v === -100 ? "Far Left" : v === -50 ? "Left" : v === 0 ? "Center" : v === 50 ? "Right" : v === 100 ? "Far Right" : "",
+          stepSize: 50
+        },
+        grid: { color: "#e0e0e0" }
+      },
+      y: {
+        min: 0, max: 100,
+        title: { display: true, text: "↑ Higher Credibility Indicators", font: { size: 12 } },
+        ticks: {
+          callback: v => v === 0 ? "Very Low" : v === 25 ? "Low" : v === 50 ? "Moderate" : v === 75 ? "High" : v === 100 ? "Very High" : "",
+          stepSize: 25
+        },
+        grid: { color: "#e0e0e0" }
+      }
+    },
+    plugins: {
+      legend: { position: "bottom", labels: { boxWidth: 12, font: { size: 11 } } },
+      tooltip: {
+        callbacks: {
+          label: ctx => {
+            const s = ctx.raw.source;
+            showSourceInfo(s);
+            return `${s.name} (${s.x > 0 ? "R" : s.x < 0 ? "L" : "C"} ${Math.abs(s.x)}, Cred: ${s.y})`;
+          }
+        }
+      }
+    },
+    onHover: (evt, elements) => {
+      if (elements.length === 0) {
+        document.getElementById("source-info").innerHTML = '<div style="color:#888;font-style:italic;font-size:11px">Hover over a dot to see source details.</div>';
+      }
+    }
+  }
+});
+
+function showSourceInfo(s) {
+  document.getElementById("source-info").innerHTML = `
+    <div class="source-name">${s.name}</div>
+    <div class="source-meta">
+      <div class="meta-item"><span class="meta-label">Category</span>${s.cat}</div>
+      <div class="meta-item"><span class="meta-label">Credibility</span>${s.credIndicators.split(":")[0]}</div>
+    </div>
+    <div class="source-desc">${s.desc}</div>
+    <div class="eval-q">📋 Evaluation question: ${s.question}</div>`;
+}
+
+function updateChart() {
+  chart.data.datasets = getDatasets();
+  chart.update();
+}
+</script>
+</body>
+</html>
