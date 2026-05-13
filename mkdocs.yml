@@ -112,6 +112,7 @@ nav:
 
   - MicroSims:
     - List of MicroSims: sims/index.md
+    - A Brief History of the English Language: sims/timeline-of-english/index.md
     - American Literary Periods — Timeline Explorer: sims/literary-periods-timeline/index.md
     - Causal Loop Diagram Explorer: sims/causal-loop-diagram-explorer/index.md
     - Cognitive Bias Spotter: sims/cognitive-bias-spotter/index.md
@@ -133,9 +134,12 @@ nav:
     - The Research Writing Process: sims/research-process-explorer/index.md
     - Vocabulary Morphology Explorer: sims/vocabulary-morphology-explorer/index.md
 
-# Supplementary Materials
+
   - Appendices:
       - Appendix A — Modern Forms of Writing: appendices/modern-forms-of-writing.md
+      - Appendix B — Joseph Campbell and the Patterns That Shape All Stories: appendices/joseph-campbell.md
+      - Appendix C — Archetypal Characters and Patterns: appendices/archetypal-characters.md
+      - Appendix D — Banned Books and Censorship in American Literature: appendices/banned-books.md
   - Glossary: glossary.md
   - FAQ: faq.md
   - License: license.md
