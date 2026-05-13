@@ -8,13 +8,11 @@ site_description: 'An intelligent textbook for US high school English/Language A
 site_author: 'Dan McCreary'
 site_url: 'https://dmccreary.github.io/english-language-arts/'
 
-# Repository
+# GitHubRepository
 repo_name: 'GitHub Repo'
 repo_url: 'https://github.com/dmccreary/english-language-arts'
 edit_uri: 'blob/main/docs'
 
-# Copyright
-copyright: 'Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.'
 
 # Navigation
 # IMPORTANT: do NOT add `navigation.tabs` — these books use side navigation
@@ -95,7 +93,6 @@ nav:
           - Quiz: chapters/17-capstone/quiz.md
           - References: chapters/17-capstone/references.md
 
-  - Glossary: glossary.md
 
   - Learning Graph:
       - Introduction: learning-graph/index.md
@@ -136,15 +133,11 @@ nav:
     - The Research Writing Process: sims/research-process-explorer/index.md
     - Vocabulary Morphology Explorer: sims/vocabulary-morphology-explorer/index.md
 
-
-
-
-
+# Supplementary Materials
   - Appendices:
-      - Appendix A — Modern Forms of Writing: appendicies/modern-forms-of-writing.md
-
+      - Appendix A — Modern Forms of Writing: appendices/modern-forms-of-writing.md
+  - Glossary: glossary.md
   - FAQ: faq.md
-
   - License: license.md
   - Contact: contact.md
 
@@ -230,6 +223,9 @@ exclude_docs: |
 watch:
   - docs
   - mkdocs.yml
+
+# Copyright
+copyright: 'Copyright &copy; 2026 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.'
 
 # Extra
 extra:
