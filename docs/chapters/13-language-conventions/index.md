@@ -402,3 +402,5 @@ This chapter has addressed the conventions and vocabulary strategies that enable
 !!! mascot-celebration "Chapter 13 Complete — You Have the Vocabulary and the Conventions"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Pip celebrating with delight">
     Punctuation, capitalization, spelling, morphology, word roots, connotation, figurative language — you have the full toolkit for working at the level of words and sentences with precision and confidence. Chapter 14 shifts the focus from the written page to the spoken and collaborative dimensions of English: academic discussion, Socratic seminars, presentation skills, and the art of listening as actively and skillfully as you read. Every word tells a story — and now you have the tools to tell it well.
+
+[See Annotated References](./references.md)

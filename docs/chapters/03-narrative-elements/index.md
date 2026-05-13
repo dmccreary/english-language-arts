@@ -337,3 +337,5 @@ This chapter has built the complete vocabulary for narrative analysis — the co
 !!! mascot-celebration "Chapter 3 Complete — You Have the Toolkit"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Pip celebrating with delight">
     You've just built the complete analytical toolkit for narrative. Theme, character, plot, conflict, point of view, cultural perspective, author's choices, text structure — these are the concepts that separate close readers from casual readers, and you now have all of them. Chapter 4 takes us to the level of language itself: the figurative language, diction, tone, and syntax that make one author's prose instantly recognizable from another's. Every word tells a story — and in Chapter 4, you'll learn to read those stories.
+
+[See Annotated References](./references.md)

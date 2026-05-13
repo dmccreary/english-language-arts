@@ -2,36 +2,40 @@
 // CANVAS_HEIGHT: 680
 
 const CLD_EXAMPLES = {
-  thermostat: {
-    label: "Thermostat Regulation (Balancing Loop)",
-    loopType: "B",
-    loopDesc: "A balancing loop maintains equilibrium. Here one negative edge reverses the direction: when temperature rises above the set point, the heater turns off, which reduces heat, bringing temp back down.",
+  gutenberg: {
+    label: "Gutenberg Press & English Literature (Reinforcing Loop)",
+    loopType: "R",
+    loopDesc: "A reinforcing (amplifying) loop sparked by Gutenberg's movable-type press (~1450). Cheaper books raised literacy and reading demand, which pushed printers to produce more, which created demand for writers, whose better works raised literary quality, making books even more sought-after — a self-amplifying cycle that transformed English language and culture.",
     nodes: [
-      { id: 1, label: "Room\nTemperature", x:   0, y: -100 },
-      { id: 2, label: "Gap (Set Point\n- Actual)",  x: 180, y:   0 },
-      { id: 3, label: "Heater\nOutput",  x:   0, y:  100 },
-      { id: 4, label: "Energy\nInput",   x: -180, y:   0 }
+      { id: 1, label: "Book\nAvailability",    x:    0, y: -150 },
+      { id: 2, label: "Reading\nDemand",        x:  143, y:  -46 },
+      { id: 3, label: "Printer\nOutput",        x:   88, y:  121 },
+      { id: 4, label: "Demand for\nNew Writers",x:  -88, y:  121 },
+      { id: 5, label: "Literary\nQuality",      x: -143, y:  -46 }
     ],
     edges: [
-      { from: 1, to: 2, label: "−", desc: "As temperature rises, the gap between set point and actual shrinks (negative relationship)." },
-      { from: 2, to: 3, label: "+", desc: "A larger gap signals the heater to increase output (positive relationship)." },
-      { from: 3, to: 4, label: "+", desc: "Higher heater output consumes more energy input (positive relationship)." },
-      { from: 4, to: 1, label: "+", desc: "More energy input raises room temperature (positive relationship)." }
+      { from: 1, to: 2, label: "+", desc: "More books available exposes more people to reading, increasing public demand for books." },
+      { from: 2, to: 3, label: "+", desc: "Higher reading demand motivates printers to run their presses longer and produce more copies." },
+      { from: 3, to: 4, label: "+", desc: "Greater printer output requires more manuscripts, creating economic demand for new writers and authors." },
+      { from: 4, to: 5, label: "+", desc: "Competition among writers and wider audiences raise the overall quality and variety of English books." },
+      { from: 5, to: 1, label: "+", desc: "Higher-quality literature attracts more publishers and readers, further increasing total book availability." }
     ]
   },
-  compound: {
-    label: "Compound Interest (Reinforcing Loop)",
+  vocabulary: {
+    label: "Vocabulary Growth Spiral (Reinforcing Loop)",
     loopType: "R",
-    loopDesc: "A reinforcing loop amplifies change. All edges are positive: more principal earns more interest, which adds to the principal, which earns even more interest — exponential growth.",
+    loopDesc: "A reinforcing loop that accelerates language learning. The more students read independently, the more new words they encounter; growing word knowledge builds comprehension and confidence, which motivates even more reading — a virtuous cycle central to ELA skill development.",
     nodes: [
-      { id: 1, label: "Principal\nBalance", x:   0, y: -80 },
-      { id: 2, label: "Interest\nEarned",   x: 150, y:  80 },
-      { id: 3, label: "Reinvested\nAmount", x: -150, y:  80 }
+      { id: 1, label: "Independent\nReading",      x:    0, y: -110 },
+      { id: 2, label: "Vocabulary\nExposure",       x:  190, y:   35 },
+      { id: 3, label: "Word\nKnowledge",            x:    0, y:  170 },
+      { id: 4, label: "Reading\nConfidence",        x: -190, y:   35 }
     ],
     edges: [
-      { from: 1, to: 2, label: "+", desc: "Higher principal generates more interest earned (positive relationship)." },
-      { from: 2, to: 3, label: "+", desc: "More interest earned means more amount reinvested (positive relationship)." },
-      { from: 3, to: 1, label: "+", desc: "More reinvestment increases the principal balance (positive relationship)." }
+      { from: 1, to: 2, label: "+", desc: "Reading more texts exposes students to a wider range of words in context (positive relationship)." },
+      { from: 2, to: 3, label: "+", desc: "Repeated exposure to new words in context deepens lasting word knowledge (positive relationship)." },
+      { from: 3, to: 4, label: "+", desc: "A larger vocabulary improves comprehension, building confidence as a reader (positive relationship)." },
+      { from: 4, to: 1, label: "+", desc: "Greater reading confidence motivates students to read more independently (positive relationship)." }
     ]
   },
   echo: {
@@ -88,7 +92,7 @@ const CLD_EXAMPLES = {
 };
 
 let network = null;
-let currentCLD = "thermostat";
+let currentCLD = "gutenberg";
 let mode = "explore";
 let buildNodes = [];
 let buildEdges = [];
@@ -282,7 +286,7 @@ function traceEffect() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  renderCLD("thermostat");
+  renderCLD("gutenberg");
   document.querySelectorAll(".cld-btn").forEach(btn => {
     btn.addEventListener("click", () => renderCLD(btn.dataset.cld));
   });

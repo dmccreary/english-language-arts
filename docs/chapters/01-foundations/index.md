@@ -43,7 +43,7 @@ This chapter builds the foundation for everything that follows. You will learn h
 
 !!! mascot-welcome "Hello, Readers — I'm Pip!"
     <img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Pip the Bookworm waving hello">
-    Welcome to *US High School English Language Arts*! I'm **Pip**, a bookworm — literally — and I'll be with you from this first chapter all the way through your capstone project. I pop up throughout this book, but I don't appear randomly. I have exactly **six jobs**, and you will learn to recognize me by which one I'm doing:
+    Welcome to *English Language Arts*! I'm **Pip**, a bookworm — literally — and I'll be with you from this first chapter all the way through your capstone project. I pop up throughout this book, but I don't appear randomly. I have **six jobs**, and you will learn to recognize me by which one I'm doing:
 
     1. **Welcome you** at the start of every chapter — that's what I'm doing right now.
     2. **Help you think** when a concept is the kind that unlocks everything else — I'll appear with a key idea worth pausing on.
@@ -52,7 +52,7 @@ This chapter builds the foundation for everything that follows. You will learn h
     5. **Encourage you** when the material gets genuinely hard — because some of it will, and slowing down is exactly the right response.
     6. **Celebrate with you** at the end of each chapter when you've done the work and earned it.
 
-    That's it. If I'm not doing one of those six things, I'm not in the chapter. Let's read between the lines!
+    That's it! *Let's read between the lines!*
 
 ## What English Language Arts Actually Is
 
@@ -72,15 +72,15 @@ The Common Core ELA standards are organized into five **strands** — five inter
 
 Here is what each strand covers:
 
-- **Reading: Literature (RL)** develops your ability to read, analyze, and interpret fiction, poetry, drama, and other literary texts. This strand covers identifying and tracing themes, analyzing how an author's word choices shape meaning and tone, and comparing multiple interpretations of the same work. You will read works from American and world literary traditions, including Shakespeare, poetry from multiple periods, and contemporary fiction and memoir.
+- **Reading: Literature** develops your ability to read, analyze, and interpret fiction, poetry, drama, and other literary texts. This strand covers identifying and tracing themes, analyzing how an author's word choices shape meaning and tone, and comparing multiple interpretations of the same work. You will read works from American and world literary traditions, including Shakespeare, poetry from multiple periods, and contemporary fiction and memoir.
 
-- **Reading: Informational Text (RI)** builds your skills for reading nonfiction — arguments, historical documents, scientific and technical texts, journalism, and digital content. This strand emphasizes identifying a central idea, analyzing how an author supports claims with evidence, evaluating the quality of reasoning, and comparing texts that address the same topic from different perspectives. The US foundational documents — the Declaration of Independence, the Federalist Papers, Lincoln's second inaugural address — are a particularly important part of this strand.
+- **Reading: Informational Text** builds your skills for reading nonfiction — arguments, historical documents, scientific and technical texts, journalism, and digital content. This strand emphasizes identifying a central idea, analyzing how an author supports claims with evidence, evaluating the quality of reasoning, and comparing texts that address the same topic from different perspectives. The US foundational documents — the Declaration of Independence, the Federalist Papers, Lincoln's second inaugural address — are a particularly important part of this strand.
 
-- **Writing (W)** develops three modes of writing: argumentative (making a claim and supporting it with evidence and reasoning), informative/explanatory (conveying complex ideas clearly and accurately), and narrative (using storytelling techniques to develop real or imagined experiences). The writing strand also covers the writing process — planning, drafting, revising, editing, publishing — and research skills, including how to gather, evaluate, and cite sources correctly.
+- **Writing** develops three modes of writing: argumentative (making a claim and supporting it with evidence and reasoning), informative/explanatory (conveying complex ideas clearly and accurately), and narrative (using storytelling techniques to develop real or imagined experiences). The writing strand also covers the writing process — planning, drafting, revising, editing, publishing — and research skills, including how to gather, evaluate, and cite sources correctly.
 
-- **Speaking and Listening (SL)** covers the skills of structured academic discussion and formal presentation. This includes preparing for and contributing to discussions, responding substantively to others' ideas, evaluating a speaker's reasoning and use of evidence, and delivering organized, well-supported oral presentations adapted to audience and purpose.
+- **Speaking and Listening** covers the skills of structured academic discussion and formal presentation. This includes preparing for and contributing to discussions, responding substantively to others' ideas, evaluating a speaker's reasoning and use of evidence, and delivering organized, well-supported oral presentations adapted to audience and purpose.
 
-- **Language (L)** addresses the conventions of standard English — grammar, usage, punctuation, capitalization, and spelling — along with vocabulary acquisition and effective language use. This strand is not about following rules for their own sake; it is about understanding how language choices create meaning and effect. A writer who understands syntax can make deliberate choices that a writer who merely follows rules cannot.
+- **Language** addresses the conventions of standard English — grammar, usage, punctuation, capitalization, and spelling — along with vocabulary acquisition and effective language use. This strand is not about following rules for their own sake; it is about understanding how language choices create meaning and effect. A writer who understands syntax can make deliberate choices that a writer who merely follows rules cannot.
 
 !!! mascot-thinking "Five Strands — One System"
     <img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Pip with a thoughtful expression">
@@ -428,3 +428,5 @@ Morphological knowledge is not a substitute for encountering words in context �
 
 **Textual evidence**
 : Direct quotations, paraphrases, or specific references from a text used to support an analytical claim about that text's meaning, structure, or effect; effective use of textual evidence always includes an explanation of what the evidence demonstrates.
+
+[See Annotated References](./references.md)

@@ -9,6 +9,7 @@
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true, theme: 'default',
+    themeVariables: { fontSize: '16px' },
     flowchart: { useMaxWidth: true, htmlLabels: true, curve: 'basis' } });
 </script>
 <style>
@@ -31,14 +32,14 @@ html, body { width: 100%; height: 100%; font-family: Arial, sans-serif; }
 .info-title { font-size: 15px; font-weight: bold; color: #1565C0; margin-bottom: 6px; }
 .info-content { font-size: 13px; line-height: 1.55; color: #444; }
 .info-placeholder { color: #888; font-style: italic; font-size: 13px; }
-.node { cursor: pointer; }
+.node { cursor: pointer; pointer-events: all; }
 </style>
 </head>
 <body>
 <div class="container">
   <div class="diagram-panel">
     <div class="mermaid">
-flowchart TD
+flowchart LR
   ELA["🎓 English Language Arts"]
 
   ELA --> RL["Reading: Literature"]
@@ -69,7 +70,7 @@ flowchart TD
   <div class="info-panel">
     <h3>ELA Strand Details</h3>
     <div id="info-display">
-      <p class="info-placeholder">Hover over any node to learn about that strand or focus area.</p>
+      <p class="info-placeholder">Click any node to learn about that strand or focus area.</p>
     </div>
   </div>
 </div>
@@ -90,31 +91,36 @@ const nodeInfo = {
 };
 
 const infoDisplay = document.getElementById("info-display");
-const defaultContent = '<p class="info-placeholder">Hover over any node to learn about that strand or focus area.</p>';
+const defaultContent = '<p class="info-placeholder">Click any node to learn about that strand or focus area.</p>';
 
 function showInfo(id) {
   if (nodeInfo[id]) {
     infoDisplay.innerHTML = `<div class="info-title">${nodeInfo[id].title}</div><div class="info-content">${nodeInfo[id].description}</div>`;
   }
 }
-function clearInfo() { infoDisplay.innerHTML = defaultContent; }
 
-function setupHover() {
+function extractId(node) {
+  const match = node.id.match(/flowchart-(.+?)-\d+$/);
+  return match ? match[1] : "";
+}
+
+function setupClicks() {
   const nodes = document.querySelectorAll(".node");
+  if (nodes.length === 0) { setTimeout(setupClicks, 200); return; }
+  let attached = 0;
   nodes.forEach(node => {
-    const raw = node.id.replace("flowchart-", "").split("-")[0];
-    if (nodeInfo[raw]) {
-      node.addEventListener("mouseenter", () => showInfo(raw));
-      node.addEventListener("mouseleave", clearInfo);
+    const id = extractId(node);
+    if (nodeInfo[id]) {
+      node.style.cursor = "pointer";
+      node.style.pointerEvents = "all";
+      node.addEventListener("click", () => showInfo(id));
+      attached++;
     }
   });
-  if (nodes.length === 0) setTimeout(setupHover, 150);
+  if (attached === 0) setTimeout(setupClicks, 200);
 }
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", () => setTimeout(setupHover, 200));
-} else {
-  setTimeout(setupHover, 200);
-}
+
+document.addEventListener("DOMContentLoaded", () => setTimeout(setupClicks, 300));
 </script>
 </body>
 </html>

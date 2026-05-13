@@ -388,3 +388,5 @@ This chapter has developed two frameworks with wide application: systems thinkin
 !!! mascot-celebration "Chapter 16 Complete — You're Thinking in Systems and Writing with Integrity"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Pip celebrating with delight">
     Systems thinking and AI literacy — you now have two frameworks for navigating a world of complex, interconnected forces and rapidly evolving tools. Chapter 17, the capstone, brings all of these skills together in extended, integrated projects: the research thesis, the literary portfolio, the rhetorical analysis, and the civic engagement portfolio. You have built a comprehensive toolkit across sixteen chapters. Now you'll use it. Every word tells a story — and now you have the analytical power to tell stories about the systems behind the stories.
+
+[See Annotated References](./references.md)

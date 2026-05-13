@@ -431,3 +431,5 @@ This final chapter has laid out the five capstone pathways, the shared project f
 !!! mascot-celebration "You Made It — Every Word Has Been a Story"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Pip celebrating with delight">
     This is Pip, and I have one final thing to say. You have traveled the length of this book — through literary analysis and figurative language, through argument and research, through grammar and speaking and media literacy and systems thinking — and now you are here at the capstone, ready to bring it all together. The skills you have built are real, and they are yours. A well-crafted argument, a compelling narrative, a rigorously supported research claim, a public letter that enters the civic conversation — these are not just school assignments. They are the tools of an educated, engaged, thoughtful citizen. Use them well, revise them often, and never stop reading between the lines. Every word tells a story. Now go tell yours.
+
+[See Annotated References](./references.md)

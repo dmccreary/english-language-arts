@@ -26,23 +26,74 @@ nav:
 
   - Chapters:
       - List of Chapters: chapters/index.md
-      - 1. Foundations of ELA: chapters/01-foundations/index.md
-      - 2. Literary Genres: chapters/02-literary-genres/index.md
-      - 3. Narrative Elements: chapters/03-narrative-elements/index.md
-      - 4. Figurative Language: chapters/04-figurative-language/index.md
-      - 5. Narrative Techniques: chapters/05-narrative-techniques/index.md
-      - 6. Informational Text: chapters/06-informational-text/index.md
-      - 7. Foundational Documents: chapters/07-foundational-documents/index.md
-      - 8. Critical Thinking: chapters/08-critical-thinking/index.md
-      - 9. Writing Process: chapters/09-writing-process/index.md
-      - 10. Writing Modes: chapters/10-writing-modes/index.md
-      - 11. Research and Citation: chapters/11-research-citation/index.md
-      - 12. Grammar: chapters/12-grammar/index.md
-      - 13. Language Conventions: chapters/13-language-conventions/index.md
-      - 14. Speaking and Listening: chapters/14-speaking-listening/index.md
-      - 15. Media Literacy: chapters/15-media-literacy/index.md
-      - 16. Systems Thinking and AI: chapters/16-systems-thinking-ai/index.md
-      - 17. Capstone Project: chapters/17-capstone/index.md
+      - 1. Foundations of ELA:
+          - Content: chapters/01-foundations/index.md
+          - Quiz: chapters/01-foundations/quiz.md
+          - References: chapters/01-foundations/references.md
+      - 2. Literary Genres:
+          - Content: chapters/02-literary-genres/index.md
+          - Quiz: chapters/02-literary-genres/quiz.md
+          - References: chapters/02-literary-genres/references.md
+      - 3. Narrative Elements:
+          - Content: chapters/03-narrative-elements/index.md
+          - Quiz: chapters/03-narrative-elements/quiz.md
+          - References: chapters/03-narrative-elements/references.md
+      - 4. Figurative Language:
+          - Content: chapters/04-figurative-language/index.md
+          - Quiz: chapters/04-figurative-language/quiz.md
+          - References: chapters/04-figurative-language/references.md
+      - 5. Narrative Techniques:
+          - Content: chapters/05-narrative-techniques/index.md
+          - Quiz: chapters/05-narrative-techniques/quiz.md
+          - References: chapters/05-narrative-techniques/references.md
+      - 6. Informational Text:
+          - Content: chapters/06-informational-text/index.md
+          - Quiz: chapters/06-informational-text/quiz.md
+          - References: chapters/06-informational-text/references.md
+      - 7. Foundational Documents:
+          - Content: chapters/07-foundational-documents/index.md
+          - Quiz: chapters/07-foundational-documents/quiz.md
+          - References: chapters/07-foundational-documents/references.md
+      - 8. Critical Thinking:
+          - Content: chapters/08-critical-thinking/index.md
+          - Quiz: chapters/08-critical-thinking/quiz.md
+          - References: chapters/08-critical-thinking/references.md
+      - 9. Writing Process:
+          - Content: chapters/09-writing-process/index.md
+          - Quiz: chapters/09-writing-process/quiz.md
+          - References: chapters/09-writing-process/references.md
+      - 10. Writing Modes:
+          - Content: chapters/10-writing-modes/index.md
+          - Quiz: chapters/10-writing-modes/quiz.md
+          - References: chapters/10-writing-modes/references.md
+      - 11. Research and Citation:
+          - Content: chapters/11-research-citation/index.md
+          - Quiz: chapters/11-research-citation/quiz.md
+          - References: chapters/11-research-citation/references.md
+      - 12. Grammar:
+          - Content: chapters/12-grammar/index.md
+          - Quiz: chapters/12-grammar/quiz.md
+          - References: chapters/12-grammar/references.md
+      - 13. Language Conventions:
+          - Content: chapters/13-language-conventions/index.md
+          - Quiz: chapters/13-language-conventions/quiz.md
+          - References: chapters/13-language-conventions/references.md
+      - 14. Speaking and Listening:
+          - Content: chapters/14-speaking-listening/index.md
+          - Quiz: chapters/14-speaking-listening/quiz.md
+          - References: chapters/14-speaking-listening/references.md
+      - 15. Media Literacy:
+          - Content: chapters/15-media-literacy/index.md
+          - Quiz: chapters/15-media-literacy/quiz.md
+          - References: chapters/15-media-literacy/references.md
+      - 16. Systems Thinking and AI:
+          - Content: chapters/16-systems-thinking-ai/index.md
+          - Quiz: chapters/16-systems-thinking-ai/quiz.md
+          - References: chapters/16-systems-thinking-ai/references.md
+      - 17. Capstone Project:
+          - Content: chapters/17-capstone/index.md
+          - Quiz: chapters/17-capstone/quiz.md
+          - References: chapters/17-capstone/references.md
 
   - Glossary: glossary.md
 
@@ -55,6 +106,12 @@ nav:
       - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
       - Mascot Style Guide: learning-graph/mascot-test.md
       - FAQ Quality Report: learning-graph/faq-quality-report.md
+      # generated reports with the title in the files
+      - learning-graph/book-metrics.md
+      - learning-graph/chapter-metrics.md
+      - learning-graph/diagram-details.md
+      - learning-graph/diagram-table.md
+      - Quiz Generation Report: learning-graph/quiz-generation-report.md
 
   - MicroSims:
     - List of MicroSims: sims/index.md

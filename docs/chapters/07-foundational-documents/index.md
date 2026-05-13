@@ -344,3 +344,5 @@ This chapter has extended your rhetorical reading skills to the specific challen
 !!! mascot-celebration "Chapter 7 Complete — You Can Read the Documents That Built a Nation"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Pip celebrating with delight">
     You've now worked through some of the most important and consequential texts in American history — not as monuments, but as arguments. You can read Jefferson's logic, Lincoln's rhetoric, King's warrants, and Thoreau's principles as analytical objects rather than just words on a page. That's what it means to be rhetorical literate — and it's exactly the foundation Chapter 8 builds on, as we turn to critical thinking and the identification of logical fallacies. Every word tells a story, and now you know how to read the stories that shaped a nation.
+
+[See Annotated References](./references.md)

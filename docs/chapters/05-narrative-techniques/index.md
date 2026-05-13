@@ -340,3 +340,5 @@ This chapter has moved from craft techniques to historical and comparative conte
 !!! mascot-celebration "Chapter 5 Complete — You've Got the Full Picture"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Pip celebrating with delight">
     You've now completed the entire analytical and historical foundation for the course. Genre, narrative elements, figurative language, style, narrative techniques, literary history, comparative analysis — you have the full toolkit. The chapters ahead take you into specific strands: informational text, argument, research, writing, grammar. But everything you've built in these first five chapters is the foundation everything else rests on. Every word tells a story — and now you have the vocabulary to tell that story back.
+
+[See Annotated References](./references.md)

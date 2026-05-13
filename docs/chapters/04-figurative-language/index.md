@@ -349,3 +349,5 @@ This chapter has built the vocabulary for reading literary language at the level
 !!! mascot-celebration "Chapter 4 Complete — You're Reading at the Level of Language"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Pip celebrating with delight">
     You've just built the most granular part of the analytical toolkit — the tools for reading at the level of the individual word and sentence. Metaphor, tone, connotation, syntax: once you see these, you're reading literature the way its authors wrote it. Chapter 5 takes the view wider again: we'll look at how authors use narrative techniques across a whole text — foreshadowing, flashback, pacing — and how literary works exist in historical and comparative contexts. You're ready.
+
+[See Annotated References](./references.md)

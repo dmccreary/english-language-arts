@@ -454,3 +454,5 @@ This chapter has provided a systematic foundation in standard English grammar an
 !!! mascot-celebration "Chapter 12 Complete — You Know the Architecture Now"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Pip celebrating with delight">
     Parts of speech, clauses, sentence types, participial phrases, infinitives — you have the full grammatical vocabulary for understanding how English sentences are built. This is not the end of grammar learning; it is the foundation. Chapter 13 builds on this foundation with the conventions of punctuation, capitalization, spelling, and vocabulary development — the tools that make precise, error-free academic writing possible. Every word tells a story, and now you understand the grammar of how those words work together.
+
+[See Annotated References](./references.md)

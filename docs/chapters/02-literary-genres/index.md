@@ -352,3 +352,5 @@ Here is a checklist of the key concepts you should be able to explain confidentl
 !!! mascot-celebration "Chapter 2 Complete — You've Mapped the Territory"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Pip celebrating with delight">
     You've just surveyed the full landscape of literary production — every major kind of text you'll encounter in this course, and the analytical vocabulary for working with each one. That's a genuine accomplishment. Every word tells a story, and now you know what kind of story each form is equipped to tell. In Chapter 3, we go deep inside narrative texts to look at how authors build meaning through plot, character, and point of view. Bring your genre knowledge with you — you'll need it.
+
+[See Annotated References](./references.md)

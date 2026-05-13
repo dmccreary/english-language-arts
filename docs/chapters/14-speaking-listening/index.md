@@ -386,3 +386,5 @@ This chapter has developed the speaking and listening competencies that academic
 !!! mascot-celebration "Chapter 14 Complete — Your Voice Matters"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Pip celebrating with delight">
     Speaking, listening, discussion, presentation, media evaluation — you now have the framework for participating in academic and civic conversation with both confidence and critical acuity. Chapter 15 continues developing these skills in the specific context of media literacy: understanding how media shapes what we know, how bias operates across different media formats, and how to be a thoughtful, critical consumer of the information that surrounds us. Every word tells a story — and now you have the skills to hear those stories clearly.
+
+[See Annotated References](./references.md)

@@ -391,3 +391,5 @@ This chapter has provided the complete vocabulary and framework for reading info
 !!! mascot-celebration "Chapter 6 Complete — You're Reading Like a Rhetorician"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Pip celebrating with delight">
     You now have the tools to read any argument — any speech, essay, editorial, or persuasive text — and see exactly what it's doing to try to convince you. Ethos, pathos, logos, kairos; claim, evidence, warrant, counterclaim — this is the grammar of persuasion, and you speak it now. Chapter 7 puts these skills to work on the most important informational texts in American history. Every word tells a story — and in Chapter 7, those stories built a nation.
+
+[See Annotated References](./references.md)

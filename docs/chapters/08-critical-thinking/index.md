@@ -348,3 +348,5 @@ This chapter has built the analytical infrastructure that underlies all rigorous
 !!! mascot-celebration "Chapter 8 Complete — You Think Like an Analyst"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Pip celebrating with delight">
     You can now name the specific patterns of bad reasoning that appear in political speeches, social media debates, advertisements, and — honestly — in your own first drafts. That naming is power: once you can see the straw man being constructed, you can't un-see it. Once you recognize a false dichotomy, the either-or pressure evaporates. Chapter 9 shifts gears from analysis to creation — from reading arguments to writing them — and every skill you've built in this chapter goes directly into making you a stronger writer.
+
+[See Annotated References](./references.md)

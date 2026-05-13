@@ -17,23 +17,25 @@ hide:
   ![English Language Arts](./img/cover.png){ width="100%" }
 </figure>
 
-An intelligent textbook for US high school English/Language Arts aligned with the Common Core State Standards (CCSS-ELA) developed by NGA and CCSSO.
+An interactive intelligent textbook for US high school English/Language Arts (ELA) aligned with the Common Core State Standards (CCSS-ELA) developed by NGA and CCSSO.
 
 ## Getting Started
 
-This is an intelligent textbook built with MkDocs Material. Use the navigation
-sidebar on the left to explore chapters, the learning graph, MicroSims, and
-supporting reference content.
+This is an interactive intelligent textbook designed to make learning English Language Arts fun! Use the navigation
+sidebar on the left to explore the different sections of the book. View the [chapters](./chapters/index.md) to
+read and of the 17 chapters of the book.  Use the **Search** form in the upper right corner of every
+page to find specific parts of the book.
 
 ## Front Matter
 
-- **About** — audience, prerequisites, and how to read the book
-- **Course Description** — the seed document used to generate the learning graph
+- **[About](./about.md)** — tells you about why we created this book and how to cite this book
+- **[Course Description](./course-description.md)** — gives you an overview of the book, the
+topics covered (and topics not covered) and the learning objectives.
 
 ## Chapters
 
 The main body of the book lives under [Chapters](chapters/index.md). Each
-chapter has its own folder with a two-digit prefix (e.g. `01-introduction`).
+chapter has its own folder with the chapter content, a review quiz and references.
 
 ## Learning Graph
 

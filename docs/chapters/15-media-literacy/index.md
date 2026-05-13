@@ -355,3 +355,5 @@ This chapter has developed the media literacy and cognitive bias frameworks esse
 !!! mascot-celebration "Chapter 15 Complete — You're a Critical Reader of the Information Landscape"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Pip celebrating with delight">
     Media literacy and cognitive bias awareness — you now have both the external toolkit for evaluating sources and the internal framework for recognizing the distortions in your own perception. These are lifelong skills that grow more valuable the more you practice them. Chapter 16 moves to two forward-looking frameworks: systems thinking (how to see the patterns and feedback loops behind complex events) and AI literacy (how to use AI writing tools ethically, effectively, and with full awareness of their limitations). Every word tells a story — and now you have the skills to question the story the information landscape is telling you.
+
+[See Annotated References](./references.md)

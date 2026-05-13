@@ -316,3 +316,5 @@ This chapter has introduced the complete ecosystem of academic writing — from 
 !!! mascot-celebration "Chapter 9 Complete — You Have a Process Now"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Pip celebrating with delight">
     Writing is no longer a mystery or a performance — it is a process, and you now have that process. Every piece of writing you do from here will go better because you know what stage you are at and what that stage requires. Chapter 10 puts this process to work on the three major writing modes — argument, informative, and narrative — with the full structural and strategic toolkit each requires. Every word tells a story. In Chapter 10, you learn how to choose which kind of story to tell.
+
+[See Annotated References](./references.md)

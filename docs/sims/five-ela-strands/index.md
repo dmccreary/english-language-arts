@@ -1,7 +1,7 @@
 ---
 title: The Five ELA Strands — Interactive Overview
 description: "Recall the five ELA strands and explain how they form an interconnected system (Bloom Level 2 — Understand: explain, classify)."
-status: scaffold
+status: approved
 library: Mermaid
 bloom_level: 2
 image: /sims/five-ela-strands/five-ela-strands.png
@@ -10,7 +10,7 @@ og:image: /sims/five-ela-strands/five-ela-strands.png
 
 # The Five ELA Strands — Interactive Overview
 
-<iframe src="main.html" width="100%" height="482" scrolling="no"></iframe>
+<iframe src="main.html" width="100%" height="402" scrolling="no"></iframe>
 
 [Run MicroSim in Fullscreen](main.html){ .md-button .md-button--primary }
 
