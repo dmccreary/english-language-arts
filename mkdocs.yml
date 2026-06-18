@@ -254,7 +254,7 @@ extra:
   textbook_name: 'English Language Arts'
   textbook_version: '0.1'
 
-  # Google Analytics — uncomment once a property ID exists:
-  # analytics:
-  #   provider: google
-  #   property: G-XXXXXXXXXX
+  # Google Analytics
+  analytics:
+    provider: google
+    property: G-PTR59CVKWM
