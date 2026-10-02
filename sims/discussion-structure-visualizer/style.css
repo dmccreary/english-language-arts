@@ -1,0 +1,193 @@
+/* Academic Discussion Protocol Map — layout and panel styles.
+   The whole MicroSim is 560px tall (see CANVAS_HEIGHT in the .js file):
+   a 44px top bar plus a 516px view. */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2937;
+}
+
+.sim {
+    width: 100%;
+    height: 560px;
+    background: aliceblue;
+    border: 1px solid silver;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* ---------- top bar ---------- */
+.topbar {
+    height: 44px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 12px;
+    border-bottom: 1px solid silver;
+    background: white;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.modes { display: flex; gap: 6px; flex-shrink: 0; }
+
+.mode-btn {
+    font-size: 14px;
+    padding: 6px 12px;
+    border: 2px solid #3f51b5;
+    border-radius: 6px;
+    background: white;
+    color: #3f51b5;
+    cursor: pointer;
+}
+
+.mode-btn.active { background: #3f51b5; color: white; }
+
+/* ---------- views ---------- */
+.view { flex: 1; min-height: 0; display: flex; }
+.view[hidden] { display: none; }
+
+/* ---------- Explore: network + panel ---------- */
+.network-wrap { position: relative; flex: 1; min-width: 0; }
+
+#network { width: 100%; height: 100%; }
+
+.hint {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    color: #4b5563;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 3px 10px;
+    border-radius: 12px;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.panel {
+    width: 300px;
+    flex-shrink: 0;
+    background: white;
+    border-left: 1px solid silver;
+    padding: 10px 12px;
+    overflow-y: auto;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.panel-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+
+.panel h2 { font-size: 17px; margin-bottom: 2px; }
+.panel .lead { color: #4b5563; margin-bottom: 8px; }
+.panel .kicker {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #4b5563;
+}
+
+.panel .item { border-left: 4px solid #c5cae9; padding: 2px 0 2px 8px; margin-bottom: 7px; }
+.panel .item-label { font-weight: bold; }
+
+.panel .item button.linklike {
+    font: inherit;
+    font-weight: bold;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 10px; }
+
+.chip {
+    font-size: 13px;
+    padding: 4px 9px;
+    border: 1px solid #9fa8da;
+    border-radius: 14px;
+    background: #f3f4ff;
+    color: #1f2937;
+    cursor: pointer;
+}
+
+.chip.protocol { color: white; border-color: transparent; }
+
+.panel .reset {
+    flex-shrink: 0;
+    font-size: 13px;
+    padding: 4px 10px;
+    border: 1px solid #9ca3af;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+}
+
+/* ---------- Role Play ---------- */
+#role-view { flex-direction: column; background: white; overflow-y: auto; }
+
+.role-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px 8px;
+    font-size: 15px;
+}
+
+.role-controls select { font-size: 14px; padding: 4px 6px; margin-right: 10px; max-width: 100%; }
+
+.role-card { padding: 0 14px 10px; }
+
+.role-card h2 {
+    font-size: 17px;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.role-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 12px; }
+
+.role-section {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 7px 10px;
+    background: #fafafa;
+}
+
+.role-section.wide { grid-column: 1 / -1; }
+
+.role-section h3 { font-size: 14px; margin-bottom: 3px; }
+
+.role-section ul { list-style: none; font-size: 13.5px; line-height: 1.4; }
+
+.role-section li { padding-left: 14px; text-indent: -14px; margin-bottom: 2px; }
+
+.role-section li::before { content: "\2022\00a0\00a0"; color: #6b7280; }
+
+.role-section.frames li { font-style: italic; }
+
+/* ---------- narrow screens: stack the panel under the network ---------- */
+@media (max-width: 620px) {
+    .title { font-size: 16px; }
+    #explore-view { flex-direction: column; }
+    .network-wrap { flex: none; height: 270px; }
+    .network-wrap .vis-navigation { display: none; }
+    .panel { width: 100%; flex: 1; border-left: none; border-top: 1px solid silver; }
+    .role-grid { grid-template-columns: 1fr; }
+}

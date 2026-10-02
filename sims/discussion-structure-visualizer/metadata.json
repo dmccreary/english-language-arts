@@ -1,0 +1,54 @@
+{
+  "title": "Interactive Academic Discussion Protocol Map",
+  "description": "Understand (L2 — Understand) the structure and participant roles of four major academic discussion protocols by interactively exploring their differences.",
+  "creator": "English Language Arts",
+  "date": "2026-10-01",
+  "subject": [
+    "English Language Arts",
+    "Speaking and Listening"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY 4.0",
+  "identifier": "discussion-structure-visualizer",
+  "library": "vis-network",
+  "bloomLevel": 2,
+  "bloomVerb": "Understand",
+  "completion_status": "implemented",
+  "chapter_number": 14,
+  "chapter_title": "Speaking, Listening, and Multimedia Presentation",
+  "chapter_dir": "14-speaking-listening",
+  "educational": {
+    "gradeLevel": "9-12",
+    "subjectArea": "English Language Arts",
+    "topic": "Structured academic discussion protocols",
+    "learningObjectives": [
+      "Describe the participant structure, facilitator role, evidence requirements, learning goal, and typical duration of a Socratic seminar, a fishbowl, philosophical chairs, and numbered heads together.",
+      "Compare one attribute across all four discussion protocols.",
+      "Identify the responsibilities of a facilitator, inner-circle member, outer-circle member, or small group member in a given protocol.",
+      "Select sentence frames appropriate to a role when preparing for a discussion."
+    ],
+    "bloomLevels": ["Understand"],
+    "duration": "15-20 minutes",
+    "prerequisites": "The descriptions of the four discussion protocols and the sentence frames of academic discussion in Chapter 14."
+  },
+  "pedagogical": {
+    "modelType": "click-to-explore concept network with a comparison panel and a role preparation card",
+    "interactionModes": ["node-click", "button", "dropdown-select"],
+    "assessment": "Readers match each protocol to its participant structure, explain how the facilitator role differs between two protocols, and complete two sentence frames for their own role.",
+    "misconceptionsAddressed": [
+      "All class discussions follow the same rules.",
+      "The facilitator's job is to supply answers.",
+      "Observers in a fishbowl have nothing to do until it is their turn to speak."
+    ]
+  },
+  "controls": [
+    { "type": "button", "label": "Explore", "action": "shows the protocol map and the detail or comparison panel" },
+    { "type": "button", "label": "Role Play", "action": "shows the role preparation card" },
+    { "type": "node-click", "label": "Protocol node", "action": "focuses one protocol and lists its five attributes in full" },
+    { "type": "node-click", "label": "Attribute node", "action": "highlights that attribute under all four protocols and compares them in the panel" },
+    { "type": "select", "label": "Protocol", "options": ["Socratic Seminar", "Fishbowl", "Philosophical Chairs", "Numbered Heads Together"] },
+    { "type": "select", "label": "Your role", "options": ["Facilitator", "Inner circle", "Outer circle", "Small group member"] }
+  ]
+}
