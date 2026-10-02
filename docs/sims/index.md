@@ -12,6 +12,12 @@ Each sim is embedded directly in the chapter where it is introduced.
 
 <div class="grid cards" markdown>
 
+-   **[Academic Discussion Protocol Map](./discussion-structure-visualizer/index.md)**
+
+    ![Academic Discussion Protocol Map](./discussion-structure-visualizer/discussion-structure-visualizer.png)
+
+    Compare the Socratic seminar, fishbowl, philosophical chairs, and numbered heads together by structure, facilitator role, evidence, goal, and duration, then prepare for your own role with ready-to-use sentence frames.
+
 -   **[American Foundational Documents Timeline](./foundational-documents-timeline/index.md)**
 
     ![American Foundational Documents Timeline](./foundational-documents-timeline/foundational-documents-timeline.png)

@@ -284,6 +284,11 @@ For the hallway poster: A large, high-contrast visual (the bar chart simplified 
 
 **Case Study 3 — Adapting to Unexpected Audience Reactions**: Mid-presentation, you notice that your audience looks confused by a term you have been using without defining. Adapt in real time: stop, acknowledge the response ("I can see some uncertain looks — let me back up and define what I mean by 'rhetorical situation'"), provide a brief definition, and then continue. This real-time adaptation is one of the hallmarks of an experienced speaker. The alternative — plowing through material that the audience is not following — is a common and entirely avoidable failure.
 
+#### Diagram: Interactive Academic Discussion Protocol Map
+
+<iframe src="../../sims/discussion-structure-visualizer/main.html" width="100%" height="562px" scrolling="no"></iframe>
+[Run Interactive Academic Discussion Protocol Map Fullscreen](../../sims/discussion-structure-visualizer/main.html)
+
 <details markdown="1">
 <summary>Interactive Academic Discussion Protocol Map</summary>
 Type: Interactive Diagram
