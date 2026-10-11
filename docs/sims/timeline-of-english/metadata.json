@@ -1,7 +1,7 @@
 {
   "title": "A Brief History of the English Language",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
+  "subject": "English Language Arts",
   "description": "Interactive MicroSim for a brief history of the english language",
   "date": "2026-05-13",
   "educational": {
@@ -11,7 +11,7 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Language Arts",
     "topic": "A Brief History of the English Language",
     "learningObjectives": [
       "TODO: Add learning objectives"
